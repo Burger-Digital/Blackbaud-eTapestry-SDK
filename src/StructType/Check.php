@@ -87,7 +87,7 @@ class Check extends AbstractStructBase
     /**
      * Set account value
      * @param string $account
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setAccount(?string $account = null): self
     {
@@ -110,7 +110,7 @@ class Check extends AbstractStructBase
     /**
      * Set bank value
      * @param string $bank
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setBank(?string $bank = null): self
     {
@@ -133,7 +133,7 @@ class Check extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setDate(?string $date = null): self
     {
@@ -156,7 +156,7 @@ class Check extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setNote(?string $note = null): self
     {
@@ -179,7 +179,7 @@ class Check extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setNumber(?string $number = null): self
     {
@@ -202,7 +202,7 @@ class Check extends AbstractStructBase
     /**
      * Set payee value
      * @param string $payee
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setPayee(?string $payee = null): self
     {
@@ -225,7 +225,7 @@ class Check extends AbstractStructBase
     /**
      * Set signator value
      * @param string $signator
-     * @return \StructType\Check
+     * @return \BurgerDigital\eTapestry\StructType\Check
      */
     public function setSignator(?string $signator = null): self
     {

@@ -79,7 +79,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set accountRoleTypes value
      * @param int $accountRoleTypes
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setAccountRoleTypes(?int $accountRoleTypes = null): self
     {
@@ -102,7 +102,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setAddress(?string $address = null): self
     {
@@ -125,7 +125,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set allowEmailOnlyMatch value
      * @param bool $allowEmailOnlyMatch
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setAllowEmailOnlyMatch(?bool $allowEmailOnlyMatch = null): self
     {
@@ -148,7 +148,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setEmail(?string $email = null): self
     {
@@ -171,7 +171,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setName(?string $name = null): self
     {
@@ -194,7 +194,7 @@ class DuplicateAccountSearch extends AbstractStructBase
     /**
      * Set phoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\DuplicateAccountSearch
+     * @return \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch
      */
     public function setPhoneNumber(?string $phoneNumber = null): self
     {

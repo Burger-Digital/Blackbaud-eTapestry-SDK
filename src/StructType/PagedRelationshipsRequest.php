@@ -75,7 +75,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -98,7 +98,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -121,7 +121,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -144,7 +144,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -191,7 +191,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
      * Set otherAccountRefs value
      * @throws InvalidArgumentException
      * @param string[] $otherAccountRefs
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function setOtherAccountRefs(array $otherAccountRefs = []): self
     {
@@ -207,7 +207,7 @@ class PagedRelationshipsRequest extends AbstractStructBase
      * Add item to otherAccountRefs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\PagedRelationshipsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest
      */
     public function addToOtherAccountRefs(string $item): self
     {

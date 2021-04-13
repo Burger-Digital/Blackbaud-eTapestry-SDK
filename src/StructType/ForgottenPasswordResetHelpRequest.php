@@ -47,7 +47,7 @@ class ForgottenPasswordResetHelpRequest extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \StructType\ForgottenPasswordResetHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordResetHelpRequest
      */
     public function setCode(?string $code = null): self
     {
@@ -70,7 +70,7 @@ class ForgottenPasswordResetHelpRequest extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\ForgottenPasswordResetHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordResetHelpRequest
      */
     public function setRef(?string $ref = null): self
     {

@@ -63,7 +63,7 @@ class GeneratedReceipt extends AbstractStructBase
     /**
      * Set dateIssued value
      * @param string $dateIssued
-     * @return \StructType\GeneratedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt
      */
     public function setDateIssued(?string $dateIssued = null): self
     {
@@ -86,7 +86,7 @@ class GeneratedReceipt extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \StructType\GeneratedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt
      */
     public function setNumber(?string $number = null): self
     {
@@ -109,7 +109,7 @@ class GeneratedReceipt extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \StructType\GeneratedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt
      */
     public function setStatus(?string $status = null): self
     {
@@ -132,7 +132,7 @@ class GeneratedReceipt extends AbstractStructBase
     /**
      * Set voidedNumber value
      * @param string $voidedNumber
-     * @return \StructType\GeneratedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt
      */
     public function setVoidedNumber(?string $voidedNumber = null): self
     {

@@ -29,7 +29,7 @@ class CalendarItem extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -43,7 +43,7 @@ class CalendarItem extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -57,7 +57,7 @@ class CalendarItem extends AbstractStructBase
      * - arrayType: tns:Invitation[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Invitation[]
+     * @var \BurgerDigital\eTapestry\StructType\Invitation[]
      */
     protected array $invitations = [];
     /**
@@ -82,7 +82,7 @@ class CalendarItem extends AbstractStructBase
     protected ?bool $private = null;
     /**
      * The recurringSchedule
-     * @var \StructType\RecurringSchedule|null
+     * @var \BurgerDigital\eTapestry\StructType\RecurringSchedule|null
      */
     protected ?\StructType\RecurringSchedule $recurringSchedule = null;
     /**
@@ -137,16 +137,16 @@ class CalendarItem extends AbstractStructBase
      * @uses CalendarItem::setType()
      * @param string $accountName
      * @param string $accountRef
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $createdDate
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param string $endTime
-     * @param \StructType\Invitation[] $invitations
+     * @param \BurgerDigital\eTapestry\StructType\Invitation[] $invitations
      * @param string $lastModifiedDate
      * @param string $note
      * @param int $priority
      * @param bool $private
-     * @param \StructType\RecurringSchedule $recurringSchedule
+     * @param \BurgerDigital\eTapestry\StructType\RecurringSchedule $recurringSchedule
      * @param string $ref
      * @param bool $remind
      * @param string $startTime
@@ -187,7 +187,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -210,7 +210,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -224,7 +224,7 @@ class CalendarItem extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -242,12 +242,12 @@ class CalendarItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calendarItemAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$calendarItemAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$calendarItemAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($calendarItemAttachmentsItem) ? get_class($calendarItemAttachmentsItem) : sprintf('%s(%s)', gettype($calendarItemAttachmentsItem), var_export($calendarItemAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -256,8 +256,8 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -272,14 +272,14 @@ class CalendarItem extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -296,7 +296,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -310,7 +310,7 @@ class CalendarItem extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -328,12 +328,12 @@ class CalendarItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calendarItemDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$calendarItemDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$calendarItemDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($calendarItemDefinedValuesItem) ? get_class($calendarItemDefinedValuesItem) : sprintf('%s(%s)', gettype($calendarItemDefinedValuesItem), var_export($calendarItemDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -342,8 +342,8 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -358,14 +358,14 @@ class CalendarItem extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -382,7 +382,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set endTime value
      * @param string $endTime
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setEndTime(?string $endTime = null): self
     {
@@ -396,7 +396,7 @@ class CalendarItem extends AbstractStructBase
     }
     /**
      * Get invitations value
-     * @return \StructType\Invitation[]
+     * @return \BurgerDigital\eTapestry\StructType\Invitation[]
      */
     public function getInvitations(): array
     {
@@ -414,12 +414,12 @@ class CalendarItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $calendarItemInvitationsItem) {
             // validation for constraint: itemType
-            if (!$calendarItemInvitationsItem instanceof \StructType\Invitation) {
+            if (!$calendarItemInvitationsItem instanceof \BurgerDigital\eTapestry\StructType\Invitation) {
                 $invalidValues[] = is_object($calendarItemInvitationsItem) ? get_class($calendarItemInvitationsItem) : sprintf('%s(%s)', gettype($calendarItemInvitationsItem), var_export($calendarItemInvitationsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The invitations property can only contain items of type \StructType\Invitation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The invitations property can only contain items of type \BurgerDigital\eTapestry\StructType\Invitation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -428,8 +428,8 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set invitations value
      * @throws InvalidArgumentException
-     * @param \StructType\Invitation[] $invitations
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\Invitation[] $invitations
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setInvitations(array $invitations = []): self
     {
@@ -444,14 +444,14 @@ class CalendarItem extends AbstractStructBase
     /**
      * Add item to invitations value
      * @throws InvalidArgumentException
-     * @param \StructType\Invitation $item
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\Invitation $item
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function addToInvitations(\StructType\Invitation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Invitation) {
-            throw new InvalidArgumentException(sprintf('The invitations property can only contain items of type \StructType\Invitation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Invitation) {
+            throw new InvalidArgumentException(sprintf('The invitations property can only contain items of type \BurgerDigital\eTapestry\StructType\Invitation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->invitations[] = $item;
         
@@ -468,7 +468,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -491,7 +491,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setNote(?string $note = null): self
     {
@@ -514,7 +514,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set priority value
      * @param int $priority
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setPriority(?int $priority = null): self
     {
@@ -537,7 +537,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set private value
      * @param bool $private
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setPrivate(?bool $private = null): self
     {
@@ -551,7 +551,7 @@ class CalendarItem extends AbstractStructBase
     }
     /**
      * Get recurringSchedule value
-     * @return \StructType\RecurringSchedule|null
+     * @return \BurgerDigital\eTapestry\StructType\RecurringSchedule|null
      */
     public function getRecurringSchedule(): ?\StructType\RecurringSchedule
     {
@@ -559,8 +559,8 @@ class CalendarItem extends AbstractStructBase
     }
     /**
      * Set recurringSchedule value
-     * @param \StructType\RecurringSchedule $recurringSchedule
-     * @return \StructType\CalendarItem
+     * @param \BurgerDigital\eTapestry\StructType\RecurringSchedule $recurringSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setRecurringSchedule(?\StructType\RecurringSchedule $recurringSchedule = null): self
     {
@@ -579,7 +579,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setRef(?string $ref = null): self
     {
@@ -602,7 +602,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set remind value
      * @param bool $remind
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setRemind(?bool $remind = null): self
     {
@@ -625,7 +625,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set startTime value
      * @param string $startTime
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setStartTime(?string $startTime = null): self
     {
@@ -648,7 +648,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setStatus(?int $status = null): self
     {
@@ -671,7 +671,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setTitle(?string $title = null): self
     {
@@ -694,7 +694,7 @@ class CalendarItem extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\CalendarItem
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem
      */
     public function setType(?int $type = null): self
     {

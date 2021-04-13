@@ -55,7 +55,7 @@ class ConnectRequest extends AbstractStructBase
     /**
      * Set applicationContext value
      * @param string $applicationContext
-     * @return \StructType\ConnectRequest
+     * @return \BurgerDigital\eTapestry\StructType\ConnectRequest
      */
     public function setApplicationContext(?string $applicationContext = null): self
     {
@@ -78,7 +78,7 @@ class ConnectRequest extends AbstractStructBase
     /**
      * Set databaseId value
      * @param string $databaseId
-     * @return \StructType\ConnectRequest
+     * @return \BurgerDigital\eTapestry\StructType\ConnectRequest
      */
     public function setDatabaseId(?string $databaseId = null): self
     {
@@ -101,7 +101,7 @@ class ConnectRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\ConnectRequest
+     * @return \BurgerDigital\eTapestry\StructType\ConnectRequest
      */
     public function setPassword(?string $password = null): self
     {

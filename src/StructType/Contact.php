@@ -29,7 +29,7 @@ class Contact extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -48,7 +48,7 @@ class Contact extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -103,10 +103,10 @@ class Contact extends AbstractStructBase
      * @uses Contact::setType()
      * @param string $accountName
      * @param string $accountRef
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $lastModifiedDate
      * @param string $method
@@ -143,7 +143,7 @@ class Contact extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -166,7 +166,7 @@ class Contact extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -180,7 +180,7 @@ class Contact extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -198,12 +198,12 @@ class Contact extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contactAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$contactAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$contactAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($contactAttachmentsItem) ? get_class($contactAttachmentsItem) : sprintf('%s(%s)', gettype($contactAttachmentsItem), var_export($contactAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -212,8 +212,8 @@ class Contact extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Contact
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -228,14 +228,14 @@ class Contact extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Contact
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -252,7 +252,7 @@ class Contact extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -275,7 +275,7 @@ class Contact extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setDate(?string $date = null): self
     {
@@ -289,7 +289,7 @@ class Contact extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -307,12 +307,12 @@ class Contact extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $contactDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$contactDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$contactDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($contactDefinedValuesItem) ? get_class($contactDefinedValuesItem) : sprintf('%s(%s)', gettype($contactDefinedValuesItem), var_export($contactDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -321,8 +321,8 @@ class Contact extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Contact
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -337,14 +337,14 @@ class Contact extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Contact
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -361,7 +361,7 @@ class Contact extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setFinal(?bool $final = null): self
     {
@@ -384,7 +384,7 @@ class Contact extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -407,7 +407,7 @@ class Contact extends AbstractStructBase
     /**
      * Set method value
      * @param string $method
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setMethod(?string $method = null): self
     {
@@ -430,7 +430,7 @@ class Contact extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setNote(?string $note = null): self
     {
@@ -453,7 +453,7 @@ class Contact extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setRef(?string $ref = null): self
     {
@@ -476,7 +476,7 @@ class Contact extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setSubject(?string $subject = null): self
     {
@@ -499,7 +499,7 @@ class Contact extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Contact
+     * @return \BurgerDigital\eTapestry\StructType\Contact
      */
     public function setType(?int $type = null): self
     {

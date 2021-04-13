@@ -15,7 +15,7 @@ class LoginCredentialsRequest extends AbstractStructBase
 {
     /**
      * The account
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $account = null;
     /**
@@ -54,7 +54,7 @@ class LoginCredentialsRequest extends AbstractStructBase
      * - arrayType: tns:SearchCriteria[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SearchCriteria[]
+     * @var \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     protected array $duplicateSearchCriteria = [];
     /**
@@ -115,14 +115,14 @@ class LoginCredentialsRequest extends AbstractStructBase
      * @uses LoginCredentialsRequest::setMatchNotFoundActionType()
      * @uses LoginCredentialsRequest::setNotificationEmail()
      * @uses LoginCredentialsRequest::setPassword()
-     * @param \StructType\Account $account
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
      * @param string $confirmationLoginURL
      * @param string $confirmationMessageFooter
      * @param string $confirmationMessageHeader
      * @param string $confirmationSender
      * @param string $confirmationSignature
      * @param string $confirmationSubject
-     * @param \StructType\SearchCriteria[] $duplicateSearchCriteria
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $duplicateSearchCriteria
      * @param string $duplicateSearchQuery
      * @param string $failureEmail
      * @param string $loginId
@@ -154,7 +154,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     }
     /**
      * Get account value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getAccount(): ?\StructType\Account
     {
@@ -162,8 +162,8 @@ class LoginCredentialsRequest extends AbstractStructBase
     }
     /**
      * Set account value
-     * @param \StructType\Account $account
-     * @return \StructType\LoginCredentialsRequest
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setAccount(?\StructType\Account $account = null): self
     {
@@ -182,7 +182,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationLoginURL value
      * @param string $confirmationLoginURL
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationLoginURL(?string $confirmationLoginURL = null): self
     {
@@ -205,7 +205,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationMessageFooter value
      * @param string $confirmationMessageFooter
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationMessageFooter(?string $confirmationMessageFooter = null): self
     {
@@ -228,7 +228,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationMessageHeader value
      * @param string $confirmationMessageHeader
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationMessageHeader(?string $confirmationMessageHeader = null): self
     {
@@ -251,7 +251,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationSender value
      * @param string $confirmationSender
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationSender(?string $confirmationSender = null): self
     {
@@ -274,7 +274,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationSignature value
      * @param string $confirmationSignature
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationSignature(?string $confirmationSignature = null): self
     {
@@ -297,7 +297,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set confirmationSubject value
      * @param string $confirmationSubject
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setConfirmationSubject(?string $confirmationSubject = null): self
     {
@@ -311,7 +311,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     }
     /**
      * Get duplicateSearchCriteria value
-     * @return \StructType\SearchCriteria[]
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     public function getDuplicateSearchCriteria(): array
     {
@@ -329,12 +329,12 @@ class LoginCredentialsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $loginCredentialsRequestDuplicateSearchCriteriaItem) {
             // validation for constraint: itemType
-            if (!$loginCredentialsRequestDuplicateSearchCriteriaItem instanceof \StructType\SearchCriteria) {
+            if (!$loginCredentialsRequestDuplicateSearchCriteriaItem instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
                 $invalidValues[] = is_object($loginCredentialsRequestDuplicateSearchCriteriaItem) ? get_class($loginCredentialsRequestDuplicateSearchCriteriaItem) : sprintf('%s(%s)', gettype($loginCredentialsRequestDuplicateSearchCriteriaItem), var_export($loginCredentialsRequestDuplicateSearchCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The duplicateSearchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The duplicateSearchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -343,8 +343,8 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set duplicateSearchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria[] $duplicateSearchCriteria
-     * @return \StructType\LoginCredentialsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $duplicateSearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setDuplicateSearchCriteria(array $duplicateSearchCriteria = []): self
     {
@@ -359,14 +359,14 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Add item to duplicateSearchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria $item
-     * @return \StructType\LoginCredentialsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria $item
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function addToDuplicateSearchCriteria(\StructType\SearchCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SearchCriteria) {
-            throw new InvalidArgumentException(sprintf('The duplicateSearchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
+            throw new InvalidArgumentException(sprintf('The duplicateSearchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->duplicateSearchCriteria[] = $item;
         
@@ -383,7 +383,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set duplicateSearchQuery value
      * @param string $duplicateSearchQuery
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setDuplicateSearchQuery(?string $duplicateSearchQuery = null): self
     {
@@ -406,7 +406,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set failureEmail value
      * @param string $failureEmail
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setFailureEmail(?string $failureEmail = null): self
     {
@@ -429,7 +429,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set loginId value
      * @param string $loginId
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setLoginId(?string $loginId = null): self
     {
@@ -452,7 +452,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set matchHasLoginIdActionType value
      * @param int $matchHasLoginIdActionType
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setMatchHasLoginIdActionType(?int $matchHasLoginIdActionType = null): self
     {
@@ -475,7 +475,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set matchMultipleActionType value
      * @param int $matchMultipleActionType
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setMatchMultipleActionType(?int $matchMultipleActionType = null): self
     {
@@ -498,7 +498,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set matchNotFoundActionType value
      * @param int $matchNotFoundActionType
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setMatchNotFoundActionType(?int $matchNotFoundActionType = null): self
     {
@@ -521,7 +521,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set notificationEmail value
      * @param string $notificationEmail
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setNotificationEmail(?string $notificationEmail = null): self
     {
@@ -544,7 +544,7 @@ class LoginCredentialsRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\LoginCredentialsRequest
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest
      */
     public function setPassword(?string $password = null): self
     {

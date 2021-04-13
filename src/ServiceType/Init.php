@@ -18,7 +18,7 @@ class Init extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\LinkedTransaction|bool
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction|bool
      */
     public function initLinkedTransaction()
     {
@@ -35,7 +35,7 @@ class Init extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\LinkedTransaction
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function getResult()
     {

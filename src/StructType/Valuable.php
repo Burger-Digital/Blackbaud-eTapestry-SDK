@@ -15,57 +15,57 @@ class Valuable extends AbstractStructBase
 {
     /**
      * The CCP
-     * @var \StructType\CCP|null
+     * @var \BurgerDigital\eTapestry\StructType\CCP|null
      */
     protected ?\StructType\CCP $CCP = null;
     /**
      * The bond
-     * @var \StructType\Bond|null
+     * @var \BurgerDigital\eTapestry\StructType\Bond|null
      */
     protected ?\StructType\Bond $bond = null;
     /**
      * The buckaroo
-     * @var \StructType\Buckaroo|null
+     * @var \BurgerDigital\eTapestry\StructType\Buckaroo|null
      */
     protected ?\StructType\Buckaroo $buckaroo = null;
     /**
      * The cash
-     * @var \StructType\Cash|null
+     * @var \BurgerDigital\eTapestry\StructType\Cash|null
      */
     protected ?\StructType\Cash $cash = null;
     /**
      * The check
-     * @var \StructType\Check|null
+     * @var \BurgerDigital\eTapestry\StructType\Check|null
      */
     protected ?\StructType\Check $check = null;
     /**
      * The creditCard
-     * @var \StructType\CreditCard|null
+     * @var \BurgerDigital\eTapestry\StructType\CreditCard|null
      */
     protected ?\StructType\CreditCard $creditCard = null;
     /**
      * The electronicFundsTransfer
-     * @var \StructType\ElectronicFundsTransfer|null
+     * @var \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer|null
      */
     protected ?\StructType\ElectronicFundsTransfer $electronicFundsTransfer = null;
     /**
      * The inKind
-     * @var \StructType\InKind|null
+     * @var \BurgerDigital\eTapestry\StructType\InKind|null
      */
     protected ?\StructType\InKind $inKind = null;
     /**
      * The insurance
-     * @var \StructType\Insurance|null
+     * @var \BurgerDigital\eTapestry\StructType\Insurance|null
      */
     protected ?\StructType\Insurance $insurance = null;
     /**
      * The realEstate
-     * @var \StructType\RealEstate|null
+     * @var \BurgerDigital\eTapestry\StructType\RealEstate|null
      */
     protected ?\StructType\RealEstate $realEstate = null;
     /**
      * The stock
-     * @var \StructType\Stock|null
+     * @var \BurgerDigital\eTapestry\StructType\Stock|null
      */
     protected ?\StructType\Stock $stock = null;
     /**
@@ -87,17 +87,17 @@ class Valuable extends AbstractStructBase
      * @uses Valuable::setRealEstate()
      * @uses Valuable::setStock()
      * @uses Valuable::setType()
-     * @param \StructType\CCP $cCP
-     * @param \StructType\Bond $bond
-     * @param \StructType\Buckaroo $buckaroo
-     * @param \StructType\Cash $cash
-     * @param \StructType\Check $check
-     * @param \StructType\CreditCard $creditCard
-     * @param \StructType\ElectronicFundsTransfer $electronicFundsTransfer
-     * @param \StructType\InKind $inKind
-     * @param \StructType\Insurance $insurance
-     * @param \StructType\RealEstate $realEstate
-     * @param \StructType\Stock $stock
+     * @param \BurgerDigital\eTapestry\StructType\CCP $cCP
+     * @param \BurgerDigital\eTapestry\StructType\Bond $bond
+     * @param \BurgerDigital\eTapestry\StructType\Buckaroo $buckaroo
+     * @param \BurgerDigital\eTapestry\StructType\Cash $cash
+     * @param \BurgerDigital\eTapestry\StructType\Check $check
+     * @param \BurgerDigital\eTapestry\StructType\CreditCard $creditCard
+     * @param \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer $electronicFundsTransfer
+     * @param \BurgerDigital\eTapestry\StructType\InKind $inKind
+     * @param \BurgerDigital\eTapestry\StructType\Insurance $insurance
+     * @param \BurgerDigital\eTapestry\StructType\RealEstate $realEstate
+     * @param \BurgerDigital\eTapestry\StructType\Stock $stock
      * @param int $type
      */
     public function __construct(?\StructType\CCP $cCP = null, ?\StructType\Bond $bond = null, ?\StructType\Buckaroo $buckaroo = null, ?\StructType\Cash $cash = null, ?\StructType\Check $check = null, ?\StructType\CreditCard $creditCard = null, ?\StructType\ElectronicFundsTransfer $electronicFundsTransfer = null, ?\StructType\InKind $inKind = null, ?\StructType\Insurance $insurance = null, ?\StructType\RealEstate $realEstate = null, ?\StructType\Stock $stock = null, ?int $type = null)
@@ -118,7 +118,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get CCP value
-     * @return \StructType\CCP|null
+     * @return \BurgerDigital\eTapestry\StructType\CCP|null
      */
     public function getCCP(): ?\StructType\CCP
     {
@@ -126,8 +126,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set CCP value
-     * @param \StructType\CCP $cCP
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\CCP $cCP
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setCCP(?\StructType\CCP $cCP = null): self
     {
@@ -137,7 +137,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get bond value
-     * @return \StructType\Bond|null
+     * @return \BurgerDigital\eTapestry\StructType\Bond|null
      */
     public function getBond(): ?\StructType\Bond
     {
@@ -145,8 +145,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set bond value
-     * @param \StructType\Bond $bond
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Bond $bond
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setBond(?\StructType\Bond $bond = null): self
     {
@@ -156,7 +156,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get buckaroo value
-     * @return \StructType\Buckaroo|null
+     * @return \BurgerDigital\eTapestry\StructType\Buckaroo|null
      */
     public function getBuckaroo(): ?\StructType\Buckaroo
     {
@@ -164,8 +164,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set buckaroo value
-     * @param \StructType\Buckaroo $buckaroo
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Buckaroo $buckaroo
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setBuckaroo(?\StructType\Buckaroo $buckaroo = null): self
     {
@@ -175,7 +175,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get cash value
-     * @return \StructType\Cash|null
+     * @return \BurgerDigital\eTapestry\StructType\Cash|null
      */
     public function getCash(): ?\StructType\Cash
     {
@@ -183,8 +183,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set cash value
-     * @param \StructType\Cash $cash
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Cash $cash
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setCash(?\StructType\Cash $cash = null): self
     {
@@ -194,7 +194,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get check value
-     * @return \StructType\Check|null
+     * @return \BurgerDigital\eTapestry\StructType\Check|null
      */
     public function getCheck(): ?\StructType\Check
     {
@@ -202,8 +202,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set check value
-     * @param \StructType\Check $check
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Check $check
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setCheck(?\StructType\Check $check = null): self
     {
@@ -213,7 +213,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get creditCard value
-     * @return \StructType\CreditCard|null
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard|null
      */
     public function getCreditCard(): ?\StructType\CreditCard
     {
@@ -221,8 +221,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set creditCard value
-     * @param \StructType\CreditCard $creditCard
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\CreditCard $creditCard
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setCreditCard(?\StructType\CreditCard $creditCard = null): self
     {
@@ -232,7 +232,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get electronicFundsTransfer value
-     * @return \StructType\ElectronicFundsTransfer|null
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer|null
      */
     public function getElectronicFundsTransfer(): ?\StructType\ElectronicFundsTransfer
     {
@@ -240,8 +240,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set electronicFundsTransfer value
-     * @param \StructType\ElectronicFundsTransfer $electronicFundsTransfer
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer $electronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setElectronicFundsTransfer(?\StructType\ElectronicFundsTransfer $electronicFundsTransfer = null): self
     {
@@ -251,7 +251,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get inKind value
-     * @return \StructType\InKind|null
+     * @return \BurgerDigital\eTapestry\StructType\InKind|null
      */
     public function getInKind(): ?\StructType\InKind
     {
@@ -259,8 +259,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set inKind value
-     * @param \StructType\InKind $inKind
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\InKind $inKind
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setInKind(?\StructType\InKind $inKind = null): self
     {
@@ -270,7 +270,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get insurance value
-     * @return \StructType\Insurance|null
+     * @return \BurgerDigital\eTapestry\StructType\Insurance|null
      */
     public function getInsurance(): ?\StructType\Insurance
     {
@@ -278,8 +278,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set insurance value
-     * @param \StructType\Insurance $insurance
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Insurance $insurance
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setInsurance(?\StructType\Insurance $insurance = null): self
     {
@@ -289,7 +289,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get realEstate value
-     * @return \StructType\RealEstate|null
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate|null
      */
     public function getRealEstate(): ?\StructType\RealEstate
     {
@@ -297,8 +297,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set realEstate value
-     * @param \StructType\RealEstate $realEstate
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\RealEstate $realEstate
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setRealEstate(?\StructType\RealEstate $realEstate = null): self
     {
@@ -308,7 +308,7 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Get stock value
-     * @return \StructType\Stock|null
+     * @return \BurgerDigital\eTapestry\StructType\Stock|null
      */
     public function getStock(): ?\StructType\Stock
     {
@@ -316,8 +316,8 @@ class Valuable extends AbstractStructBase
     }
     /**
      * Set stock value
-     * @param \StructType\Stock $stock
-     * @return \StructType\Valuable
+     * @param \BurgerDigital\eTapestry\StructType\Stock $stock
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setStock(?\StructType\Stock $stock = null): self
     {
@@ -336,7 +336,7 @@ class Valuable extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Valuable
+     * @return \BurgerDigital\eTapestry\StructType\Valuable
      */
     public function setType(?int $type = null): self
     {

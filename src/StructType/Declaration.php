@@ -39,7 +39,7 @@ class Declaration extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -167,7 +167,7 @@ class Declaration extends AbstractStructBase
      * @param string $accountRef
      * @param string $address
      * @param string $apartmentNumber
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $buildingNumber
      * @param string $city
      * @param string $confirmationDate
@@ -227,7 +227,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -250,7 +250,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -273,7 +273,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setAddress(?string $address = null): self
     {
@@ -296,7 +296,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set apartmentNumber value
      * @param string $apartmentNumber
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setApartmentNumber(?string $apartmentNumber = null): self
     {
@@ -310,7 +310,7 @@ class Declaration extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -328,12 +328,12 @@ class Declaration extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $declarationAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$declarationAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$declarationAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($declarationAttachmentsItem) ? get_class($declarationAttachmentsItem) : sprintf('%s(%s)', gettype($declarationAttachmentsItem), var_export($declarationAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -342,8 +342,8 @@ class Declaration extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Declaration
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -358,14 +358,14 @@ class Declaration extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Declaration
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -382,7 +382,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set buildingNumber value
      * @param string $buildingNumber
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setBuildingNumber(?string $buildingNumber = null): self
     {
@@ -405,7 +405,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setCity(?string $city = null): self
     {
@@ -428,7 +428,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set confirmationDate value
      * @param string $confirmationDate
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setConfirmationDate(?string $confirmationDate = null): self
     {
@@ -451,7 +451,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setCountry(?string $country = null): self
     {
@@ -474,7 +474,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set county value
      * @param string $county
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setCounty(?string $county = null): self
     {
@@ -497,7 +497,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -520,7 +520,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setDate(?string $date = null): self
     {
@@ -543,7 +543,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -566,7 +566,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -589,7 +589,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setName(?string $name = null): self
     {
@@ -612,7 +612,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setNote(?string $note = null): self
     {
@@ -635,7 +635,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -658,7 +658,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setRef(?string $ref = null): self
     {
@@ -681,7 +681,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -704,7 +704,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setState(?string $state = null): self
     {
@@ -727,7 +727,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set streetName value
      * @param string $streetName
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setStreetName(?string $streetName = null): self
     {
@@ -750,7 +750,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set suburb value
      * @param string $suburb
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setSuburb(?string $suburb = null): self
     {
@@ -773,7 +773,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setType(?int $type = null): self
     {
@@ -796,7 +796,7 @@ class Declaration extends AbstractStructBase
     /**
      * Set verbal value
      * @param bool $verbal
-     * @return \StructType\Declaration
+     * @return \BurgerDigital\eTapestry\StructType\Declaration
      */
     public function setVerbal(?bool $verbal = null): self
     {

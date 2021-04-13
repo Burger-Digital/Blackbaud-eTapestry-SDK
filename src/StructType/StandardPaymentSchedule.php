@@ -79,7 +79,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set firstInstallmentDate value
      * @param string $firstInstallmentDate
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setFirstInstallmentDate(?string $firstInstallmentDate = null): self
     {
@@ -102,7 +102,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set frequency value
      * @param int $frequency
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setFrequency(?int $frequency = null): self
     {
@@ -125,7 +125,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set installmentAmount value
      * @param float $installmentAmount
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setInstallmentAmount(?float $installmentAmount = null): self
     {
@@ -148,7 +148,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setNote(?string $note = null): self
     {
@@ -171,7 +171,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set processType value
      * @param int $processType
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setProcessType(?int $processType = null): self
     {
@@ -194,7 +194,7 @@ class StandardPaymentSchedule extends AbstractStructBase
     /**
      * Set stopDate value
      * @param string $stopDate
-     * @return \StructType\StandardPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule
      */
     public function setStopDate(?string $stopDate = null): self
     {

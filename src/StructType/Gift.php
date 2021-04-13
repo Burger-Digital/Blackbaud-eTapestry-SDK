@@ -59,7 +59,7 @@ class Gift extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -83,7 +83,7 @@ class Gift extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -103,7 +103,7 @@ class Gift extends AbstractStructBase
     protected ?string $fundraiser = null;
     /**
      * The generatedReceipt
-     * @var \StructType\GeneratedReceipt|null
+     * @var \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     protected ?\StructType\GeneratedReceipt $generatedReceipt = null;
     /**
@@ -148,12 +148,12 @@ class Gift extends AbstractStructBase
     protected ?string $offsettingRef = null;
     /**
      * The orderDetail
-     * @var \StructType\OrderDetail|null
+     * @var \BurgerDigital\eTapestry\StructType\OrderDetail|null
      */
     protected ?\StructType\OrderDetail $orderDetail = null;
     /**
      * The orderInfo
-     * @var \StructType\OrderInfo|null
+     * @var \BurgerDigital\eTapestry\StructType\OrderInfo|null
      */
     protected ?\StructType\OrderInfo $orderInfo = null;
     /**
@@ -198,7 +198,7 @@ class Gift extends AbstractStructBase
     protected ?string $segmentedTransactionRef = null;
     /**
      * The softCredit
-     * @var \StructType\SoftCredit|null
+     * @var \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     protected ?\StructType\SoftCredit $softCredit = null;
     /**
@@ -218,7 +218,7 @@ class Gift extends AbstractStructBase
     protected ?int $type = null;
     /**
      * The valuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $valuable = null;
     /**
@@ -271,15 +271,15 @@ class Gift extends AbstractStructBase
      * @param string $accountRef
      * @param float $amount
      * @param string $approach
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
      * @param string $fundraiser
-     * @param \StructType\GeneratedReceipt $generatedReceipt
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
      * @param float $giftAidAmount
      * @param string $giftAidClaimedDate
      * @param int $giftAidStatus
@@ -288,8 +288,8 @@ class Gift extends AbstractStructBase
      * @param float $nonDeductibleAmount
      * @param string $note
      * @param string $offsettingRef
-     * @param \StructType\OrderDetail $orderDetail
-     * @param \StructType\OrderInfo $orderInfo
+     * @param \BurgerDigital\eTapestry\StructType\OrderDetail $orderDetail
+     * @param \BurgerDigital\eTapestry\StructType\OrderInfo $orderInfo
      * @param string $originalAccountName
      * @param string $originalAccountRef
      * @param string $originalTransactionRef
@@ -298,11 +298,11 @@ class Gift extends AbstractStructBase
      * @param int $recognitionType
      * @param string $ref
      * @param string $segmentedTransactionRef
-     * @param \StructType\SoftCredit $softCredit
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
      * @param string $tributeAccountName
      * @param string $tributeAccountRef
      * @param int $type
-     * @param \StructType\Valuable $valuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
      */
     public function __construct(?string $creditAccount = null, ?float $creditAmount = null, ?string $debitAccount = null, ?float $debitAmount = null, ?string $accountName = null, ?string $accountRef = null, ?float $amount = null, ?string $approach = null, array $attachments = [], ?string $campaign = null, ?string $createdDate = null, ?string $date = null, array $definedValues = [], ?bool $final = null, ?string $fund = null, ?string $fundraiser = null, ?\StructType\GeneratedReceipt $generatedReceipt = null, ?float $giftAidAmount = null, ?string $giftAidClaimedDate = null, ?int $giftAidStatus = null, ?string $lastModifiedDate = null, ?string $letter = null, ?float $nonDeductibleAmount = null, ?string $note = null, ?string $offsettingRef = null, ?\StructType\OrderDetail $orderDetail = null, ?\StructType\OrderInfo $orderInfo = null, ?string $originalAccountName = null, ?string $originalAccountRef = null, ?string $originalTransactionRef = null, ?string $receipt = null, ?string $recognitionName = null, ?int $recognitionType = null, ?string $ref = null, ?string $segmentedTransactionRef = null, ?\StructType\SoftCredit $softCredit = null, ?string $tributeAccountName = null, ?string $tributeAccountRef = null, ?int $type = null, ?\StructType\Valuable $valuable = null)
     {
@@ -359,7 +359,7 @@ class Gift extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -382,7 +382,7 @@ class Gift extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -405,7 +405,7 @@ class Gift extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -428,7 +428,7 @@ class Gift extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -451,7 +451,7 @@ class Gift extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -474,7 +474,7 @@ class Gift extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -497,7 +497,7 @@ class Gift extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setAmount(?float $amount = null): self
     {
@@ -520,7 +520,7 @@ class Gift extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setApproach(?string $approach = null): self
     {
@@ -534,7 +534,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -552,12 +552,12 @@ class Gift extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $giftAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$giftAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$giftAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($giftAttachmentsItem) ? get_class($giftAttachmentsItem) : sprintf('%s(%s)', gettype($giftAttachmentsItem), var_export($giftAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -566,8 +566,8 @@ class Gift extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -582,14 +582,14 @@ class Gift extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -606,7 +606,7 @@ class Gift extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -629,7 +629,7 @@ class Gift extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -652,7 +652,7 @@ class Gift extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setDate(?string $date = null): self
     {
@@ -666,7 +666,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -684,12 +684,12 @@ class Gift extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $giftDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$giftDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$giftDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($giftDefinedValuesItem) ? get_class($giftDefinedValuesItem) : sprintf('%s(%s)', gettype($giftDefinedValuesItem), var_export($giftDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -698,8 +698,8 @@ class Gift extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -714,14 +714,14 @@ class Gift extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -738,7 +738,7 @@ class Gift extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setFinal(?bool $final = null): self
     {
@@ -761,7 +761,7 @@ class Gift extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setFund(?string $fund = null): self
     {
@@ -784,7 +784,7 @@ class Gift extends AbstractStructBase
     /**
      * Set fundraiser value
      * @param string $fundraiser
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setFundraiser(?string $fundraiser = null): self
     {
@@ -798,7 +798,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get generatedReceipt value
-     * @return \StructType\GeneratedReceipt|null
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     public function getGeneratedReceipt(): ?\StructType\GeneratedReceipt
     {
@@ -806,8 +806,8 @@ class Gift extends AbstractStructBase
     }
     /**
      * Set generatedReceipt value
-     * @param \StructType\GeneratedReceipt $generatedReceipt
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setGeneratedReceipt(?\StructType\GeneratedReceipt $generatedReceipt = null): self
     {
@@ -826,7 +826,7 @@ class Gift extends AbstractStructBase
     /**
      * Set giftAidAmount value
      * @param float $giftAidAmount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setGiftAidAmount(?float $giftAidAmount = null): self
     {
@@ -849,7 +849,7 @@ class Gift extends AbstractStructBase
     /**
      * Set giftAidClaimedDate value
      * @param string $giftAidClaimedDate
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setGiftAidClaimedDate(?string $giftAidClaimedDate = null): self
     {
@@ -872,7 +872,7 @@ class Gift extends AbstractStructBase
     /**
      * Set giftAidStatus value
      * @param int $giftAidStatus
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setGiftAidStatus(?int $giftAidStatus = null): self
     {
@@ -895,7 +895,7 @@ class Gift extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -918,7 +918,7 @@ class Gift extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setLetter(?string $letter = null): self
     {
@@ -941,7 +941,7 @@ class Gift extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -964,7 +964,7 @@ class Gift extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setNote(?string $note = null): self
     {
@@ -987,7 +987,7 @@ class Gift extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -1001,7 +1001,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get orderDetail value
-     * @return \StructType\OrderDetail|null
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail|null
      */
     public function getOrderDetail(): ?\StructType\OrderDetail
     {
@@ -1009,8 +1009,8 @@ class Gift extends AbstractStructBase
     }
     /**
      * Set orderDetail value
-     * @param \StructType\OrderDetail $orderDetail
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\OrderDetail $orderDetail
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOrderDetail(?\StructType\OrderDetail $orderDetail = null): self
     {
@@ -1020,7 +1020,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get orderInfo value
-     * @return \StructType\OrderInfo|null
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo|null
      */
     public function getOrderInfo(): ?\StructType\OrderInfo
     {
@@ -1028,8 +1028,8 @@ class Gift extends AbstractStructBase
     }
     /**
      * Set orderInfo value
-     * @param \StructType\OrderInfo $orderInfo
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\OrderInfo $orderInfo
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOrderInfo(?\StructType\OrderInfo $orderInfo = null): self
     {
@@ -1048,7 +1048,7 @@ class Gift extends AbstractStructBase
     /**
      * Set originalAccountName value
      * @param string $originalAccountName
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOriginalAccountName(?string $originalAccountName = null): self
     {
@@ -1071,7 +1071,7 @@ class Gift extends AbstractStructBase
     /**
      * Set originalAccountRef value
      * @param string $originalAccountRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOriginalAccountRef(?string $originalAccountRef = null): self
     {
@@ -1094,7 +1094,7 @@ class Gift extends AbstractStructBase
     /**
      * Set originalTransactionRef value
      * @param string $originalTransactionRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setOriginalTransactionRef(?string $originalTransactionRef = null): self
     {
@@ -1117,7 +1117,7 @@ class Gift extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -1140,7 +1140,7 @@ class Gift extends AbstractStructBase
     /**
      * Set recognitionName value
      * @param string $recognitionName
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setRecognitionName(?string $recognitionName = null): self
     {
@@ -1163,7 +1163,7 @@ class Gift extends AbstractStructBase
     /**
      * Set recognitionType value
      * @param int $recognitionType
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setRecognitionType(?int $recognitionType = null): self
     {
@@ -1186,7 +1186,7 @@ class Gift extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setRef(?string $ref = null): self
     {
@@ -1209,7 +1209,7 @@ class Gift extends AbstractStructBase
     /**
      * Set segmentedTransactionRef value
      * @param string $segmentedTransactionRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setSegmentedTransactionRef(?string $segmentedTransactionRef = null): self
     {
@@ -1223,7 +1223,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get softCredit value
-     * @return \StructType\SoftCredit|null
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     public function getSoftCredit(): ?\StructType\SoftCredit
     {
@@ -1231,8 +1231,8 @@ class Gift extends AbstractStructBase
     }
     /**
      * Set softCredit value
-     * @param \StructType\SoftCredit $softCredit
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setSoftCredit(?\StructType\SoftCredit $softCredit = null): self
     {
@@ -1251,7 +1251,7 @@ class Gift extends AbstractStructBase
     /**
      * Set tributeAccountName value
      * @param string $tributeAccountName
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setTributeAccountName(?string $tributeAccountName = null): self
     {
@@ -1274,7 +1274,7 @@ class Gift extends AbstractStructBase
     /**
      * Set tributeAccountRef value
      * @param string $tributeAccountRef
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setTributeAccountRef(?string $tributeAccountRef = null): self
     {
@@ -1297,7 +1297,7 @@ class Gift extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Gift
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setType(?int $type = null): self
     {
@@ -1311,7 +1311,7 @@ class Gift extends AbstractStructBase
     }
     /**
      * Get valuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getValuable(): ?\StructType\Valuable
     {
@@ -1319,8 +1319,8 @@ class Gift extends AbstractStructBase
     }
     /**
      * Set valuable value
-     * @param \StructType\Valuable $valuable
-     * @return \StructType\Gift
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
+     * @return \BurgerDigital\eTapestry\StructType\Gift
      */
     public function setValuable(?\StructType\Valuable $valuable = null): self
     {

@@ -63,7 +63,7 @@ class DefinedFieldValue extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \StructType\DefinedFieldValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue
      */
     public function setDesc(?string $desc = null): self
     {
@@ -86,7 +86,7 @@ class DefinedFieldValue extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\DefinedFieldValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -109,7 +109,7 @@ class DefinedFieldValue extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\DefinedFieldValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue
      */
     public function setRef(?string $ref = null): self
     {
@@ -132,7 +132,7 @@ class DefinedFieldValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\DefinedFieldValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue
      */
     public function setValue(?string $value = null): self
     {

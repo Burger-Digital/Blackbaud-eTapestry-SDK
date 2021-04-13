@@ -18,10 +18,10 @@ class External extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\ExternalLoginRequest $externalLoginRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\ExternalLoginRequest $externalLoginRequest_1
      * @return string|bool
      */
-    public function externalLogin(\StructType\ExternalLoginRequest $externalLoginRequest_1)
+    public function externalLogin(\BurgerDigital\eTapestry\StructType\ExternalLoginRequest $externalLoginRequest_1)
     {
         try {
             $this->setResult($resultExternalLogin = $this->getSoapClient()->__soapCall('externalLogin', [

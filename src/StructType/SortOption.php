@@ -47,7 +47,7 @@ class SortOption extends AbstractStructBase
     /**
      * Set ascending value
      * @param bool $ascending
-     * @return \StructType\SortOption
+     * @return \BurgerDigital\eTapestry\StructType\SortOption
      */
     public function setAscending(?bool $ascending = null): self
     {
@@ -70,7 +70,7 @@ class SortOption extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \StructType\SortOption
+     * @return \BurgerDigital\eTapestry\StructType\SortOption
      */
     public function setField(?string $field = null): self
     {

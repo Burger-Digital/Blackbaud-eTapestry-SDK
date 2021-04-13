@@ -79,7 +79,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set dataType value
      * @param int $dataType
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setDataType(?int $dataType = null): self
     {
@@ -102,7 +102,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set displayType value
      * @param int $displayType
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setDisplayType(?int $displayType = null): self
     {
@@ -125,7 +125,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set fieldName value
      * @param string $fieldName
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setFieldName(?string $fieldName = null): self
     {
@@ -148,7 +148,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set fieldRef value
      * @param string $fieldRef
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setFieldRef(?string $fieldRef = null): self
     {
@@ -171,7 +171,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setValue(?string $value = null): self
     {
@@ -194,7 +194,7 @@ class DefinedValue extends AbstractStructBase
     /**
      * Set valueRef value
      * @param string $valueRef
-     * @return \StructType\DefinedValue
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue
      */
     public function setValueRef(?string $valueRef = null): self
     {

@@ -131,7 +131,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -154,7 +154,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -177,7 +177,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -200,7 +200,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setDate(?string $date = null): self
     {
@@ -223,7 +223,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setFinal(?bool $final = null): self
     {
@@ -246,7 +246,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -269,7 +269,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -292,7 +292,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setRef(?string $ref = null): self
     {
@@ -339,7 +339,7 @@ class SegmentedDonation extends AbstractStructBase
      * Set segments value
      * @throws InvalidArgumentException
      * @param mixed[] $segments
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setSegments(array $segments = []): self
     {
@@ -355,7 +355,7 @@ class SegmentedDonation extends AbstractStructBase
      * Add item to segments value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function addToSegments(mixed $item): self
     {
@@ -378,7 +378,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -401,7 +401,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set totalNonDeductibleAmount value
      * @param float $totalNonDeductibleAmount
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setTotalNonDeductibleAmount(?float $totalNonDeductibleAmount = null): self
     {
@@ -424,7 +424,7 @@ class SegmentedDonation extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\SegmentedDonation
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation
      */
     public function setType(?int $type = null): self
     {

@@ -151,7 +151,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingAddress value
      * @param string $billingAddress
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingAddress(?string $billingAddress = null): self
     {
@@ -174,7 +174,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingCity value
      * @param string $billingCity
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingCity(?string $billingCity = null): self
     {
@@ -197,7 +197,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingCountry value
      * @param string $billingCountry
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingCountry(?string $billingCountry = null): self
     {
@@ -220,7 +220,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingEmail value
      * @param string $billingEmail
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingEmail(?string $billingEmail = null): self
     {
@@ -243,7 +243,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingName value
      * @param string $billingName
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingName(?string $billingName = null): self
     {
@@ -266,7 +266,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingPhone value
      * @param string $billingPhone
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingPhone(?string $billingPhone = null): self
     {
@@ -289,7 +289,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingPostalCode value
      * @param string $billingPostalCode
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingPostalCode(?string $billingPostalCode = null): self
     {
@@ -312,7 +312,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set billingState value
      * @param string $billingState
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setBillingState(?string $billingState = null): self
     {
@@ -335,7 +335,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingAddress value
      * @param string $shippingAddress
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingAddress(?string $shippingAddress = null): self
     {
@@ -358,7 +358,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingCity value
      * @param string $shippingCity
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingCity(?string $shippingCity = null): self
     {
@@ -381,7 +381,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingCountry value
      * @param string $shippingCountry
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingCountry(?string $shippingCountry = null): self
     {
@@ -404,7 +404,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingName value
      * @param string $shippingName
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingName(?string $shippingName = null): self
     {
@@ -427,7 +427,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingPostalCode value
      * @param string $shippingPostalCode
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingPostalCode(?string $shippingPostalCode = null): self
     {
@@ -450,7 +450,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingState value
      * @param string $shippingState
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingState(?string $shippingState = null): self
     {
@@ -473,7 +473,7 @@ class OrderInfo extends AbstractStructBase
     /**
      * Set shippingType value
      * @param int $shippingType
-     * @return \StructType\OrderInfo
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo
      */
     public function setShippingType(?int $shippingType = null): self
     {

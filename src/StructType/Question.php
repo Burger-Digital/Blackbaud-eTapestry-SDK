@@ -20,7 +20,7 @@ class Question extends AbstractStructBase
     protected ?string $displayText = null;
     /**
      * The field
-     * @var \StructType\DefinedField|null
+     * @var \BurgerDigital\eTapestry\StructType\DefinedField|null
      */
     protected ?\StructType\DefinedField $field = null;
     /**
@@ -40,7 +40,7 @@ class Question extends AbstractStructBase
      * @uses Question::setRef()
      * @uses Question::setRequired()
      * @param string $displayText
-     * @param \StructType\DefinedField $field
+     * @param \BurgerDigital\eTapestry\StructType\DefinedField $field
      * @param string $ref
      * @param bool $required
      */
@@ -63,7 +63,7 @@ class Question extends AbstractStructBase
     /**
      * Set displayText value
      * @param string $displayText
-     * @return \StructType\Question
+     * @return \BurgerDigital\eTapestry\StructType\Question
      */
     public function setDisplayText(?string $displayText = null): self
     {
@@ -77,7 +77,7 @@ class Question extends AbstractStructBase
     }
     /**
      * Get field value
-     * @return \StructType\DefinedField|null
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField|null
      */
     public function getField(): ?\StructType\DefinedField
     {
@@ -85,8 +85,8 @@ class Question extends AbstractStructBase
     }
     /**
      * Set field value
-     * @param \StructType\DefinedField $field
-     * @return \StructType\Question
+     * @param \BurgerDigital\eTapestry\StructType\DefinedField $field
+     * @return \BurgerDigital\eTapestry\StructType\Question
      */
     public function setField(?\StructType\DefinedField $field = null): self
     {
@@ -105,7 +105,7 @@ class Question extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Question
+     * @return \BurgerDigital\eTapestry\StructType\Question
      */
     public function setRef(?string $ref = null): self
     {
@@ -128,7 +128,7 @@ class Question extends AbstractStructBase
     /**
      * Set required value
      * @param bool $required
-     * @return \StructType\Question
+     * @return \BurgerDigital\eTapestry\StructType\Question
      */
     public function setRequired(?bool $required = null): self
     {

@@ -29,7 +29,7 @@ class CartItem extends AbstractStructBase
      * - arrayType: tns:CartItemDiscount[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\CartItemDiscount[]
+     * @var \BurgerDigital\eTapestry\StructType\CartItemDiscount[]
      */
     protected array $discounts = [];
     /**
@@ -58,7 +58,7 @@ class CartItem extends AbstractStructBase
      * - arrayType: tns:CartParent[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\CartParent[]
+     * @var \BurgerDigital\eTapestry\StructType\CartParent[]
      */
     protected array $parents = [];
     /**
@@ -97,7 +97,7 @@ class CartItem extends AbstractStructBase
      * - arrayType: tns:Question[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Question[]
+     * @var \BurgerDigital\eTapestry\StructType\Question[]
      */
     protected array $questions = [];
     /**
@@ -111,7 +111,7 @@ class CartItem extends AbstractStructBase
      * - arrayType: tns:CartImage[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\CartImage[]
+     * @var \BurgerDigital\eTapestry\StructType\CartImage[]
      */
     protected array $regularImages = [];
     /**
@@ -141,7 +141,7 @@ class CartItem extends AbstractStructBase
     protected ?float $taxableAmount = null;
     /**
      * The thumbImage
-     * @var \StructType\CartImage|null
+     * @var \BurgerDigital\eTapestry\StructType\CartImage|null
      */
     protected ?\StructType\CartImage $thumbImage = null;
     /**
@@ -177,27 +177,27 @@ class CartItem extends AbstractStructBase
      * @uses CartItem::setType()
      * @param float $bestCompDiscountPrice
      * @param bool $disabled
-     * @param \StructType\CartItemDiscount[] $discounts
+     * @param \BurgerDigital\eTapestry\StructType\CartItemDiscount[] $discounts
      * @param string $longDescription
      * @param bool $manageQuantity
      * @param string $name
      * @param float $nonDeductibleAmount
-     * @param \StructType\CartParent[] $parents
+     * @param \BurgerDigital\eTapestry\StructType\CartParent[] $parents
      * @param int $pricingType
      * @param bool $publicizeQuantity
      * @param string $publishEndDate
      * @param string $publishStartDate
      * @param bool $publishableNow
      * @param int $quantity
-     * @param \StructType\Question[] $questions
+     * @param \BurgerDigital\eTapestry\StructType\Question[] $questions
      * @param string $ref
-     * @param \StructType\CartImage[] $regularImages
+     * @param \BurgerDigital\eTapestry\StructType\CartImage[] $regularImages
      * @param float $regularPrice
      * @param bool $shippable
      * @param float $shippingPrice
      * @param string $shortDescription
      * @param float $taxableAmount
-     * @param \StructType\CartImage $thumbImage
+     * @param \BurgerDigital\eTapestry\StructType\CartImage $thumbImage
      * @param int $type
      */
     public function __construct(?float $bestCompDiscountPrice = null, ?bool $disabled = null, array $discounts = [], ?string $longDescription = null, ?bool $manageQuantity = null, ?string $name = null, ?float $nonDeductibleAmount = null, array $parents = [], ?int $pricingType = null, ?bool $publicizeQuantity = null, ?string $publishEndDate = null, ?string $publishStartDate = null, ?bool $publishableNow = null, ?int $quantity = null, array $questions = [], ?string $ref = null, array $regularImages = [], ?float $regularPrice = null, ?bool $shippable = null, ?float $shippingPrice = null, ?string $shortDescription = null, ?float $taxableAmount = null, ?\StructType\CartImage $thumbImage = null, ?int $type = null)
@@ -239,7 +239,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set bestCompDiscountPrice value
      * @param float $bestCompDiscountPrice
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setBestCompDiscountPrice(?float $bestCompDiscountPrice = null): self
     {
@@ -262,7 +262,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -276,7 +276,7 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Get discounts value
-     * @return \StructType\CartItemDiscount[]
+     * @return \BurgerDigital\eTapestry\StructType\CartItemDiscount[]
      */
     public function getDiscounts(): array
     {
@@ -294,12 +294,12 @@ class CartItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartItemDiscountsItem) {
             // validation for constraint: itemType
-            if (!$cartItemDiscountsItem instanceof \StructType\CartItemDiscount) {
+            if (!$cartItemDiscountsItem instanceof \BurgerDigital\eTapestry\StructType\CartItemDiscount) {
                 $invalidValues[] = is_object($cartItemDiscountsItem) ? get_class($cartItemDiscountsItem) : sprintf('%s(%s)', gettype($cartItemDiscountsItem), var_export($cartItemDiscountsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The discounts property can only contain items of type \StructType\CartItemDiscount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The discounts property can only contain items of type \BurgerDigital\eTapestry\StructType\CartItemDiscount, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -308,8 +308,8 @@ class CartItem extends AbstractStructBase
     /**
      * Set discounts value
      * @throws InvalidArgumentException
-     * @param \StructType\CartItemDiscount[] $discounts
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartItemDiscount[] $discounts
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setDiscounts(array $discounts = []): self
     {
@@ -324,14 +324,14 @@ class CartItem extends AbstractStructBase
     /**
      * Add item to discounts value
      * @throws InvalidArgumentException
-     * @param \StructType\CartItemDiscount $item
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartItemDiscount $item
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function addToDiscounts(\StructType\CartItemDiscount $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CartItemDiscount) {
-            throw new InvalidArgumentException(sprintf('The discounts property can only contain items of type \StructType\CartItemDiscount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\CartItemDiscount) {
+            throw new InvalidArgumentException(sprintf('The discounts property can only contain items of type \BurgerDigital\eTapestry\StructType\CartItemDiscount, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->discounts[] = $item;
         
@@ -348,7 +348,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set longDescription value
      * @param string $longDescription
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setLongDescription(?string $longDescription = null): self
     {
@@ -371,7 +371,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set manageQuantity value
      * @param bool $manageQuantity
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setManageQuantity(?bool $manageQuantity = null): self
     {
@@ -394,7 +394,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setName(?string $name = null): self
     {
@@ -417,7 +417,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -431,7 +431,7 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Get parents value
-     * @return \StructType\CartParent[]
+     * @return \BurgerDigital\eTapestry\StructType\CartParent[]
      */
     public function getParents(): array
     {
@@ -449,12 +449,12 @@ class CartItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartItemParentsItem) {
             // validation for constraint: itemType
-            if (!$cartItemParentsItem instanceof \StructType\CartParent) {
+            if (!$cartItemParentsItem instanceof \BurgerDigital\eTapestry\StructType\CartParent) {
                 $invalidValues[] = is_object($cartItemParentsItem) ? get_class($cartItemParentsItem) : sprintf('%s(%s)', gettype($cartItemParentsItem), var_export($cartItemParentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The parents property can only contain items of type \StructType\CartParent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The parents property can only contain items of type \BurgerDigital\eTapestry\StructType\CartParent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -463,8 +463,8 @@ class CartItem extends AbstractStructBase
     /**
      * Set parents value
      * @throws InvalidArgumentException
-     * @param \StructType\CartParent[] $parents
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartParent[] $parents
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setParents(array $parents = []): self
     {
@@ -479,14 +479,14 @@ class CartItem extends AbstractStructBase
     /**
      * Add item to parents value
      * @throws InvalidArgumentException
-     * @param \StructType\CartParent $item
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartParent $item
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function addToParents(\StructType\CartParent $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CartParent) {
-            throw new InvalidArgumentException(sprintf('The parents property can only contain items of type \StructType\CartParent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\CartParent) {
+            throw new InvalidArgumentException(sprintf('The parents property can only contain items of type \BurgerDigital\eTapestry\StructType\CartParent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->parents[] = $item;
         
@@ -503,7 +503,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set pricingType value
      * @param int $pricingType
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setPricingType(?int $pricingType = null): self
     {
@@ -526,7 +526,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set publicizeQuantity value
      * @param bool $publicizeQuantity
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setPublicizeQuantity(?bool $publicizeQuantity = null): self
     {
@@ -549,7 +549,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set publishEndDate value
      * @param string $publishEndDate
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setPublishEndDate(?string $publishEndDate = null): self
     {
@@ -572,7 +572,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set publishStartDate value
      * @param string $publishStartDate
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setPublishStartDate(?string $publishStartDate = null): self
     {
@@ -595,7 +595,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set publishableNow value
      * @param bool $publishableNow
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setPublishableNow(?bool $publishableNow = null): self
     {
@@ -618,7 +618,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set quantity value
      * @param int $quantity
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setQuantity(?int $quantity = null): self
     {
@@ -632,7 +632,7 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Get questions value
-     * @return \StructType\Question[]
+     * @return \BurgerDigital\eTapestry\StructType\Question[]
      */
     public function getQuestions(): array
     {
@@ -650,12 +650,12 @@ class CartItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartItemQuestionsItem) {
             // validation for constraint: itemType
-            if (!$cartItemQuestionsItem instanceof \StructType\Question) {
+            if (!$cartItemQuestionsItem instanceof \BurgerDigital\eTapestry\StructType\Question) {
                 $invalidValues[] = is_object($cartItemQuestionsItem) ? get_class($cartItemQuestionsItem) : sprintf('%s(%s)', gettype($cartItemQuestionsItem), var_export($cartItemQuestionsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The questions property can only contain items of type \StructType\Question, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The questions property can only contain items of type \BurgerDigital\eTapestry\StructType\Question, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -664,8 +664,8 @@ class CartItem extends AbstractStructBase
     /**
      * Set questions value
      * @throws InvalidArgumentException
-     * @param \StructType\Question[] $questions
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\Question[] $questions
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setQuestions(array $questions = []): self
     {
@@ -680,14 +680,14 @@ class CartItem extends AbstractStructBase
     /**
      * Add item to questions value
      * @throws InvalidArgumentException
-     * @param \StructType\Question $item
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\Question $item
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function addToQuestions(\StructType\Question $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Question) {
-            throw new InvalidArgumentException(sprintf('The questions property can only contain items of type \StructType\Question, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Question) {
+            throw new InvalidArgumentException(sprintf('The questions property can only contain items of type \BurgerDigital\eTapestry\StructType\Question, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->questions[] = $item;
         
@@ -704,7 +704,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setRef(?string $ref = null): self
     {
@@ -718,7 +718,7 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Get regularImages value
-     * @return \StructType\CartImage[]
+     * @return \BurgerDigital\eTapestry\StructType\CartImage[]
      */
     public function getRegularImages(): array
     {
@@ -736,12 +736,12 @@ class CartItem extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartItemRegularImagesItem) {
             // validation for constraint: itemType
-            if (!$cartItemRegularImagesItem instanceof \StructType\CartImage) {
+            if (!$cartItemRegularImagesItem instanceof \BurgerDigital\eTapestry\StructType\CartImage) {
                 $invalidValues[] = is_object($cartItemRegularImagesItem) ? get_class($cartItemRegularImagesItem) : sprintf('%s(%s)', gettype($cartItemRegularImagesItem), var_export($cartItemRegularImagesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The regularImages property can only contain items of type \StructType\CartImage, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The regularImages property can only contain items of type \BurgerDigital\eTapestry\StructType\CartImage, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -750,8 +750,8 @@ class CartItem extends AbstractStructBase
     /**
      * Set regularImages value
      * @throws InvalidArgumentException
-     * @param \StructType\CartImage[] $regularImages
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartImage[] $regularImages
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setRegularImages(array $regularImages = []): self
     {
@@ -766,14 +766,14 @@ class CartItem extends AbstractStructBase
     /**
      * Add item to regularImages value
      * @throws InvalidArgumentException
-     * @param \StructType\CartImage $item
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartImage $item
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function addToRegularImages(\StructType\CartImage $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CartImage) {
-            throw new InvalidArgumentException(sprintf('The regularImages property can only contain items of type \StructType\CartImage, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\CartImage) {
+            throw new InvalidArgumentException(sprintf('The regularImages property can only contain items of type \BurgerDigital\eTapestry\StructType\CartImage, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->regularImages[] = $item;
         
@@ -790,7 +790,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set regularPrice value
      * @param float $regularPrice
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setRegularPrice(?float $regularPrice = null): self
     {
@@ -813,7 +813,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set shippable value
      * @param bool $shippable
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setShippable(?bool $shippable = null): self
     {
@@ -836,7 +836,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set shippingPrice value
      * @param float $shippingPrice
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setShippingPrice(?float $shippingPrice = null): self
     {
@@ -859,7 +859,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set shortDescription value
      * @param string $shortDescription
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setShortDescription(?string $shortDescription = null): self
     {
@@ -882,7 +882,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set taxableAmount value
      * @param float $taxableAmount
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setTaxableAmount(?float $taxableAmount = null): self
     {
@@ -896,7 +896,7 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Get thumbImage value
-     * @return \StructType\CartImage|null
+     * @return \BurgerDigital\eTapestry\StructType\CartImage|null
      */
     public function getThumbImage(): ?\StructType\CartImage
     {
@@ -904,8 +904,8 @@ class CartItem extends AbstractStructBase
     }
     /**
      * Set thumbImage value
-     * @param \StructType\CartImage $thumbImage
-     * @return \StructType\CartItem
+     * @param \BurgerDigital\eTapestry\StructType\CartImage $thumbImage
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setThumbImage(?\StructType\CartImage $thumbImage = null): self
     {
@@ -924,7 +924,7 @@ class CartItem extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\CartItem
+     * @return \BurgerDigital\eTapestry\StructType\CartItem
      */
     public function setType(?int $type = null): self
     {

@@ -44,7 +44,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
      * - arrayType: tns:SortOption[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SortOption[]
+     * @var \BurgerDigital\eTapestry\StructType\SortOption[]
      */
     protected array $sortOptions = [];
     /**
@@ -60,7 +60,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
      * @param int $start
      * @param int $accountType
      * @param string $query
-     * @param \StructType\SortOption[] $sortOptions
+     * @param \BurgerDigital\eTapestry\StructType\SortOption[] $sortOptions
      */
     public function __construct(?bool $clearCache = null, ?int $count = null, ?int $start = null, ?int $accountType = null, ?string $query = null, array $sortOptions = [])
     {
@@ -83,7 +83,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -106,7 +106,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -129,7 +129,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -152,7 +152,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set accountType value
      * @param int $accountType
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setAccountType(?int $accountType = null): self
     {
@@ -175,7 +175,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set query value
      * @param string $query
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setQuery(?string $query = null): self
     {
@@ -189,7 +189,7 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     }
     /**
      * Get sortOptions value
-     * @return \StructType\SortOption[]
+     * @return \BurgerDigital\eTapestry\StructType\SortOption[]
      */
     public function getSortOptions(): array
     {
@@ -207,12 +207,12 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pagedExistingQueryResultsRequestSortOptionsItem) {
             // validation for constraint: itemType
-            if (!$pagedExistingQueryResultsRequestSortOptionsItem instanceof \StructType\SortOption) {
+            if (!$pagedExistingQueryResultsRequestSortOptionsItem instanceof \BurgerDigital\eTapestry\StructType\SortOption) {
                 $invalidValues[] = is_object($pagedExistingQueryResultsRequestSortOptionsItem) ? get_class($pagedExistingQueryResultsRequestSortOptionsItem) : sprintf('%s(%s)', gettype($pagedExistingQueryResultsRequestSortOptionsItem), var_export($pagedExistingQueryResultsRequestSortOptionsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The sortOptions property can only contain items of type \StructType\SortOption, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The sortOptions property can only contain items of type \BurgerDigital\eTapestry\StructType\SortOption, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -221,8 +221,8 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Set sortOptions value
      * @throws InvalidArgumentException
-     * @param \StructType\SortOption[] $sortOptions
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SortOption[] $sortOptions
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function setSortOptions(array $sortOptions = []): self
     {
@@ -237,14 +237,14 @@ class PagedExistingQueryResultsRequest extends AbstractStructBase
     /**
      * Add item to sortOptions value
      * @throws InvalidArgumentException
-     * @param \StructType\SortOption $item
-     * @return \StructType\PagedExistingQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SortOption $item
+     * @return \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest
      */
     public function addToSortOptions(\StructType\SortOption $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SortOption) {
-            throw new InvalidArgumentException(sprintf('The sortOptions property can only contain items of type \StructType\SortOption, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SortOption) {
+            throw new InvalidArgumentException(sprintf('The sortOptions property can only contain items of type \BurgerDigital\eTapestry\StructType\SortOption, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->sortOptions[] = $item;
         

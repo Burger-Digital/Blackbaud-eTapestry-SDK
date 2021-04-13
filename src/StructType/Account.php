@@ -24,7 +24,7 @@ class Account extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $accountDefinedValues = [];
     /**
@@ -163,7 +163,7 @@ class Account extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $personaDefinedValues = [];
     /**
@@ -191,7 +191,7 @@ class Account extends AbstractStructBase
      * - arrayType: tns:Phone[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Phone[]
+     * @var \BurgerDigital\eTapestry\StructType\Phone[]
      */
     protected array $phones = [];
     /**
@@ -220,7 +220,7 @@ class Account extends AbstractStructBase
      * - arrayType: tns:SocialMediaProfile[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SocialMediaProfile[]
+     * @var \BurgerDigital\eTapestry\StructType\SocialMediaProfile[]
      */
     protected array $socialMediaProfiles = [];
     /**
@@ -330,7 +330,7 @@ class Account extends AbstractStructBase
      * @uses Account::setUserRoleRef()
      * @uses Account::setWebAddress()
      * @param string $accountCreatedDate
-     * @param \StructType\DefinedValue[] $accountDefinedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $accountDefinedValues
      * @param string $accountLastModifiedDate
      * @param int $accountRoleType
      * @param string $address
@@ -357,16 +357,16 @@ class Account extends AbstractStructBase
      * @param string $optOutDate
      * @param bool $optedOut
      * @param string $personaCreatedDate
-     * @param \StructType\DefinedValue[] $personaDefinedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $personaDefinedValues
      * @param string $personaLastModifiedDate
      * @param string $personaType
      * @param string[] $personaTypes
-     * @param \StructType\Phone[] $phones
+     * @param \BurgerDigital\eTapestry\StructType\Phone[] $phones
      * @param string $postalCode
      * @param bool $primaryPersona
      * @param string $ref
      * @param string $shortSalutation
-     * @param \StructType\SocialMediaProfile[] $socialMediaProfiles
+     * @param \BurgerDigital\eTapestry\StructType\SocialMediaProfile[] $socialMediaProfiles
      * @param string $sortName
      * @param string $state
      * @param string $stickyNoteType
@@ -443,7 +443,7 @@ class Account extends AbstractStructBase
     /**
      * Set accountCreatedDate value
      * @param string $accountCreatedDate
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setAccountCreatedDate(?string $accountCreatedDate = null): self
     {
@@ -457,7 +457,7 @@ class Account extends AbstractStructBase
     }
     /**
      * Get accountDefinedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getAccountDefinedValues(): array
     {
@@ -475,12 +475,12 @@ class Account extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $accountAccountDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$accountAccountDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$accountAccountDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($accountAccountDefinedValuesItem) ? get_class($accountAccountDefinedValuesItem) : sprintf('%s(%s)', gettype($accountAccountDefinedValuesItem), var_export($accountAccountDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The accountDefinedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The accountDefinedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -489,8 +489,8 @@ class Account extends AbstractStructBase
     /**
      * Set accountDefinedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $accountDefinedValues
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $accountDefinedValues
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setAccountDefinedValues(array $accountDefinedValues = []): self
     {
@@ -505,14 +505,14 @@ class Account extends AbstractStructBase
     /**
      * Add item to accountDefinedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function addToAccountDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The accountDefinedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The accountDefinedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->accountDefinedValues[] = $item;
         
@@ -529,7 +529,7 @@ class Account extends AbstractStructBase
     /**
      * Set accountLastModifiedDate value
      * @param string $accountLastModifiedDate
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setAccountLastModifiedDate(?string $accountLastModifiedDate = null): self
     {
@@ -552,7 +552,7 @@ class Account extends AbstractStructBase
     /**
      * Set accountRoleType value
      * @param int $accountRoleType
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setAccountRoleType(?int $accountRoleType = null): self
     {
@@ -575,7 +575,7 @@ class Account extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setAddress(?string $address = null): self
     {
@@ -598,7 +598,7 @@ class Account extends AbstractStructBase
     /**
      * Set apartmentNumber value
      * @param string $apartmentNumber
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setApartmentNumber(?string $apartmentNumber = null): self
     {
@@ -621,7 +621,7 @@ class Account extends AbstractStructBase
     /**
      * Set buildingNumber value
      * @param string $buildingNumber
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setBuildingNumber(?string $buildingNumber = null): self
     {
@@ -644,7 +644,7 @@ class Account extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setCity(?string $city = null): self
     {
@@ -667,7 +667,7 @@ class Account extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setCountry(?string $country = null): self
     {
@@ -690,7 +690,7 @@ class Account extends AbstractStructBase
     /**
      * Set county value
      * @param string $county
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setCounty(?string $county = null): self
     {
@@ -713,7 +713,7 @@ class Account extends AbstractStructBase
     /**
      * Set donorRecognitionName value
      * @param string $donorRecognitionName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setDonorRecognitionName(?string $donorRecognitionName = null): self
     {
@@ -736,7 +736,7 @@ class Account extends AbstractStructBase
     /**
      * Set donorRecognitionType value
      * @param int $donorRecognitionType
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setDonorRecognitionType(?int $donorRecognitionType = null): self
     {
@@ -759,7 +759,7 @@ class Account extends AbstractStructBase
     /**
      * Set donorRoleRef value
      * @param string $donorRoleRef
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setDonorRoleRef(?string $donorRoleRef = null): self
     {
@@ -782,7 +782,7 @@ class Account extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setEmail(?string $email = null): self
     {
@@ -805,7 +805,7 @@ class Account extends AbstractStructBase
     /**
      * Set envelopeSalutation value
      * @param string $envelopeSalutation
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setEnvelopeSalutation(?string $envelopeSalutation = null): self
     {
@@ -828,7 +828,7 @@ class Account extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setFirstName(?string $firstName = null): self
     {
@@ -851,7 +851,7 @@ class Account extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setId(?int $id = null): self
     {
@@ -874,7 +874,7 @@ class Account extends AbstractStructBase
     /**
      * Set initials value
      * @param string $initials
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setInitials(?string $initials = null): self
     {
@@ -897,7 +897,7 @@ class Account extends AbstractStructBase
     /**
      * Set lastName value
      * @param string $lastName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setLastName(?string $lastName = null): self
     {
@@ -920,7 +920,7 @@ class Account extends AbstractStructBase
     /**
      * Set longSalutation value
      * @param string $longSalutation
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setLongSalutation(?string $longSalutation = null): self
     {
@@ -943,7 +943,7 @@ class Account extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -966,7 +966,7 @@ class Account extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setName(?string $name = null): self
     {
@@ -989,7 +989,7 @@ class Account extends AbstractStructBase
     /**
      * Set nameFormat value
      * @param int $nameFormat
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setNameFormat(?int $nameFormat = null): self
     {
@@ -1012,7 +1012,7 @@ class Account extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setNote(?string $note = null): self
     {
@@ -1035,7 +1035,7 @@ class Account extends AbstractStructBase
     /**
      * Set oldFormattedAddress value
      * @param bool $oldFormattedAddress
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setOldFormattedAddress(?bool $oldFormattedAddress = null): self
     {
@@ -1058,7 +1058,7 @@ class Account extends AbstractStructBase
     /**
      * Set optOutDate value
      * @param string $optOutDate
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setOptOutDate(?string $optOutDate = null): self
     {
@@ -1081,7 +1081,7 @@ class Account extends AbstractStructBase
     /**
      * Set optedOut value
      * @param bool $optedOut
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setOptedOut(?bool $optedOut = null): self
     {
@@ -1104,7 +1104,7 @@ class Account extends AbstractStructBase
     /**
      * Set personaCreatedDate value
      * @param string $personaCreatedDate
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPersonaCreatedDate(?string $personaCreatedDate = null): self
     {
@@ -1118,7 +1118,7 @@ class Account extends AbstractStructBase
     }
     /**
      * Get personaDefinedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getPersonaDefinedValues(): array
     {
@@ -1136,12 +1136,12 @@ class Account extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $accountPersonaDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$accountPersonaDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$accountPersonaDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($accountPersonaDefinedValuesItem) ? get_class($accountPersonaDefinedValuesItem) : sprintf('%s(%s)', gettype($accountPersonaDefinedValuesItem), var_export($accountPersonaDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The personaDefinedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The personaDefinedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1150,8 +1150,8 @@ class Account extends AbstractStructBase
     /**
      * Set personaDefinedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $personaDefinedValues
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $personaDefinedValues
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPersonaDefinedValues(array $personaDefinedValues = []): self
     {
@@ -1166,14 +1166,14 @@ class Account extends AbstractStructBase
     /**
      * Add item to personaDefinedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function addToPersonaDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The personaDefinedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The personaDefinedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->personaDefinedValues[] = $item;
         
@@ -1190,7 +1190,7 @@ class Account extends AbstractStructBase
     /**
      * Set personaLastModifiedDate value
      * @param string $personaLastModifiedDate
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPersonaLastModifiedDate(?string $personaLastModifiedDate = null): self
     {
@@ -1213,7 +1213,7 @@ class Account extends AbstractStructBase
     /**
      * Set personaType value
      * @param string $personaType
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPersonaType(?string $personaType = null): self
     {
@@ -1260,7 +1260,7 @@ class Account extends AbstractStructBase
      * Set personaTypes value
      * @throws InvalidArgumentException
      * @param string[] $personaTypes
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPersonaTypes(array $personaTypes = []): self
     {
@@ -1276,7 +1276,7 @@ class Account extends AbstractStructBase
      * Add item to personaTypes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function addToPersonaTypes(string $item): self
     {
@@ -1290,7 +1290,7 @@ class Account extends AbstractStructBase
     }
     /**
      * Get phones value
-     * @return \StructType\Phone[]
+     * @return \BurgerDigital\eTapestry\StructType\Phone[]
      */
     public function getPhones(): array
     {
@@ -1308,12 +1308,12 @@ class Account extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $accountPhonesItem) {
             // validation for constraint: itemType
-            if (!$accountPhonesItem instanceof \StructType\Phone) {
+            if (!$accountPhonesItem instanceof \BurgerDigital\eTapestry\StructType\Phone) {
                 $invalidValues[] = is_object($accountPhonesItem) ? get_class($accountPhonesItem) : sprintf('%s(%s)', gettype($accountPhonesItem), var_export($accountPhonesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The phones property can only contain items of type \StructType\Phone, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The phones property can only contain items of type \BurgerDigital\eTapestry\StructType\Phone, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1322,8 +1322,8 @@ class Account extends AbstractStructBase
     /**
      * Set phones value
      * @throws InvalidArgumentException
-     * @param \StructType\Phone[] $phones
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\Phone[] $phones
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPhones(array $phones = []): self
     {
@@ -1338,14 +1338,14 @@ class Account extends AbstractStructBase
     /**
      * Add item to phones value
      * @throws InvalidArgumentException
-     * @param \StructType\Phone $item
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\Phone $item
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function addToPhones(\StructType\Phone $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone) {
-            throw new InvalidArgumentException(sprintf('The phones property can only contain items of type \StructType\Phone, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Phone) {
+            throw new InvalidArgumentException(sprintf('The phones property can only contain items of type \BurgerDigital\eTapestry\StructType\Phone, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->phones[] = $item;
         
@@ -1362,7 +1362,7 @@ class Account extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -1385,7 +1385,7 @@ class Account extends AbstractStructBase
     /**
      * Set primaryPersona value
      * @param bool $primaryPersona
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setPrimaryPersona(?bool $primaryPersona = null): self
     {
@@ -1408,7 +1408,7 @@ class Account extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setRef(?string $ref = null): self
     {
@@ -1431,7 +1431,7 @@ class Account extends AbstractStructBase
     /**
      * Set shortSalutation value
      * @param string $shortSalutation
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setShortSalutation(?string $shortSalutation = null): self
     {
@@ -1445,7 +1445,7 @@ class Account extends AbstractStructBase
     }
     /**
      * Get socialMediaProfiles value
-     * @return \StructType\SocialMediaProfile[]
+     * @return \BurgerDigital\eTapestry\StructType\SocialMediaProfile[]
      */
     public function getSocialMediaProfiles(): array
     {
@@ -1463,12 +1463,12 @@ class Account extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $accountSocialMediaProfilesItem) {
             // validation for constraint: itemType
-            if (!$accountSocialMediaProfilesItem instanceof \StructType\SocialMediaProfile) {
+            if (!$accountSocialMediaProfilesItem instanceof \BurgerDigital\eTapestry\StructType\SocialMediaProfile) {
                 $invalidValues[] = is_object($accountSocialMediaProfilesItem) ? get_class($accountSocialMediaProfilesItem) : sprintf('%s(%s)', gettype($accountSocialMediaProfilesItem), var_export($accountSocialMediaProfilesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The socialMediaProfiles property can only contain items of type \StructType\SocialMediaProfile, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The socialMediaProfiles property can only contain items of type \BurgerDigital\eTapestry\StructType\SocialMediaProfile, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1477,8 +1477,8 @@ class Account extends AbstractStructBase
     /**
      * Set socialMediaProfiles value
      * @throws InvalidArgumentException
-     * @param \StructType\SocialMediaProfile[] $socialMediaProfiles
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\SocialMediaProfile[] $socialMediaProfiles
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setSocialMediaProfiles(array $socialMediaProfiles = []): self
     {
@@ -1493,14 +1493,14 @@ class Account extends AbstractStructBase
     /**
      * Add item to socialMediaProfiles value
      * @throws InvalidArgumentException
-     * @param \StructType\SocialMediaProfile $item
-     * @return \StructType\Account
+     * @param \BurgerDigital\eTapestry\StructType\SocialMediaProfile $item
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function addToSocialMediaProfiles(\StructType\SocialMediaProfile $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SocialMediaProfile) {
-            throw new InvalidArgumentException(sprintf('The socialMediaProfiles property can only contain items of type \StructType\SocialMediaProfile, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SocialMediaProfile) {
+            throw new InvalidArgumentException(sprintf('The socialMediaProfiles property can only contain items of type \BurgerDigital\eTapestry\StructType\SocialMediaProfile, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->socialMediaProfiles[] = $item;
         
@@ -1517,7 +1517,7 @@ class Account extends AbstractStructBase
     /**
      * Set sortName value
      * @param string $sortName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setSortName(?string $sortName = null): self
     {
@@ -1540,7 +1540,7 @@ class Account extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setState(?string $state = null): self
     {
@@ -1563,7 +1563,7 @@ class Account extends AbstractStructBase
     /**
      * Set stickyNoteType value
      * @param string $stickyNoteType
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setStickyNoteType(?string $stickyNoteType = null): self
     {
@@ -1586,7 +1586,7 @@ class Account extends AbstractStructBase
     /**
      * Set streetName value
      * @param string $streetName
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setStreetName(?string $streetName = null): self
     {
@@ -1609,7 +1609,7 @@ class Account extends AbstractStructBase
     /**
      * Set suburb value
      * @param string $suburb
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setSuburb(?string $suburb = null): self
     {
@@ -1632,7 +1632,7 @@ class Account extends AbstractStructBase
     /**
      * Set suffix value
      * @param string $suffix
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setSuffix(?string $suffix = null): self
     {
@@ -1655,7 +1655,7 @@ class Account extends AbstractStructBase
     /**
      * Set teamRoleRef value
      * @param string $teamRoleRef
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setTeamRoleRef(?string $teamRoleRef = null): self
     {
@@ -1678,7 +1678,7 @@ class Account extends AbstractStructBase
     /**
      * Set title value
      * @param string $title
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setTitle(?string $title = null): self
     {
@@ -1701,7 +1701,7 @@ class Account extends AbstractStructBase
     /**
      * Set tributeRoleRef value
      * @param string $tributeRoleRef
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setTributeRoleRef(?string $tributeRoleRef = null): self
     {
@@ -1724,7 +1724,7 @@ class Account extends AbstractStructBase
     /**
      * Set userRoleRef value
      * @param string $userRoleRef
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setUserRoleRef(?string $userRoleRef = null): self
     {
@@ -1747,7 +1747,7 @@ class Account extends AbstractStructBase
     /**
      * Set webAddress value
      * @param string $webAddress
-     * @return \StructType\Account
+     * @return \BurgerDigital\eTapestry\StructType\Account
      */
     public function setWebAddress(?string $webAddress = null): self
     {

@@ -15,7 +15,7 @@ class OrderDetail extends AbstractStructBase
 {
     /**
      * The discountApplied
-     * @var \StructType\DiscountApplied|null
+     * @var \BurgerDigital\eTapestry\StructType\DiscountApplied|null
      */
     protected ?\StructType\DiscountApplied $discountApplied = null;
     /**
@@ -57,7 +57,7 @@ class OrderDetail extends AbstractStructBase
      * @uses OrderDetail::setUnitRetailPrice()
      * @uses OrderDetail::setUnitShippingPrice()
      * @uses OrderDetail::setUnitTaxableAmount()
-     * @param \StructType\DiscountApplied $discountApplied
+     * @param \BurgerDigital\eTapestry\StructType\DiscountApplied $discountApplied
      * @param string $itemName
      * @param string $itemRef
      * @param int $quantity
@@ -78,7 +78,7 @@ class OrderDetail extends AbstractStructBase
     }
     /**
      * Get discountApplied value
-     * @return \StructType\DiscountApplied|null
+     * @return \BurgerDigital\eTapestry\StructType\DiscountApplied|null
      */
     public function getDiscountApplied(): ?\StructType\DiscountApplied
     {
@@ -86,8 +86,8 @@ class OrderDetail extends AbstractStructBase
     }
     /**
      * Set discountApplied value
-     * @param \StructType\DiscountApplied $discountApplied
-     * @return \StructType\OrderDetail
+     * @param \BurgerDigital\eTapestry\StructType\DiscountApplied $discountApplied
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setDiscountApplied(?\StructType\DiscountApplied $discountApplied = null): self
     {
@@ -106,7 +106,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set itemName value
      * @param string $itemName
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setItemName(?string $itemName = null): self
     {
@@ -129,7 +129,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set itemRef value
      * @param string $itemRef
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setItemRef(?string $itemRef = null): self
     {
@@ -152,7 +152,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set quantity value
      * @param int $quantity
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setQuantity(?int $quantity = null): self
     {
@@ -175,7 +175,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set unitRetailPrice value
      * @param float $unitRetailPrice
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setUnitRetailPrice(?float $unitRetailPrice = null): self
     {
@@ -198,7 +198,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set unitShippingPrice value
      * @param float $unitShippingPrice
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setUnitShippingPrice(?float $unitShippingPrice = null): self
     {
@@ -221,7 +221,7 @@ class OrderDetail extends AbstractStructBase
     /**
      * Set unitTaxableAmount value
      * @param float $unitTaxableAmount
-     * @return \StructType\OrderDetail
+     * @return \BurgerDigital\eTapestry\StructType\OrderDetail
      */
     public function setUnitTaxableAmount(?float $unitTaxableAmount = null): self
     {

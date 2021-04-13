@@ -18,10 +18,10 @@ class Send extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SendEmailRequest $sendEmailRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\SendEmailRequest $sendEmailRequest_1
      * @return int|bool
      */
-    public function sendEmail(\StructType\SendEmailRequest $sendEmailRequest_1)
+    public function sendEmail(\BurgerDigital\eTapestry\StructType\SendEmailRequest $sendEmailRequest_1)
     {
         try {
             $this->setResult($resultSendEmail = $this->getSoapClient()->__soapCall('sendEmail', [

@@ -79,7 +79,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -102,7 +102,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -125,7 +125,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -148,7 +148,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setRef(?string $ref = null): self
     {
@@ -171,7 +171,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set role1 value
      * @param string $role1
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setRole1(?string $role1 = null): self
     {
@@ -194,7 +194,7 @@ class RelationshipType extends AbstractStructBase
     /**
      * Set role2 value
      * @param string $role2
-     * @return \StructType\RelationshipType
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType
      */
     public function setRole2(?string $role2 = null): self
     {

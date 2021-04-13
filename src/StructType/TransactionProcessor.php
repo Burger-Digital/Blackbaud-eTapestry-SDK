@@ -103,7 +103,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set bbpsMerchantId value
      * @param string $bbpsMerchantId
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setBbpsMerchantId(?string $bbpsMerchantId = null): self
     {
@@ -126,7 +126,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set bbpsPublicKey value
      * @param string $bbpsPublicKey
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setBbpsPublicKey(?string $bbpsPublicKey = null): self
     {
@@ -149,7 +149,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set ccSupported value
      * @param bool $ccSupported
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setCcSupported(?bool $ccSupported = null): self
     {
@@ -172,7 +172,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set default value
      * @param bool $default
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setDefault(?bool $default = null): self
     {
@@ -195,7 +195,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -218,7 +218,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set eftSupported value
      * @param bool $eftSupported
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setEftSupported(?bool $eftSupported = null): self
     {
@@ -241,7 +241,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setRef(?string $ref = null): self
     {
@@ -264,7 +264,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set refName value
      * @param string $refName
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setRefName(?string $refName = null): self
     {
@@ -287,7 +287,7 @@ class TransactionProcessor extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\TransactionProcessor
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor
      */
     public function setType(?int $type = null): self
     {

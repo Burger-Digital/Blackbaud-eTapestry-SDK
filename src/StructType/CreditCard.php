@@ -119,7 +119,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set authorizationCode value
      * @param string $authorizationCode
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setAuthorizationCode(?string $authorizationCode = null): self
     {
@@ -142,7 +142,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set cardType value
      * @param string $cardType
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setCardType(?string $cardType = null): self
     {
@@ -165,7 +165,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set cvv2 value
      * @param string $cvv2
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setCvv2(?string $cvv2 = null): self
     {
@@ -188,7 +188,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set expirationMonth value
      * @param int $expirationMonth
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setExpirationMonth(?int $expirationMonth = null): self
     {
@@ -211,7 +211,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set expirationYear value
      * @param int $expirationYear
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setExpirationYear(?int $expirationYear = null): self
     {
@@ -234,7 +234,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setFirstName(?string $firstName = null): self
     {
@@ -257,7 +257,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set lastName value
      * @param string $lastName
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setLastName(?string $lastName = null): self
     {
@@ -280,7 +280,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -303,7 +303,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set nameOnCard value
      * @param string $nameOnCard
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setNameOnCard(?string $nameOnCard = null): self
     {
@@ -326,7 +326,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setNote(?string $note = null): self
     {
@@ -349,7 +349,7 @@ class CreditCard extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \StructType\CreditCard
+     * @return \BurgerDigital\eTapestry\StructType\CreditCard
      */
     public function setNumber(?string $number = null): self
     {

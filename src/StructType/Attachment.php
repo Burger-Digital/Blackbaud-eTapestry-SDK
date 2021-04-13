@@ -71,7 +71,7 @@ class Attachment extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Attachment
+     * @return \BurgerDigital\eTapestry\StructType\Attachment
      */
     public function setDate(?string $date = null): self
     {
@@ -94,7 +94,7 @@ class Attachment extends AbstractStructBase
     /**
      * Set fileContent value
      * @param string $fileContent
-     * @return \StructType\Attachment
+     * @return \BurgerDigital\eTapestry\StructType\Attachment
      */
     public function setFileContent(?string $fileContent = null): self
     {
@@ -117,7 +117,7 @@ class Attachment extends AbstractStructBase
     /**
      * Set filename value
      * @param string $filename
-     * @return \StructType\Attachment
+     * @return \BurgerDigital\eTapestry\StructType\Attachment
      */
     public function setFilename(?string $filename = null): self
     {
@@ -140,7 +140,7 @@ class Attachment extends AbstractStructBase
     /**
      * Set mimeType value
      * @param string $mimeType
-     * @return \StructType\Attachment
+     * @return \BurgerDigital\eTapestry\StructType\Attachment
      */
     public function setMimeType(?string $mimeType = null): self
     {
@@ -163,7 +163,7 @@ class Attachment extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Attachment
+     * @return \BurgerDigital\eTapestry\StructType\Attachment
      */
     public function setRef(?string $ref = null): self
     {

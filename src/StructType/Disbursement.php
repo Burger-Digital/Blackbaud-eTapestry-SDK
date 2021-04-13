@@ -59,7 +59,7 @@ class Disbursement extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -83,7 +83,7 @@ class Disbursement extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -138,7 +138,7 @@ class Disbursement extends AbstractStructBase
     protected ?int $type = null;
     /**
      * The valuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $valuable = null;
     /**
@@ -175,11 +175,11 @@ class Disbursement extends AbstractStructBase
      * @param string $accountRef
      * @param float $amount
      * @param string $approach
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
      * @param string $fundraiser
@@ -190,7 +190,7 @@ class Disbursement extends AbstractStructBase
      * @param string $receipt
      * @param string $ref
      * @param int $type
-     * @param \StructType\Valuable $valuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
      */
     public function __construct(?string $creditAccount = null, ?float $creditAmount = null, ?string $debitAccount = null, ?float $debitAmount = null, ?string $accountName = null, ?string $accountRef = null, ?float $amount = null, ?string $approach = null, array $attachments = [], ?string $campaign = null, ?string $createdDate = null, ?string $date = null, array $definedValues = [], ?bool $final = null, ?string $fund = null, ?string $fundraiser = null, ?string $lastModifiedDate = null, ?string $letter = null, ?string $note = null, ?string $offsettingRef = null, ?string $receipt = null, ?string $ref = null, ?int $type = null, ?\StructType\Valuable $valuable = null)
     {
@@ -231,7 +231,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -254,7 +254,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -277,7 +277,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -300,7 +300,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -323,7 +323,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -346,7 +346,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -369,7 +369,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setAmount(?float $amount = null): self
     {
@@ -392,7 +392,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setApproach(?string $approach = null): self
     {
@@ -406,7 +406,7 @@ class Disbursement extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -424,12 +424,12 @@ class Disbursement extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disbursementAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$disbursementAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$disbursementAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($disbursementAttachmentsItem) ? get_class($disbursementAttachmentsItem) : sprintf('%s(%s)', gettype($disbursementAttachmentsItem), var_export($disbursementAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -438,8 +438,8 @@ class Disbursement extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Disbursement
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -454,14 +454,14 @@ class Disbursement extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Disbursement
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -478,7 +478,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -501,7 +501,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -524,7 +524,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setDate(?string $date = null): self
     {
@@ -538,7 +538,7 @@ class Disbursement extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -556,12 +556,12 @@ class Disbursement extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $disbursementDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$disbursementDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$disbursementDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($disbursementDefinedValuesItem) ? get_class($disbursementDefinedValuesItem) : sprintf('%s(%s)', gettype($disbursementDefinedValuesItem), var_export($disbursementDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -570,8 +570,8 @@ class Disbursement extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Disbursement
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -586,14 +586,14 @@ class Disbursement extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Disbursement
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -610,7 +610,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setFinal(?bool $final = null): self
     {
@@ -633,7 +633,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setFund(?string $fund = null): self
     {
@@ -656,7 +656,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set fundraiser value
      * @param string $fundraiser
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setFundraiser(?string $fundraiser = null): self
     {
@@ -679,7 +679,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -702,7 +702,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setLetter(?string $letter = null): self
     {
@@ -725,7 +725,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setNote(?string $note = null): self
     {
@@ -748,7 +748,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -771,7 +771,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -794,7 +794,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setRef(?string $ref = null): self
     {
@@ -817,7 +817,7 @@ class Disbursement extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Disbursement
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setType(?int $type = null): self
     {
@@ -831,7 +831,7 @@ class Disbursement extends AbstractStructBase
     }
     /**
      * Get valuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getValuable(): ?\StructType\Valuable
     {
@@ -839,8 +839,8 @@ class Disbursement extends AbstractStructBase
     }
     /**
      * Set valuable value
-     * @param \StructType\Valuable $valuable
-     * @return \StructType\Disbursement
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement
      */
     public function setValuable(?\StructType\Valuable $valuable = null): self
     {

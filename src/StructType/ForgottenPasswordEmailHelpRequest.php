@@ -87,7 +87,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set baseQuery value
      * @param string $baseQuery
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setBaseQuery(?string $baseQuery = null): self
     {
@@ -110,7 +110,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setEmail(?string $email = null): self
     {
@@ -133,7 +133,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set expirationHours value
      * @param int $expirationHours
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setExpirationHours(?int $expirationHours = null): self
     {
@@ -156,7 +156,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set fromEmail value
      * @param string $fromEmail
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setFromEmail(?string $fromEmail = null): self
     {
@@ -179,7 +179,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set loginId value
      * @param string $loginId
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setLoginId(?string $loginId = null): self
     {
@@ -202,7 +202,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set personaOption value
      * @param string $personaOption
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setPersonaOption(?string $personaOption = null): self
     {
@@ -225,7 +225,7 @@ class ForgottenPasswordEmailHelpRequest extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \StructType\ForgottenPasswordEmailHelpRequest
+     * @return \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest
      */
     public function setUrl(?string $url = null): self
     {

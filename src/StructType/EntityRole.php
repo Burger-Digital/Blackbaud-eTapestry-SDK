@@ -29,7 +29,7 @@ class EntityRole extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -88,7 +88,7 @@ class EntityRole extends AbstractStructBase
      * - arrayType: tns:Persona[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Persona[]
+     * @var \BurgerDigital\eTapestry\StructType\Persona[]
      */
     protected array $personas = [];
     /**
@@ -149,7 +149,7 @@ class EntityRole extends AbstractStructBase
      * @uses EntityRole::setUserRoleRef()
      * @param int $accountRoleType
      * @param string $createdDate
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param string $donorRecognitionName
      * @param int $donorRecognitionType
      * @param string $donorRoleRef
@@ -160,7 +160,7 @@ class EntityRole extends AbstractStructBase
      * @param string $loginId
      * @param int $loyaltyRating
      * @param string $name
-     * @param \StructType\Persona[] $personas
+     * @param \BurgerDigital\eTapestry\StructType\Persona[] $personas
      * @param string[] $photoLinks
      * @param string $ref
      * @param string $sortName
@@ -203,7 +203,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set accountRoleType value
      * @param int $accountRoleType
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setAccountRoleType(?int $accountRoleType = null): self
     {
@@ -226,7 +226,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -240,7 +240,7 @@ class EntityRole extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -258,12 +258,12 @@ class EntityRole extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $entityRoleDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$entityRoleDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$entityRoleDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($entityRoleDefinedValuesItem) ? get_class($entityRoleDefinedValuesItem) : sprintf('%s(%s)', gettype($entityRoleDefinedValuesItem), var_export($entityRoleDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -272,8 +272,8 @@ class EntityRole extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\EntityRole
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -288,14 +288,14 @@ class EntityRole extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\EntityRole
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -312,7 +312,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set donorRecognitionName value
      * @param string $donorRecognitionName
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setDonorRecognitionName(?string $donorRecognitionName = null): self
     {
@@ -335,7 +335,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set donorRecognitionType value
      * @param int $donorRecognitionType
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setDonorRecognitionType(?int $donorRecognitionType = null): self
     {
@@ -358,7 +358,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set donorRoleRef value
      * @param string $donorRoleRef
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setDonorRoleRef(?string $donorRoleRef = null): self
     {
@@ -381,7 +381,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set emailStatus value
      * @param int $emailStatus
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setEmailStatus(?int $emailStatus = null): self
     {
@@ -404,7 +404,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set householdStatus value
      * @param int $householdStatus
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setHouseholdStatus(?int $householdStatus = null): self
     {
@@ -427,7 +427,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setId(?int $id = null): self
     {
@@ -450,7 +450,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -473,7 +473,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set loginId value
      * @param string $loginId
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setLoginId(?string $loginId = null): self
     {
@@ -496,7 +496,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set loyaltyRating value
      * @param int $loyaltyRating
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setLoyaltyRating(?int $loyaltyRating = null): self
     {
@@ -519,7 +519,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setName(?string $name = null): self
     {
@@ -533,7 +533,7 @@ class EntityRole extends AbstractStructBase
     }
     /**
      * Get personas value
-     * @return \StructType\Persona[]
+     * @return \BurgerDigital\eTapestry\StructType\Persona[]
      */
     public function getPersonas(): array
     {
@@ -551,12 +551,12 @@ class EntityRole extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $entityRolePersonasItem) {
             // validation for constraint: itemType
-            if (!$entityRolePersonasItem instanceof \StructType\Persona) {
+            if (!$entityRolePersonasItem instanceof \BurgerDigital\eTapestry\StructType\Persona) {
                 $invalidValues[] = is_object($entityRolePersonasItem) ? get_class($entityRolePersonasItem) : sprintf('%s(%s)', gettype($entityRolePersonasItem), var_export($entityRolePersonasItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The personas property can only contain items of type \StructType\Persona, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The personas property can only contain items of type \BurgerDigital\eTapestry\StructType\Persona, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -565,8 +565,8 @@ class EntityRole extends AbstractStructBase
     /**
      * Set personas value
      * @throws InvalidArgumentException
-     * @param \StructType\Persona[] $personas
-     * @return \StructType\EntityRole
+     * @param \BurgerDigital\eTapestry\StructType\Persona[] $personas
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setPersonas(array $personas = []): self
     {
@@ -581,14 +581,14 @@ class EntityRole extends AbstractStructBase
     /**
      * Add item to personas value
      * @throws InvalidArgumentException
-     * @param \StructType\Persona $item
-     * @return \StructType\EntityRole
+     * @param \BurgerDigital\eTapestry\StructType\Persona $item
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function addToPersonas(\StructType\Persona $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Persona) {
-            throw new InvalidArgumentException(sprintf('The personas property can only contain items of type \StructType\Persona, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Persona) {
+            throw new InvalidArgumentException(sprintf('The personas property can only contain items of type \BurgerDigital\eTapestry\StructType\Persona, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->personas[] = $item;
         
@@ -629,7 +629,7 @@ class EntityRole extends AbstractStructBase
      * Set photoLinks value
      * @throws InvalidArgumentException
      * @param string[] $photoLinks
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setPhotoLinks(array $photoLinks = []): self
     {
@@ -645,7 +645,7 @@ class EntityRole extends AbstractStructBase
      * Add item to photoLinks value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function addToPhotoLinks(string $item): self
     {
@@ -668,7 +668,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setRef(?string $ref = null): self
     {
@@ -691,7 +691,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set sortName value
      * @param string $sortName
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setSortName(?string $sortName = null): self
     {
@@ -714,7 +714,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set teamRoleRef value
      * @param string $teamRoleRef
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setTeamRoleRef(?string $teamRoleRef = null): self
     {
@@ -737,7 +737,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set tributeRoleRef value
      * @param string $tributeRoleRef
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setTributeRoleRef(?string $tributeRoleRef = null): self
     {
@@ -760,7 +760,7 @@ class EntityRole extends AbstractStructBase
     /**
      * Set userRoleRef value
      * @param string $userRoleRef
-     * @return \StructType\EntityRole
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole
      */
     public function setUserRoleRef(?string $userRoleRef = null): self
     {

@@ -119,7 +119,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set confirmationMessageFooter value
      * @param string $confirmationMessageFooter
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setConfirmationMessageFooter(?string $confirmationMessageFooter = null): self
     {
@@ -142,7 +142,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set confirmationMessageHeader value
      * @param string $confirmationMessageHeader
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setConfirmationMessageHeader(?string $confirmationMessageHeader = null): self
     {
@@ -165,7 +165,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set confirmationSender value
      * @param string $confirmationSender
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setConfirmationSender(?string $confirmationSender = null): self
     {
@@ -188,7 +188,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set confirmationSignature value
      * @param string $confirmationSignature
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setConfirmationSignature(?string $confirmationSignature = null): self
     {
@@ -211,7 +211,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set confirmationSubject value
      * @param string $confirmationSubject
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setConfirmationSubject(?string $confirmationSubject = null): self
     {
@@ -234,7 +234,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set createFieldAndValues value
      * @param bool $createFieldAndValues
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setCreateFieldAndValues(?bool $createFieldAndValues = null): self
     {
@@ -257,7 +257,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set donorEmail value
      * @param string $donorEmail
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setDonorEmail(?string $donorEmail = null): self
     {
@@ -280,7 +280,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set failureEmail value
      * @param string $failureEmail
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setFailureEmail(?string $failureEmail = null): self
     {
@@ -303,7 +303,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set notificationEmail value
      * @param string $notificationEmail
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setNotificationEmail(?string $notificationEmail = null): self
     {
@@ -326,7 +326,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set processor value
      * @param string $processor
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setProcessor(?string $processor = null): self
     {
@@ -349,7 +349,7 @@ class ProcessTransactionRequest extends AbstractStructBase
     /**
      * Set transaction value
      * @param mixed $transaction
-     * @return \StructType\ProcessTransactionRequest
+     * @return \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest
      */
     public function setTransaction(?mixed $transaction = null): self
     {

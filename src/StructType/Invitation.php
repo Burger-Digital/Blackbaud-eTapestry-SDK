@@ -25,7 +25,7 @@ class Invitation extends AbstractStructBase
     protected ?string $accountRef = null;
     /**
      * The calendarItem
-     * @var \StructType\CalendarItem|null
+     * @var \BurgerDigital\eTapestry\StructType\CalendarItem|null
      */
     protected ?\StructType\CalendarItem $calendarItem = null;
     /**
@@ -77,7 +77,7 @@ class Invitation extends AbstractStructBase
      * @uses Invitation::setType()
      * @param string $accountName
      * @param string $accountRef
-     * @param \StructType\CalendarItem $calendarItem
+     * @param \BurgerDigital\eTapestry\StructType\CalendarItem $calendarItem
      * @param string $createdDate
      * @param string $date
      * @param string $lastModifiedDate
@@ -111,7 +111,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -134,7 +134,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -148,7 +148,7 @@ class Invitation extends AbstractStructBase
     }
     /**
      * Get calendarItem value
-     * @return \StructType\CalendarItem|null
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem|null
      */
     public function getCalendarItem(): ?\StructType\CalendarItem
     {
@@ -156,8 +156,8 @@ class Invitation extends AbstractStructBase
     }
     /**
      * Set calendarItem value
-     * @param \StructType\CalendarItem $calendarItem
-     * @return \StructType\Invitation
+     * @param \BurgerDigital\eTapestry\StructType\CalendarItem $calendarItem
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setCalendarItem(?\StructType\CalendarItem $calendarItem = null): self
     {
@@ -176,7 +176,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -199,7 +199,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setDate(?string $date = null): self
     {
@@ -222,7 +222,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -245,7 +245,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setRef(?string $ref = null): self
     {
@@ -268,7 +268,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set remind value
      * @param bool $remind
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setRemind(?bool $remind = null): self
     {
@@ -291,7 +291,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setStatus(?int $status = null): self
     {
@@ -314,7 +314,7 @@ class Invitation extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Invitation
+     * @return \BurgerDigital\eTapestry\StructType\Invitation
      */
     public function setType(?int $type = null): self
     {

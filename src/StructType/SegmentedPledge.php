@@ -30,7 +30,7 @@ class SegmentedPledge extends AbstractStructBase
     protected ?float $arrearsAmount = null;
     /**
      * The consolidatedCustomSchedule
-     * @var \StructType\CustomPaymentSchedule|null
+     * @var \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule|null
      */
     protected ?\StructType\CustomPaymentSchedule $consolidatedCustomSchedule = null;
     /**
@@ -130,7 +130,7 @@ class SegmentedPledge extends AbstractStructBase
      * @param string $accountName
      * @param string $accountRef
      * @param float $arrearsAmount
-     * @param \StructType\CustomPaymentSchedule $consolidatedCustomSchedule
+     * @param \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule $consolidatedCustomSchedule
      * @param string $createdDate
      * @param string $date
      * @param bool $final
@@ -179,7 +179,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -202,7 +202,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -225,7 +225,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set arrearsAmount value
      * @param float $arrearsAmount
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setArrearsAmount(?float $arrearsAmount = null): self
     {
@@ -239,7 +239,7 @@ class SegmentedPledge extends AbstractStructBase
     }
     /**
      * Get consolidatedCustomSchedule value
-     * @return \StructType\CustomPaymentSchedule|null
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule|null
      */
     public function getConsolidatedCustomSchedule(): ?\StructType\CustomPaymentSchedule
     {
@@ -247,8 +247,8 @@ class SegmentedPledge extends AbstractStructBase
     }
     /**
      * Set consolidatedCustomSchedule value
-     * @param \StructType\CustomPaymentSchedule $consolidatedCustomSchedule
-     * @return \StructType\SegmentedPledge
+     * @param \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule $consolidatedCustomSchedule
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setConsolidatedCustomSchedule(?\StructType\CustomPaymentSchedule $consolidatedCustomSchedule = null): self
     {
@@ -267,7 +267,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -290,7 +290,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setDate(?string $date = null): self
     {
@@ -313,7 +313,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setFinal(?bool $final = null): self
     {
@@ -336,7 +336,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -359,7 +359,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set nextPaymentAmount value
      * @param float $nextPaymentAmount
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setNextPaymentAmount(?float $nextPaymentAmount = null): self
     {
@@ -382,7 +382,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set nextPaymentDate value
      * @param string $nextPaymentDate
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setNextPaymentDate(?string $nextPaymentDate = null): self
     {
@@ -405,7 +405,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -428,7 +428,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set outstandingBalance value
      * @param float $outstandingBalance
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setOutstandingBalance(?float $outstandingBalance = null): self
     {
@@ -451,7 +451,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setRef(?string $ref = null): self
     {
@@ -498,7 +498,7 @@ class SegmentedPledge extends AbstractStructBase
      * Set segments value
      * @throws InvalidArgumentException
      * @param mixed[] $segments
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setSegments(array $segments = []): self
     {
@@ -514,7 +514,7 @@ class SegmentedPledge extends AbstractStructBase
      * Add item to segments value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function addToSegments(mixed $item): self
     {
@@ -537,7 +537,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -560,7 +560,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set totalNonDeductibleAmount value
      * @param float $totalNonDeductibleAmount
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setTotalNonDeductibleAmount(?float $totalNonDeductibleAmount = null): self
     {
@@ -583,7 +583,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setType(?int $type = null): self
     {
@@ -606,7 +606,7 @@ class SegmentedPledge extends AbstractStructBase
     /**
      * Set upgraded value
      * @param bool $upgraded
-     * @return \StructType\SegmentedPledge
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge
      */
     public function setUpgraded(?bool $upgraded = null): self
     {

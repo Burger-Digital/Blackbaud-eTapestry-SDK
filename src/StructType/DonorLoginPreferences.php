@@ -39,7 +39,7 @@ class DonorLoginPreferences extends AbstractStructBase
     /**
      * Set welcomePageHtml value
      * @param string $welcomePageHtml
-     * @return \StructType\DonorLoginPreferences
+     * @return \BurgerDigital\eTapestry\StructType\DonorLoginPreferences
      */
     public function setWelcomePageHtml(?string $welcomePageHtml = null): self
     {

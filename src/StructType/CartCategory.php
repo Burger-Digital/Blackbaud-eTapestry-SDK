@@ -25,7 +25,7 @@ class CartCategory extends AbstractStructBase
     protected ?bool $disabled = null;
     /**
      * The image
-     * @var \StructType\CartImage|null
+     * @var \BurgerDigital\eTapestry\StructType\CartImage|null
      */
     protected ?\StructType\CartImage $image = null;
     /**
@@ -59,7 +59,7 @@ class CartCategory extends AbstractStructBase
      * - arrayType: tns:CartParent[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\CartParent[]
+     * @var \BurgerDigital\eTapestry\StructType\CartParent[]
      */
     protected array $parents = [];
     /**
@@ -105,13 +105,13 @@ class CartCategory extends AbstractStructBase
      * @uses CartCategory::setType()
      * @param string $description
      * @param bool $disabled
-     * @param \StructType\CartImage $image
+     * @param \BurgerDigital\eTapestry\StructType\CartImage $image
      * @param int $immediateCategories
      * @param int $immediateItems
      * @param string $name
      * @param int $nestedCategories
      * @param int $nestedItems
-     * @param \StructType\CartParent[] $parents
+     * @param \BurgerDigital\eTapestry\StructType\CartParent[] $parents
      * @param string $publishEndDate
      * @param string $publishStartDate
      * @param bool $publishableNow
@@ -147,7 +147,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setDescription(?string $description = null): self
     {
@@ -170,7 +170,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -184,7 +184,7 @@ class CartCategory extends AbstractStructBase
     }
     /**
      * Get image value
-     * @return \StructType\CartImage|null
+     * @return \BurgerDigital\eTapestry\StructType\CartImage|null
      */
     public function getImage(): ?\StructType\CartImage
     {
@@ -192,8 +192,8 @@ class CartCategory extends AbstractStructBase
     }
     /**
      * Set image value
-     * @param \StructType\CartImage $image
-     * @return \StructType\CartCategory
+     * @param \BurgerDigital\eTapestry\StructType\CartImage $image
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setImage(?\StructType\CartImage $image = null): self
     {
@@ -212,7 +212,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set immediateCategories value
      * @param int $immediateCategories
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setImmediateCategories(?int $immediateCategories = null): self
     {
@@ -235,7 +235,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set immediateItems value
      * @param int $immediateItems
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setImmediateItems(?int $immediateItems = null): self
     {
@@ -258,7 +258,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setName(?string $name = null): self
     {
@@ -281,7 +281,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set nestedCategories value
      * @param int $nestedCategories
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setNestedCategories(?int $nestedCategories = null): self
     {
@@ -304,7 +304,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set nestedItems value
      * @param int $nestedItems
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setNestedItems(?int $nestedItems = null): self
     {
@@ -318,7 +318,7 @@ class CartCategory extends AbstractStructBase
     }
     /**
      * Get parents value
-     * @return \StructType\CartParent[]
+     * @return \BurgerDigital\eTapestry\StructType\CartParent[]
      */
     public function getParents(): array
     {
@@ -336,12 +336,12 @@ class CartCategory extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartCategoryParentsItem) {
             // validation for constraint: itemType
-            if (!$cartCategoryParentsItem instanceof \StructType\CartParent) {
+            if (!$cartCategoryParentsItem instanceof \BurgerDigital\eTapestry\StructType\CartParent) {
                 $invalidValues[] = is_object($cartCategoryParentsItem) ? get_class($cartCategoryParentsItem) : sprintf('%s(%s)', gettype($cartCategoryParentsItem), var_export($cartCategoryParentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The parents property can only contain items of type \StructType\CartParent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The parents property can only contain items of type \BurgerDigital\eTapestry\StructType\CartParent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -350,8 +350,8 @@ class CartCategory extends AbstractStructBase
     /**
      * Set parents value
      * @throws InvalidArgumentException
-     * @param \StructType\CartParent[] $parents
-     * @return \StructType\CartCategory
+     * @param \BurgerDigital\eTapestry\StructType\CartParent[] $parents
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setParents(array $parents = []): self
     {
@@ -366,14 +366,14 @@ class CartCategory extends AbstractStructBase
     /**
      * Add item to parents value
      * @throws InvalidArgumentException
-     * @param \StructType\CartParent $item
-     * @return \StructType\CartCategory
+     * @param \BurgerDigital\eTapestry\StructType\CartParent $item
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function addToParents(\StructType\CartParent $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CartParent) {
-            throw new InvalidArgumentException(sprintf('The parents property can only contain items of type \StructType\CartParent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\CartParent) {
+            throw new InvalidArgumentException(sprintf('The parents property can only contain items of type \BurgerDigital\eTapestry\StructType\CartParent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->parents[] = $item;
         
@@ -390,7 +390,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set publishEndDate value
      * @param string $publishEndDate
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setPublishEndDate(?string $publishEndDate = null): self
     {
@@ -413,7 +413,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set publishStartDate value
      * @param string $publishStartDate
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setPublishStartDate(?string $publishStartDate = null): self
     {
@@ -436,7 +436,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set publishableNow value
      * @param bool $publishableNow
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setPublishableNow(?bool $publishableNow = null): self
     {
@@ -459,7 +459,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setRef(?string $ref = null): self
     {
@@ -482,7 +482,7 @@ class CartCategory extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\CartCategory
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory
      */
     public function setType(?int $type = null): self
     {

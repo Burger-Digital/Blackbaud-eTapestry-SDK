@@ -21,7 +21,7 @@ class Find extends AbstractSoapClientBase
      * @param string $string_1
      * @param string $string_2
      * @param string $boolean_3
-     * @return \StructType\Account[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account[]|bool
      */
     public function findAccountsForOutlookIntegration($string_1, $string_2, $boolean_3)
     {
@@ -42,7 +42,7 @@ class Find extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\Account[]
+     * @return \BurgerDigital\eTapestry\StructType\Account[]
      */
     public function getResult()
     {

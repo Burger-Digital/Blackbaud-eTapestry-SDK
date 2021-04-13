@@ -44,7 +44,7 @@ class Persona extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -73,7 +73,7 @@ class Persona extends AbstractStructBase
      * - arrayType: tns:Phone[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Phone[]
+     * @var \BurgerDigital\eTapestry\StructType\Phone[]
      */
     protected array $phones = [];
     /**
@@ -142,12 +142,12 @@ class Persona extends AbstractStructBase
      * @param string $country
      * @param string $county
      * @param string $createdDate
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param string $email
      * @param string $lastModifiedDate
      * @param string $longSalutation
      * @param string $note
-     * @param \StructType\Phone[] $phones
+     * @param \BurgerDigital\eTapestry\StructType\Phone[] $phones
      * @param string $postalCode
      * @param bool $primary
      * @param string $ref
@@ -191,7 +191,7 @@ class Persona extends AbstractStructBase
     /**
      * Set address value
      * @param string $address
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setAddress(?string $address = null): self
     {
@@ -214,7 +214,7 @@ class Persona extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setCity(?string $city = null): self
     {
@@ -237,7 +237,7 @@ class Persona extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setCountry(?string $country = null): self
     {
@@ -260,7 +260,7 @@ class Persona extends AbstractStructBase
     /**
      * Set county value
      * @param string $county
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setCounty(?string $county = null): self
     {
@@ -283,7 +283,7 @@ class Persona extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -297,7 +297,7 @@ class Persona extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -315,12 +315,12 @@ class Persona extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $personaDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$personaDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$personaDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($personaDefinedValuesItem) ? get_class($personaDefinedValuesItem) : sprintf('%s(%s)', gettype($personaDefinedValuesItem), var_export($personaDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -329,8 +329,8 @@ class Persona extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Persona
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -345,14 +345,14 @@ class Persona extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Persona
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -369,7 +369,7 @@ class Persona extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setEmail(?string $email = null): self
     {
@@ -392,7 +392,7 @@ class Persona extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -415,7 +415,7 @@ class Persona extends AbstractStructBase
     /**
      * Set longSalutation value
      * @param string $longSalutation
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setLongSalutation(?string $longSalutation = null): self
     {
@@ -438,7 +438,7 @@ class Persona extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setNote(?string $note = null): self
     {
@@ -452,7 +452,7 @@ class Persona extends AbstractStructBase
     }
     /**
      * Get phones value
-     * @return \StructType\Phone[]
+     * @return \BurgerDigital\eTapestry\StructType\Phone[]
      */
     public function getPhones(): array
     {
@@ -470,12 +470,12 @@ class Persona extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $personaPhonesItem) {
             // validation for constraint: itemType
-            if (!$personaPhonesItem instanceof \StructType\Phone) {
+            if (!$personaPhonesItem instanceof \BurgerDigital\eTapestry\StructType\Phone) {
                 $invalidValues[] = is_object($personaPhonesItem) ? get_class($personaPhonesItem) : sprintf('%s(%s)', gettype($personaPhonesItem), var_export($personaPhonesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The phones property can only contain items of type \StructType\Phone, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The phones property can only contain items of type \BurgerDigital\eTapestry\StructType\Phone, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -484,8 +484,8 @@ class Persona extends AbstractStructBase
     /**
      * Set phones value
      * @throws InvalidArgumentException
-     * @param \StructType\Phone[] $phones
-     * @return \StructType\Persona
+     * @param \BurgerDigital\eTapestry\StructType\Phone[] $phones
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setPhones(array $phones = []): self
     {
@@ -500,14 +500,14 @@ class Persona extends AbstractStructBase
     /**
      * Add item to phones value
      * @throws InvalidArgumentException
-     * @param \StructType\Phone $item
-     * @return \StructType\Persona
+     * @param \BurgerDigital\eTapestry\StructType\Phone $item
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function addToPhones(\StructType\Phone $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Phone) {
-            throw new InvalidArgumentException(sprintf('The phones property can only contain items of type \StructType\Phone, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Phone) {
+            throw new InvalidArgumentException(sprintf('The phones property can only contain items of type \BurgerDigital\eTapestry\StructType\Phone, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->phones[] = $item;
         
@@ -524,7 +524,7 @@ class Persona extends AbstractStructBase
     /**
      * Set postalCode value
      * @param string $postalCode
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -547,7 +547,7 @@ class Persona extends AbstractStructBase
     /**
      * Set primary value
      * @param bool $primary
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setPrimary(?bool $primary = null): self
     {
@@ -570,7 +570,7 @@ class Persona extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setRef(?string $ref = null): self
     {
@@ -593,7 +593,7 @@ class Persona extends AbstractStructBase
     /**
      * Set shortSalutation value
      * @param string $shortSalutation
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setShortSalutation(?string $shortSalutation = null): self
     {
@@ -616,7 +616,7 @@ class Persona extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setState(?string $state = null): self
     {
@@ -639,7 +639,7 @@ class Persona extends AbstractStructBase
     /**
      * Set stickyNoteType value
      * @param string $stickyNoteType
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setStickyNoteType(?string $stickyNoteType = null): self
     {
@@ -662,7 +662,7 @@ class Persona extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setType(?string $type = null): self
     {
@@ -685,7 +685,7 @@ class Persona extends AbstractStructBase
     /**
      * Set webAddress value
      * @param string $webAddress
-     * @return \StructType\Persona
+     * @return \BurgerDigital\eTapestry\StructType\Persona
      */
     public function setWebAddress(?string $webAddress = null): self
     {

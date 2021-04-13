@@ -47,7 +47,7 @@ class CartImage extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \StructType\CartImage
+     * @return \BurgerDigital\eTapestry\StructType\CartImage
      */
     public function setDescription(?string $description = null): self
     {
@@ -70,7 +70,7 @@ class CartImage extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \StructType\CartImage
+     * @return \BurgerDigital\eTapestry\StructType\CartImage
      */
     public function setUrl(?string $url = null): self
     {

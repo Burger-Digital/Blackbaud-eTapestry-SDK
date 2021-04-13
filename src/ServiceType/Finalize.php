@@ -18,10 +18,10 @@ class Finalize extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CartOrderRequest $cartOrderRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\CartOrderRequest $cartOrderRequest_1
      * @return void|bool
      */
-    public function finalizePendingBuckarooCartOrder(\StructType\CartOrderRequest $cartOrderRequest_1)
+    public function finalizePendingBuckarooCartOrder(\BurgerDigital\eTapestry\StructType\CartOrderRequest $cartOrderRequest_1)
     {
         try {
             $this->setResult($resultFinalizePendingBuckarooCartOrder = $this->getSoapClient()->__soapCall('finalizePendingBuckarooCartOrder', [

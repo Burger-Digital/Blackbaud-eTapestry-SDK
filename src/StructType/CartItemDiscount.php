@@ -55,7 +55,7 @@ class CartItemDiscount extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\CartItemDiscount
+     * @return \BurgerDigital\eTapestry\StructType\CartItemDiscount
      */
     public function setAmount(?float $amount = null): self
     {
@@ -78,7 +78,7 @@ class CartItemDiscount extends AbstractStructBase
     /**
      * Set promoCode value
      * @param string $promoCode
-     * @return \StructType\CartItemDiscount
+     * @return \BurgerDigital\eTapestry\StructType\CartItemDiscount
      */
     public function setPromoCode(?string $promoCode = null): self
     {
@@ -101,7 +101,7 @@ class CartItemDiscount extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\CartItemDiscount
+     * @return \BurgerDigital\eTapestry\StructType\CartItemDiscount
      */
     public function setRef(?string $ref = null): self
     {

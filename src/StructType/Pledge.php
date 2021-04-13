@@ -64,7 +64,7 @@ class Pledge extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -84,7 +84,7 @@ class Pledge extends AbstractStructBase
     protected ?string $createdDate = null;
     /**
      * The customSchedule
-     * @var \StructType\CustomPaymentSchedule|null
+     * @var \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule|null
      */
     protected ?\StructType\CustomPaymentSchedule $customSchedule = null;
     /**
@@ -98,7 +98,7 @@ class Pledge extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -118,7 +118,7 @@ class Pledge extends AbstractStructBase
     protected ?string $fundraiser = null;
     /**
      * The generatedReceipt
-     * @var \StructType\GeneratedReceipt|null
+     * @var \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     protected ?\StructType\GeneratedReceipt $generatedReceipt = null;
     /**
@@ -203,7 +203,7 @@ class Pledge extends AbstractStructBase
     protected ?float $outstandingBalance = null;
     /**
      * The paymentValuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $paymentValuable = null;
     /**
@@ -228,7 +228,7 @@ class Pledge extends AbstractStructBase
     protected ?string $ref = null;
     /**
      * The scheduledValuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $scheduledValuable = null;
     /**
@@ -238,12 +238,12 @@ class Pledge extends AbstractStructBase
     protected ?string $segmentedTransactionRef = null;
     /**
      * The softCredit
-     * @var \StructType\SoftCredit|null
+     * @var \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     protected ?\StructType\SoftCredit $softCredit = null;
     /**
      * The standardSchedule
-     * @var \StructType\StandardPaymentSchedule|null
+     * @var \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule|null
      */
     protected ?\StructType\StandardPaymentSchedule $standardSchedule = null;
     /**
@@ -332,17 +332,17 @@ class Pledge extends AbstractStructBase
      * @param float $amount
      * @param string $approach
      * @param float $arrearsAmount
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param bool $copyUDFsToFuturePayments
      * @param string $createdDate
-     * @param \StructType\CustomPaymentSchedule $customSchedule
+     * @param \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule $customSchedule
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
      * @param string $fundraiser
-     * @param \StructType\GeneratedReceipt $generatedReceipt
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
      * @param float $giftAidAmount
      * @param string $giftAidClaimedDate
      * @param int $giftAidStatus
@@ -359,15 +359,15 @@ class Pledge extends AbstractStructBase
      * @param string $originalAccountRef
      * @param string $originalTransactionRef
      * @param float $outstandingBalance
-     * @param \StructType\Valuable $paymentValuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $paymentValuable
      * @param string $receipt
      * @param string $recognitionName
      * @param int $recognitionType
      * @param string $ref
-     * @param \StructType\Valuable $scheduledValuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $scheduledValuable
      * @param string $segmentedTransactionRef
-     * @param \StructType\SoftCredit $softCredit
-     * @param \StructType\StandardPaymentSchedule $standardSchedule
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @param \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule $standardSchedule
      * @param string $tributeAccountName
      * @param string $tributeAccountRef
      * @param int $type
@@ -439,7 +439,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -462,7 +462,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -485,7 +485,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -508,7 +508,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -531,7 +531,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -554,7 +554,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -577,7 +577,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setAmount(?float $amount = null): self
     {
@@ -600,7 +600,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setApproach(?string $approach = null): self
     {
@@ -623,7 +623,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set arrearsAmount value
      * @param float $arrearsAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setArrearsAmount(?float $arrearsAmount = null): self
     {
@@ -637,7 +637,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -655,12 +655,12 @@ class Pledge extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pledgeAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$pledgeAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$pledgeAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($pledgeAttachmentsItem) ? get_class($pledgeAttachmentsItem) : sprintf('%s(%s)', gettype($pledgeAttachmentsItem), var_export($pledgeAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -669,8 +669,8 @@ class Pledge extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -685,14 +685,14 @@ class Pledge extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -709,7 +709,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -732,7 +732,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set copyUDFsToFuturePayments value
      * @param bool $copyUDFsToFuturePayments
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCopyUDFsToFuturePayments(?bool $copyUDFsToFuturePayments = null): self
     {
@@ -755,7 +755,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -769,7 +769,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get customSchedule value
-     * @return \StructType\CustomPaymentSchedule|null
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule|null
      */
     public function getCustomSchedule(): ?\StructType\CustomPaymentSchedule
     {
@@ -777,8 +777,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set customSchedule value
-     * @param \StructType\CustomPaymentSchedule $customSchedule
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule $customSchedule
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setCustomSchedule(?\StructType\CustomPaymentSchedule $customSchedule = null): self
     {
@@ -797,7 +797,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setDate(?string $date = null): self
     {
@@ -811,7 +811,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -829,12 +829,12 @@ class Pledge extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pledgeDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$pledgeDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$pledgeDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($pledgeDefinedValuesItem) ? get_class($pledgeDefinedValuesItem) : sprintf('%s(%s)', gettype($pledgeDefinedValuesItem), var_export($pledgeDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -843,8 +843,8 @@ class Pledge extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -859,14 +859,14 @@ class Pledge extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -883,7 +883,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setFinal(?bool $final = null): self
     {
@@ -906,7 +906,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setFund(?string $fund = null): self
     {
@@ -929,7 +929,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set fundraiser value
      * @param string $fundraiser
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setFundraiser(?string $fundraiser = null): self
     {
@@ -943,7 +943,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get generatedReceipt value
-     * @return \StructType\GeneratedReceipt|null
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     public function getGeneratedReceipt(): ?\StructType\GeneratedReceipt
     {
@@ -951,8 +951,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set generatedReceipt value
-     * @param \StructType\GeneratedReceipt $generatedReceipt
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setGeneratedReceipt(?\StructType\GeneratedReceipt $generatedReceipt = null): self
     {
@@ -971,7 +971,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set giftAidAmount value
      * @param float $giftAidAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setGiftAidAmount(?float $giftAidAmount = null): self
     {
@@ -994,7 +994,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set giftAidClaimedDate value
      * @param string $giftAidClaimedDate
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setGiftAidClaimedDate(?string $giftAidClaimedDate = null): self
     {
@@ -1017,7 +1017,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set giftAidStatus value
      * @param int $giftAidStatus
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setGiftAidStatus(?int $giftAidStatus = null): self
     {
@@ -1040,7 +1040,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set initialPaymentAmount value
      * @param float $initialPaymentAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setInitialPaymentAmount(?float $initialPaymentAmount = null): self
     {
@@ -1063,7 +1063,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -1086,7 +1086,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setLetter(?string $letter = null): self
     {
@@ -1109,7 +1109,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set linkedPaymentsAmount value
      * @param float $linkedPaymentsAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setLinkedPaymentsAmount(?float $linkedPaymentsAmount = null): self
     {
@@ -1132,7 +1132,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set nextPaymentAmount value
      * @param float $nextPaymentAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setNextPaymentAmount(?float $nextPaymentAmount = null): self
     {
@@ -1155,7 +1155,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set nextPaymentDate value
      * @param string $nextPaymentDate
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setNextPaymentDate(?string $nextPaymentDate = null): self
     {
@@ -1178,7 +1178,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -1201,7 +1201,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setNote(?string $note = null): self
     {
@@ -1224,7 +1224,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -1247,7 +1247,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set originalAccountName value
      * @param string $originalAccountName
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setOriginalAccountName(?string $originalAccountName = null): self
     {
@@ -1270,7 +1270,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set originalAccountRef value
      * @param string $originalAccountRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setOriginalAccountRef(?string $originalAccountRef = null): self
     {
@@ -1293,7 +1293,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set originalTransactionRef value
      * @param string $originalTransactionRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setOriginalTransactionRef(?string $originalTransactionRef = null): self
     {
@@ -1316,7 +1316,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set outstandingBalance value
      * @param float $outstandingBalance
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setOutstandingBalance(?float $outstandingBalance = null): self
     {
@@ -1330,7 +1330,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get paymentValuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getPaymentValuable(): ?\StructType\Valuable
     {
@@ -1338,8 +1338,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set paymentValuable value
-     * @param \StructType\Valuable $paymentValuable
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $paymentValuable
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setPaymentValuable(?\StructType\Valuable $paymentValuable = null): self
     {
@@ -1358,7 +1358,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -1381,7 +1381,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set recognitionName value
      * @param string $recognitionName
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setRecognitionName(?string $recognitionName = null): self
     {
@@ -1404,7 +1404,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set recognitionType value
      * @param int $recognitionType
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setRecognitionType(?int $recognitionType = null): self
     {
@@ -1427,7 +1427,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setRef(?string $ref = null): self
     {
@@ -1441,7 +1441,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get scheduledValuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getScheduledValuable(): ?\StructType\Valuable
     {
@@ -1449,8 +1449,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set scheduledValuable value
-     * @param \StructType\Valuable $scheduledValuable
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $scheduledValuable
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setScheduledValuable(?\StructType\Valuable $scheduledValuable = null): self
     {
@@ -1469,7 +1469,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set segmentedTransactionRef value
      * @param string $segmentedTransactionRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setSegmentedTransactionRef(?string $segmentedTransactionRef = null): self
     {
@@ -1483,7 +1483,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get softCredit value
-     * @return \StructType\SoftCredit|null
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     public function getSoftCredit(): ?\StructType\SoftCredit
     {
@@ -1491,8 +1491,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set softCredit value
-     * @param \StructType\SoftCredit $softCredit
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setSoftCredit(?\StructType\SoftCredit $softCredit = null): self
     {
@@ -1502,7 +1502,7 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Get standardSchedule value
-     * @return \StructType\StandardPaymentSchedule|null
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule|null
      */
     public function getStandardSchedule(): ?\StructType\StandardPaymentSchedule
     {
@@ -1510,8 +1510,8 @@ class Pledge extends AbstractStructBase
     }
     /**
      * Set standardSchedule value
-     * @param \StructType\StandardPaymentSchedule $standardSchedule
-     * @return \StructType\Pledge
+     * @param \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule $standardSchedule
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setStandardSchedule(?\StructType\StandardPaymentSchedule $standardSchedule = null): self
     {
@@ -1530,7 +1530,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set tributeAccountName value
      * @param string $tributeAccountName
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setTributeAccountName(?string $tributeAccountName = null): self
     {
@@ -1553,7 +1553,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set tributeAccountRef value
      * @param string $tributeAccountRef
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setTributeAccountRef(?string $tributeAccountRef = null): self
     {
@@ -1576,7 +1576,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setType(?int $type = null): self
     {
@@ -1599,7 +1599,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set writeOff value
      * @param bool $writeOff
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setWriteOff(?bool $writeOff = null): self
     {
@@ -1622,7 +1622,7 @@ class Pledge extends AbstractStructBase
     /**
      * Set writeOffDate value
      * @param string $writeOffDate
-     * @return \StructType\Pledge
+     * @return \BurgerDigital\eTapestry\StructType\Pledge
      */
     public function setWriteOffDate(?string $writeOffDate = null): self
     {

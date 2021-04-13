@@ -55,7 +55,7 @@ class StateTaxRate extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\StateTaxRate
+     * @return \BurgerDigital\eTapestry\StructType\StateTaxRate
      */
     public function setCountry(?string $country = null): self
     {
@@ -78,7 +78,7 @@ class StateTaxRate extends AbstractStructBase
     /**
      * Set rate value
      * @param float $rate
-     * @return \StructType\StateTaxRate
+     * @return \BurgerDigital\eTapestry\StructType\StateTaxRate
      */
     public function setRate(?float $rate = null): self
     {
@@ -101,7 +101,7 @@ class StateTaxRate extends AbstractStructBase
     /**
      * Set state value
      * @param string $state
-     * @return \StructType\StateTaxRate
+     * @return \BurgerDigital\eTapestry\StructType\StateTaxRate
      */
     public function setState(?string $state = null): self
     {

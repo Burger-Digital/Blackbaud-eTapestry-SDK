@@ -75,7 +75,7 @@ class CartOrderResponse extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param int $accountNumber
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function setAccountNumber(?int $accountNumber = null): self
     {
@@ -98,7 +98,7 @@ class CartOrderResponse extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -121,7 +121,7 @@ class CartOrderResponse extends AbstractStructBase
     /**
      * Set createdNewAccount value
      * @param bool $createdNewAccount
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function setCreatedNewAccount(?bool $createdNewAccount = null): self
     {
@@ -168,7 +168,7 @@ class CartOrderResponse extends AbstractStructBase
      * Set journalEntryRefs value
      * @throws InvalidArgumentException
      * @param string[] $journalEntryRefs
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function setJournalEntryRefs(array $journalEntryRefs = []): self
     {
@@ -184,7 +184,7 @@ class CartOrderResponse extends AbstractStructBase
      * Add item to journalEntryRefs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function addToJournalEntryRefs(string $item): self
     {
@@ -207,7 +207,7 @@ class CartOrderResponse extends AbstractStructBase
     /**
      * Set responseUrl value
      * @param string $responseUrl
-     * @return \StructType\CartOrderResponse
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse
      */
     public function setResponseUrl(?string $responseUrl = null): self
     {

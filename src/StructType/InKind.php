@@ -55,7 +55,7 @@ class InKind extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\InKind
+     * @return \BurgerDigital\eTapestry\StructType\InKind
      */
     public function setNote(?string $note = null): self
     {
@@ -78,7 +78,7 @@ class InKind extends AbstractStructBase
     /**
      * Set saleDate value
      * @param string $saleDate
-     * @return \StructType\InKind
+     * @return \BurgerDigital\eTapestry\StructType\InKind
      */
     public function setSaleDate(?string $saleDate = null): self
     {
@@ -101,7 +101,7 @@ class InKind extends AbstractStructBase
     /**
      * Set saleValue value
      * @param float $saleValue
-     * @return \StructType\InKind
+     * @return \BurgerDigital\eTapestry\StructType\InKind
      */
     public function setSaleValue(?float $saleValue = null): self
     {

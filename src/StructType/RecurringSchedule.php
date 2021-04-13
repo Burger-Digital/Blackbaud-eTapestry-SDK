@@ -63,7 +63,7 @@ class RecurringSchedule extends AbstractStructBase
     /**
      * Set frequency value
      * @param int $frequency
-     * @return \StructType\RecurringSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringSchedule
      */
     public function setFrequency(?int $frequency = null): self
     {
@@ -86,7 +86,7 @@ class RecurringSchedule extends AbstractStructBase
     /**
      * Set measure value
      * @param int $measure
-     * @return \StructType\RecurringSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringSchedule
      */
     public function setMeasure(?int $measure = null): self
     {
@@ -109,7 +109,7 @@ class RecurringSchedule extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \StructType\RecurringSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringSchedule
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -132,7 +132,7 @@ class RecurringSchedule extends AbstractStructBase
     /**
      * Set stopDate value
      * @param string $stopDate
-     * @return \StructType\RecurringSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringSchedule
      */
     public function setStopDate(?string $stopDate = null): self
     {

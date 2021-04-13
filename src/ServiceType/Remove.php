@@ -19,7 +19,7 @@ class Remove extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @param \StructType\DefinedValue[] $arrayOfDefinedValue_2
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $arrayOfDefinedValue_2
      * @return void|bool
      */
     public function removeDefinedValues($string_1, array $arrayOfDefinedValue_2)

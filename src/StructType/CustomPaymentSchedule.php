@@ -95,7 +95,7 @@ class CustomPaymentSchedule extends AbstractStructBase
      * Set installmentAmounts value
      * @throws InvalidArgumentException
      * @param float[] $installmentAmounts
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function setInstallmentAmounts(array $installmentAmounts = []): self
     {
@@ -111,7 +111,7 @@ class CustomPaymentSchedule extends AbstractStructBase
      * Add item to installmentAmounts value
      * @throws InvalidArgumentException
      * @param float $item
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function addToInstallmentAmounts(float $item): self
     {
@@ -158,7 +158,7 @@ class CustomPaymentSchedule extends AbstractStructBase
      * Set installmentDates value
      * @throws InvalidArgumentException
      * @param string[] $installmentDates
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function setInstallmentDates(array $installmentDates = []): self
     {
@@ -174,7 +174,7 @@ class CustomPaymentSchedule extends AbstractStructBase
      * Add item to installmentDates value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function addToInstallmentDates(string $item): self
     {
@@ -197,7 +197,7 @@ class CustomPaymentSchedule extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function setNote(?string $note = null): self
     {
@@ -220,7 +220,7 @@ class CustomPaymentSchedule extends AbstractStructBase
     /**
      * Set processType value
      * @param int $processType
-     * @return \StructType\CustomPaymentSchedule
+     * @return \BurgerDigital\eTapestry\StructType\CustomPaymentSchedule
      */
     public function setProcessType(?int $processType = null): self
     {

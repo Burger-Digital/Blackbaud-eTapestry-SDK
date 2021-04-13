@@ -39,7 +39,7 @@ class Cash extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Cash
+     * @return \BurgerDigital\eTapestry\StructType\Cash
      */
     public function setNote(?string $note = null): self
     {

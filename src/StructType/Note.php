@@ -29,7 +29,7 @@ class Note extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -48,7 +48,7 @@ class Note extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -97,10 +97,10 @@ class Note extends AbstractStructBase
      * @uses Note::setType()
      * @param string $accountName
      * @param string $accountRef
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param bool $immutable
      * @param string $lastModifiedDate
@@ -135,7 +135,7 @@ class Note extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -158,7 +158,7 @@ class Note extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -172,7 +172,7 @@ class Note extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -190,12 +190,12 @@ class Note extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $noteAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$noteAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$noteAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($noteAttachmentsItem) ? get_class($noteAttachmentsItem) : sprintf('%s(%s)', gettype($noteAttachmentsItem), var_export($noteAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -204,8 +204,8 @@ class Note extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Note
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -220,14 +220,14 @@ class Note extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Note
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -244,7 +244,7 @@ class Note extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -267,7 +267,7 @@ class Note extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setDate(?string $date = null): self
     {
@@ -281,7 +281,7 @@ class Note extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -299,12 +299,12 @@ class Note extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $noteDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$noteDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$noteDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($noteDefinedValuesItem) ? get_class($noteDefinedValuesItem) : sprintf('%s(%s)', gettype($noteDefinedValuesItem), var_export($noteDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -313,8 +313,8 @@ class Note extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Note
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -329,14 +329,14 @@ class Note extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Note
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -353,7 +353,7 @@ class Note extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setFinal(?bool $final = null): self
     {
@@ -376,7 +376,7 @@ class Note extends AbstractStructBase
     /**
      * Set immutable value
      * @param bool $immutable
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setImmutable(?bool $immutable = null): self
     {
@@ -399,7 +399,7 @@ class Note extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -422,7 +422,7 @@ class Note extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setNote(?string $note = null): self
     {
@@ -445,7 +445,7 @@ class Note extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setRef(?string $ref = null): self
     {
@@ -468,7 +468,7 @@ class Note extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Note
+     * @return \BurgerDigital\eTapestry\StructType\Note
      */
     public function setType(?int $type = null): self
     {

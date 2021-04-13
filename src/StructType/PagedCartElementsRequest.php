@@ -119,7 +119,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -142,7 +142,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -165,7 +165,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -188,7 +188,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set cartRef value
      * @param string $cartRef
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setCartRef(?string $cartRef = null): self
     {
@@ -211,7 +211,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set categoryRef value
      * @param string $categoryRef
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setCategoryRef(?string $categoryRef = null): self
     {
@@ -234,7 +234,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set elementTypeMask value
      * @param int $elementTypeMask
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setElementTypeMask(?int $elementTypeMask = null): self
     {
@@ -257,7 +257,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set includeDisabledItems value
      * @param bool $includeDisabledItems
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setIncludeDisabledItems(?bool $includeDisabledItems = null): self
     {
@@ -280,7 +280,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set includeNoItemCategories value
      * @param bool $includeNoItemCategories
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setIncludeNoItemCategories(?bool $includeNoItemCategories = null): self
     {
@@ -303,7 +303,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set includeNonPublishableCategories value
      * @param bool $includeNonPublishableCategories
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setIncludeNonPublishableCategories(?bool $includeNonPublishableCategories = null): self
     {
@@ -326,7 +326,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set includeNonPublishableItems value
      * @param bool $includeNonPublishableItems
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setIncludeNonPublishableItems(?bool $includeNonPublishableItems = null): self
     {
@@ -349,7 +349,7 @@ class PagedCartElementsRequest extends AbstractStructBase
     /**
      * Set searchText value
      * @param string $searchText
-     * @return \StructType\PagedCartElementsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest
      */
     public function setSearchText(?string $searchText = null): self
     {

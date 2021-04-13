@@ -67,7 +67,7 @@ class EcommerceResponse extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param int $accountNumber
-     * @return \StructType\EcommerceResponse
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function setAccountNumber(?int $accountNumber = null): self
     {
@@ -90,7 +90,7 @@ class EcommerceResponse extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\EcommerceResponse
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -113,7 +113,7 @@ class EcommerceResponse extends AbstractStructBase
     /**
      * Set createdNewAccount value
      * @param bool $createdNewAccount
-     * @return \StructType\EcommerceResponse
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function setCreatedNewAccount(?bool $createdNewAccount = null): self
     {
@@ -160,7 +160,7 @@ class EcommerceResponse extends AbstractStructBase
      * Set journalEntryRefs value
      * @throws InvalidArgumentException
      * @param string[] $journalEntryRefs
-     * @return \StructType\EcommerceResponse
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function setJournalEntryRefs(array $journalEntryRefs = []): self
     {
@@ -176,7 +176,7 @@ class EcommerceResponse extends AbstractStructBase
      * Add item to journalEntryRefs value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\EcommerceResponse
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function addToJournalEntryRefs(string $item): self
     {

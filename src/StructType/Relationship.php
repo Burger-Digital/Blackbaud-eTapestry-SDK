@@ -44,7 +44,7 @@ class Relationship extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -89,7 +89,7 @@ class Relationship extends AbstractStructBase
     protected ?string $startDate = null;
     /**
      * The type
-     * @var \StructType\RelationshipType|null
+     * @var \BurgerDigital\eTapestry\StructType\RelationshipType|null
      */
     protected ?\StructType\RelationshipType $type = null;
     /**
@@ -114,7 +114,7 @@ class Relationship extends AbstractStructBase
      * @param string $account2Name
      * @param string $account2Ref
      * @param string $createdDate
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param string $endDate
      * @param int $hohAccount
      * @param string $lastModifiedDate
@@ -123,7 +123,7 @@ class Relationship extends AbstractStructBase
      * @param string $note
      * @param string $ref
      * @param string $startDate
-     * @param \StructType\RelationshipType $type
+     * @param \BurgerDigital\eTapestry\StructType\RelationshipType $type
      */
     public function __construct(?string $account1Name = null, ?string $account1Ref = null, ?string $account2Name = null, ?string $account2Ref = null, ?string $createdDate = null, array $definedValues = [], ?string $endDate = null, ?int $hohAccount = null, ?string $lastModifiedDate = null, ?int $matchingGiftAccount = null, ?string $matchingGiftTerms = null, ?string $note = null, ?string $ref = null, ?string $startDate = null, ?\StructType\RelationshipType $type = null)
     {
@@ -155,7 +155,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set account1Name value
      * @param string $account1Name
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setAccount1Name(?string $account1Name = null): self
     {
@@ -178,7 +178,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set account1Ref value
      * @param string $account1Ref
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setAccount1Ref(?string $account1Ref = null): self
     {
@@ -201,7 +201,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set account2Name value
      * @param string $account2Name
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setAccount2Name(?string $account2Name = null): self
     {
@@ -224,7 +224,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set account2Ref value
      * @param string $account2Ref
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setAccount2Ref(?string $account2Ref = null): self
     {
@@ -247,7 +247,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -261,7 +261,7 @@ class Relationship extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -279,12 +279,12 @@ class Relationship extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $relationshipDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$relationshipDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$relationshipDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($relationshipDefinedValuesItem) ? get_class($relationshipDefinedValuesItem) : sprintf('%s(%s)', gettype($relationshipDefinedValuesItem), var_export($relationshipDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -293,8 +293,8 @@ class Relationship extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Relationship
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -309,14 +309,14 @@ class Relationship extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Relationship
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -333,7 +333,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -356,7 +356,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set hohAccount value
      * @param int $hohAccount
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setHohAccount(?int $hohAccount = null): self
     {
@@ -379,7 +379,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -402,7 +402,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set matchingGiftAccount value
      * @param int $matchingGiftAccount
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setMatchingGiftAccount(?int $matchingGiftAccount = null): self
     {
@@ -425,7 +425,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set matchingGiftTerms value
      * @param string $matchingGiftTerms
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setMatchingGiftTerms(?string $matchingGiftTerms = null): self
     {
@@ -448,7 +448,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setNote(?string $note = null): self
     {
@@ -471,7 +471,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setRef(?string $ref = null): self
     {
@@ -494,7 +494,7 @@ class Relationship extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \StructType\Relationship
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -508,7 +508,7 @@ class Relationship extends AbstractStructBase
     }
     /**
      * Get type value
-     * @return \StructType\RelationshipType|null
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType|null
      */
     public function getType(): ?\StructType\RelationshipType
     {
@@ -516,8 +516,8 @@ class Relationship extends AbstractStructBase
     }
     /**
      * Set type value
-     * @param \StructType\RelationshipType $type
-     * @return \StructType\Relationship
+     * @param \BurgerDigital\eTapestry\StructType\RelationshipType $type
+     * @return \BurgerDigital\eTapestry\StructType\Relationship
      */
     public function setType(?\StructType\RelationshipType $type = null): self
     {

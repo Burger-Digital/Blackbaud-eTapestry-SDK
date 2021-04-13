@@ -69,7 +69,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
      * - arrayType: tns:SearchCriteria[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SearchCriteria[]
+     * @var \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     protected array $searchCriteria = [];
     /**
@@ -78,7 +78,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
      * - arrayType: tns:SortOption[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SortOption[]
+     * @var \BurgerDigital\eTapestry\StructType\SortOption[]
      */
     protected array $sortOptions = [];
     /**
@@ -105,8 +105,8 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
      * @param bool $matchAny
      * @param string $personaOption
      * @param int $returnType
-     * @param \StructType\SearchCriteria[] $searchCriteria
-     * @param \StructType\SortOption[] $sortOptions
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $searchCriteria
+     * @param \BurgerDigital\eTapestry\StructType\SortOption[] $sortOptions
      */
     public function __construct(?bool $clearCache = null, ?int $count = null, ?int $start = null, ?int $accountType = null, ?string $applicationGroup = null, ?string $baseQuery = null, ?bool $involvePrivacySettings = null, ?bool $matchAny = null, ?string $personaOption = null, ?int $returnType = null, array $searchCriteria = [], array $sortOptions = [])
     {
@@ -135,7 +135,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -158,7 +158,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -181,7 +181,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -204,7 +204,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set accountType value
      * @param int $accountType
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setAccountType(?int $accountType = null): self
     {
@@ -227,7 +227,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set applicationGroup value
      * @param string $applicationGroup
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setApplicationGroup(?string $applicationGroup = null): self
     {
@@ -250,7 +250,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set baseQuery value
      * @param string $baseQuery
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setBaseQuery(?string $baseQuery = null): self
     {
@@ -273,7 +273,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set involvePrivacySettings value
      * @param bool $involvePrivacySettings
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setInvolvePrivacySettings(?bool $involvePrivacySettings = null): self
     {
@@ -296,7 +296,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set matchAny value
      * @param bool $matchAny
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setMatchAny(?bool $matchAny = null): self
     {
@@ -319,7 +319,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set personaOption value
      * @param string $personaOption
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setPersonaOption(?string $personaOption = null): self
     {
@@ -342,7 +342,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set returnType value
      * @param int $returnType
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setReturnType(?int $returnType = null): self
     {
@@ -356,7 +356,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     }
     /**
      * Get searchCriteria value
-     * @return \StructType\SearchCriteria[]
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     public function getSearchCriteria(): array
     {
@@ -374,12 +374,12 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pagedDynamicQueryResultsRequestSearchCriteriaItem) {
             // validation for constraint: itemType
-            if (!$pagedDynamicQueryResultsRequestSearchCriteriaItem instanceof \StructType\SearchCriteria) {
+            if (!$pagedDynamicQueryResultsRequestSearchCriteriaItem instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
                 $invalidValues[] = is_object($pagedDynamicQueryResultsRequestSearchCriteriaItem) ? get_class($pagedDynamicQueryResultsRequestSearchCriteriaItem) : sprintf('%s(%s)', gettype($pagedDynamicQueryResultsRequestSearchCriteriaItem), var_export($pagedDynamicQueryResultsRequestSearchCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The searchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The searchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -388,8 +388,8 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set searchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria[] $searchCriteria
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $searchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setSearchCriteria(array $searchCriteria = []): self
     {
@@ -404,14 +404,14 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Add item to searchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria $item
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria $item
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function addToSearchCriteria(\StructType\SearchCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SearchCriteria) {
-            throw new InvalidArgumentException(sprintf('The searchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
+            throw new InvalidArgumentException(sprintf('The searchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->searchCriteria[] = $item;
         
@@ -419,7 +419,7 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     }
     /**
      * Get sortOptions value
-     * @return \StructType\SortOption[]
+     * @return \BurgerDigital\eTapestry\StructType\SortOption[]
      */
     public function getSortOptions(): array
     {
@@ -437,12 +437,12 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $pagedDynamicQueryResultsRequestSortOptionsItem) {
             // validation for constraint: itemType
-            if (!$pagedDynamicQueryResultsRequestSortOptionsItem instanceof \StructType\SortOption) {
+            if (!$pagedDynamicQueryResultsRequestSortOptionsItem instanceof \BurgerDigital\eTapestry\StructType\SortOption) {
                 $invalidValues[] = is_object($pagedDynamicQueryResultsRequestSortOptionsItem) ? get_class($pagedDynamicQueryResultsRequestSortOptionsItem) : sprintf('%s(%s)', gettype($pagedDynamicQueryResultsRequestSortOptionsItem), var_export($pagedDynamicQueryResultsRequestSortOptionsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The sortOptions property can only contain items of type \StructType\SortOption, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The sortOptions property can only contain items of type \BurgerDigital\eTapestry\StructType\SortOption, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -451,8 +451,8 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Set sortOptions value
      * @throws InvalidArgumentException
-     * @param \StructType\SortOption[] $sortOptions
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SortOption[] $sortOptions
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function setSortOptions(array $sortOptions = []): self
     {
@@ -467,14 +467,14 @@ class PagedDynamicQueryResultsRequest extends AbstractStructBase
     /**
      * Add item to sortOptions value
      * @throws InvalidArgumentException
-     * @param \StructType\SortOption $item
-     * @return \StructType\PagedDynamicQueryResultsRequest
+     * @param \BurgerDigital\eTapestry\StructType\SortOption $item
+     * @return \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest
      */
     public function addToSortOptions(\StructType\SortOption $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SortOption) {
-            throw new InvalidArgumentException(sprintf('The sortOptions property can only contain items of type \StructType\SortOption, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SortOption) {
+            throw new InvalidArgumentException(sprintf('The sortOptions property can only contain items of type \BurgerDigital\eTapestry\StructType\SortOption, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->sortOptions[] = $item;
         

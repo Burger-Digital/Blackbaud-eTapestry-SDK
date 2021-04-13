@@ -59,7 +59,7 @@ class Tax extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -83,7 +83,7 @@ class Tax extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -98,7 +98,7 @@ class Tax extends AbstractStructBase
     protected ?string $fund = null;
     /**
      * The generatedReceipt
-     * @var \StructType\GeneratedReceipt|null
+     * @var \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     protected ?\StructType\GeneratedReceipt $generatedReceipt = null;
     /**
@@ -153,7 +153,7 @@ class Tax extends AbstractStructBase
     protected ?string $segmentedTransactionRef = null;
     /**
      * The softCredit
-     * @var \StructType\SoftCredit|null
+     * @var \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     protected ?\StructType\SoftCredit $softCredit = null;
     /**
@@ -173,7 +173,7 @@ class Tax extends AbstractStructBase
     protected ?int $type = null;
     /**
      * The valuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $valuable = null;
     /**
@@ -217,14 +217,14 @@ class Tax extends AbstractStructBase
      * @param string $accountRef
      * @param float $amount
      * @param string $approach
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
-     * @param \StructType\GeneratedReceipt $generatedReceipt
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
      * @param string $lastModifiedDate
      * @param string $letter
      * @param float $nonDeductibleAmount
@@ -235,11 +235,11 @@ class Tax extends AbstractStructBase
      * @param int $recognitionType
      * @param string $ref
      * @param string $segmentedTransactionRef
-     * @param \StructType\SoftCredit $softCredit
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
      * @param float $taxRate
      * @param string $taxRegion
      * @param int $type
-     * @param \StructType\Valuable $valuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
      */
     public function __construct(?string $creditAccount = null, ?float $creditAmount = null, ?string $debitAccount = null, ?float $debitAmount = null, ?string $accountName = null, ?string $accountRef = null, ?float $amount = null, ?string $approach = null, array $attachments = [], ?string $campaign = null, ?string $createdDate = null, ?string $date = null, array $definedValues = [], ?bool $final = null, ?string $fund = null, ?\StructType\GeneratedReceipt $generatedReceipt = null, ?string $lastModifiedDate = null, ?string $letter = null, ?float $nonDeductibleAmount = null, ?string $note = null, ?string $offsettingRef = null, ?string $receipt = null, ?string $recognitionName = null, ?int $recognitionType = null, ?string $ref = null, ?string $segmentedTransactionRef = null, ?\StructType\SoftCredit $softCredit = null, ?float $taxRate = null, ?string $taxRegion = null, ?int $type = null, ?\StructType\Valuable $valuable = null)
     {
@@ -287,7 +287,7 @@ class Tax extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -310,7 +310,7 @@ class Tax extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -333,7 +333,7 @@ class Tax extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -356,7 +356,7 @@ class Tax extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -379,7 +379,7 @@ class Tax extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -402,7 +402,7 @@ class Tax extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -425,7 +425,7 @@ class Tax extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setAmount(?float $amount = null): self
     {
@@ -448,7 +448,7 @@ class Tax extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setApproach(?string $approach = null): self
     {
@@ -462,7 +462,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -480,12 +480,12 @@ class Tax extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $taxAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$taxAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$taxAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($taxAttachmentsItem) ? get_class($taxAttachmentsItem) : sprintf('%s(%s)', gettype($taxAttachmentsItem), var_export($taxAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -494,8 +494,8 @@ class Tax extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -510,14 +510,14 @@ class Tax extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -534,7 +534,7 @@ class Tax extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -557,7 +557,7 @@ class Tax extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -580,7 +580,7 @@ class Tax extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setDate(?string $date = null): self
     {
@@ -594,7 +594,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -612,12 +612,12 @@ class Tax extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $taxDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$taxDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$taxDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($taxDefinedValuesItem) ? get_class($taxDefinedValuesItem) : sprintf('%s(%s)', gettype($taxDefinedValuesItem), var_export($taxDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -626,8 +626,8 @@ class Tax extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -642,14 +642,14 @@ class Tax extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -666,7 +666,7 @@ class Tax extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setFinal(?bool $final = null): self
     {
@@ -689,7 +689,7 @@ class Tax extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setFund(?string $fund = null): self
     {
@@ -703,7 +703,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get generatedReceipt value
-     * @return \StructType\GeneratedReceipt|null
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     public function getGeneratedReceipt(): ?\StructType\GeneratedReceipt
     {
@@ -711,8 +711,8 @@ class Tax extends AbstractStructBase
     }
     /**
      * Set generatedReceipt value
-     * @param \StructType\GeneratedReceipt $generatedReceipt
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setGeneratedReceipt(?\StructType\GeneratedReceipt $generatedReceipt = null): self
     {
@@ -731,7 +731,7 @@ class Tax extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -754,7 +754,7 @@ class Tax extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setLetter(?string $letter = null): self
     {
@@ -777,7 +777,7 @@ class Tax extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -800,7 +800,7 @@ class Tax extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setNote(?string $note = null): self
     {
@@ -823,7 +823,7 @@ class Tax extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -846,7 +846,7 @@ class Tax extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -869,7 +869,7 @@ class Tax extends AbstractStructBase
     /**
      * Set recognitionName value
      * @param string $recognitionName
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setRecognitionName(?string $recognitionName = null): self
     {
@@ -892,7 +892,7 @@ class Tax extends AbstractStructBase
     /**
      * Set recognitionType value
      * @param int $recognitionType
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setRecognitionType(?int $recognitionType = null): self
     {
@@ -915,7 +915,7 @@ class Tax extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setRef(?string $ref = null): self
     {
@@ -938,7 +938,7 @@ class Tax extends AbstractStructBase
     /**
      * Set segmentedTransactionRef value
      * @param string $segmentedTransactionRef
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setSegmentedTransactionRef(?string $segmentedTransactionRef = null): self
     {
@@ -952,7 +952,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get softCredit value
-     * @return \StructType\SoftCredit|null
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     public function getSoftCredit(): ?\StructType\SoftCredit
     {
@@ -960,8 +960,8 @@ class Tax extends AbstractStructBase
     }
     /**
      * Set softCredit value
-     * @param \StructType\SoftCredit $softCredit
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setSoftCredit(?\StructType\SoftCredit $softCredit = null): self
     {
@@ -980,7 +980,7 @@ class Tax extends AbstractStructBase
     /**
      * Set taxRate value
      * @param float $taxRate
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setTaxRate(?float $taxRate = null): self
     {
@@ -1003,7 +1003,7 @@ class Tax extends AbstractStructBase
     /**
      * Set taxRegion value
      * @param string $taxRegion
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setTaxRegion(?string $taxRegion = null): self
     {
@@ -1026,7 +1026,7 @@ class Tax extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\Tax
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setType(?int $type = null): self
     {
@@ -1040,7 +1040,7 @@ class Tax extends AbstractStructBase
     }
     /**
      * Get valuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getValuable(): ?\StructType\Valuable
     {
@@ -1048,8 +1048,8 @@ class Tax extends AbstractStructBase
     }
     /**
      * Set valuable value
-     * @param \StructType\Valuable $valuable
-     * @return \StructType\Tax
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
+     * @return \BurgerDigital\eTapestry\StructType\Tax
      */
     public function setValuable(?\StructType\Valuable $valuable = null): self
     {

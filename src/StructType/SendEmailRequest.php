@@ -87,7 +87,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -110,7 +110,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setEmail(?string $email = null): self
     {
@@ -133,7 +133,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set htmlMessage value
      * @param string $htmlMessage
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setHtmlMessage(?string $htmlMessage = null): self
     {
@@ -156,7 +156,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set personaOption value
      * @param string $personaOption
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setPersonaOption(?string $personaOption = null): self
     {
@@ -179,7 +179,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set plainMessage value
      * @param string $plainMessage
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setPlainMessage(?string $plainMessage = null): self
     {
@@ -202,7 +202,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set sender value
      * @param string $sender
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setSender(?string $sender = null): self
     {
@@ -225,7 +225,7 @@ class SendEmailRequest extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \StructType\SendEmailRequest
+     * @return \BurgerDigital\eTapestry\StructType\SendEmailRequest
      */
     public function setSubject(?string $subject = null): self
     {

@@ -59,7 +59,7 @@ class RecurringGift extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -88,7 +88,7 @@ class RecurringGift extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -108,7 +108,7 @@ class RecurringGift extends AbstractStructBase
     protected ?string $fundraiser = null;
     /**
      * The generatedReceipt
-     * @var \StructType\GeneratedReceipt|null
+     * @var \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     protected ?\StructType\GeneratedReceipt $generatedReceipt = null;
     /**
@@ -193,7 +193,7 @@ class RecurringGift extends AbstractStructBase
     protected ?string $ref = null;
     /**
      * The softCredit
-     * @var \StructType\SoftCredit|null
+     * @var \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     protected ?\StructType\SoftCredit $softCredit = null;
     /**
@@ -213,7 +213,7 @@ class RecurringGift extends AbstractStructBase
     protected ?int $type = null;
     /**
      * The valuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $valuable = null;
     /**
@@ -265,16 +265,16 @@ class RecurringGift extends AbstractStructBase
      * @param string $accountRef
      * @param float $amount
      * @param string $approach
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param bool $copyRgsElements
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
      * @param string $fundraiser
-     * @param \StructType\GeneratedReceipt $generatedReceipt
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
      * @param float $giftAidAmount
      * @param string $giftAidClaimedDate
      * @param int $giftAidStatus
@@ -291,11 +291,11 @@ class RecurringGift extends AbstractStructBase
      * @param int $recognitionType
      * @param string $recurringGiftScheduleRef
      * @param string $ref
-     * @param \StructType\SoftCredit $softCredit
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
      * @param string $tributeAccountName
      * @param string $tributeAccountRef
      * @param int $type
-     * @param \StructType\Valuable $valuable
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
      */
     public function __construct(?string $creditAccount = null, ?float $creditAmount = null, ?string $debitAccount = null, ?float $debitAmount = null, ?string $accountName = null, ?string $accountRef = null, ?float $amount = null, ?string $approach = null, array $attachments = [], ?string $campaign = null, ?bool $copyRgsElements = null, ?string $createdDate = null, ?string $date = null, array $definedValues = [], ?bool $final = null, ?string $fund = null, ?string $fundraiser = null, ?\StructType\GeneratedReceipt $generatedReceipt = null, ?float $giftAidAmount = null, ?string $giftAidClaimedDate = null, ?int $giftAidStatus = null, ?string $lastModifiedDate = null, ?string $letter = null, ?float $nonDeductibleAmount = null, ?string $note = null, ?string $offsettingRef = null, ?string $originalAccountName = null, ?string $originalAccountRef = null, ?string $originalTransactionRef = null, ?string $receipt = null, ?string $recognitionName = null, ?int $recognitionType = null, ?string $recurringGiftScheduleRef = null, ?string $ref = null, ?\StructType\SoftCredit $softCredit = null, ?string $tributeAccountName = null, ?string $tributeAccountRef = null, ?int $type = null, ?\StructType\Valuable $valuable = null)
     {
@@ -351,7 +351,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set creditAccount value
      * @param string $creditAccount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setCreditAccount(?string $creditAccount = null): self
     {
@@ -374,7 +374,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set creditAmount value
      * @param float $creditAmount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setCreditAmount(?float $creditAmount = null): self
     {
@@ -397,7 +397,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set debitAccount value
      * @param string $debitAccount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setDebitAccount(?string $debitAccount = null): self
     {
@@ -420,7 +420,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set debitAmount value
      * @param float $debitAmount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setDebitAmount(?float $debitAmount = null): self
     {
@@ -443,7 +443,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -466,7 +466,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -489,7 +489,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setAmount(?float $amount = null): self
     {
@@ -512,7 +512,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setApproach(?string $approach = null): self
     {
@@ -526,7 +526,7 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -544,12 +544,12 @@ class RecurringGift extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurringGiftAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$recurringGiftAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$recurringGiftAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($recurringGiftAttachmentsItem) ? get_class($recurringGiftAttachmentsItem) : sprintf('%s(%s)', gettype($recurringGiftAttachmentsItem), var_export($recurringGiftAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -558,8 +558,8 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -574,14 +574,14 @@ class RecurringGift extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -598,7 +598,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -621,7 +621,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set copyRgsElements value
      * @param bool $copyRgsElements
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setCopyRgsElements(?bool $copyRgsElements = null): self
     {
@@ -644,7 +644,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -667,7 +667,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setDate(?string $date = null): self
     {
@@ -681,7 +681,7 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -699,12 +699,12 @@ class RecurringGift extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurringGiftDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$recurringGiftDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$recurringGiftDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($recurringGiftDefinedValuesItem) ? get_class($recurringGiftDefinedValuesItem) : sprintf('%s(%s)', gettype($recurringGiftDefinedValuesItem), var_export($recurringGiftDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -713,8 +713,8 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -729,14 +729,14 @@ class RecurringGift extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -753,7 +753,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setFinal(?bool $final = null): self
     {
@@ -776,7 +776,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setFund(?string $fund = null): self
     {
@@ -799,7 +799,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set fundraiser value
      * @param string $fundraiser
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setFundraiser(?string $fundraiser = null): self
     {
@@ -813,7 +813,7 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Get generatedReceipt value
-     * @return \StructType\GeneratedReceipt|null
+     * @return \BurgerDigital\eTapestry\StructType\GeneratedReceipt|null
      */
     public function getGeneratedReceipt(): ?\StructType\GeneratedReceipt
     {
@@ -821,8 +821,8 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Set generatedReceipt value
-     * @param \StructType\GeneratedReceipt $generatedReceipt
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\GeneratedReceipt $generatedReceipt
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setGeneratedReceipt(?\StructType\GeneratedReceipt $generatedReceipt = null): self
     {
@@ -841,7 +841,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set giftAidAmount value
      * @param float $giftAidAmount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setGiftAidAmount(?float $giftAidAmount = null): self
     {
@@ -864,7 +864,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set giftAidClaimedDate value
      * @param string $giftAidClaimedDate
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setGiftAidClaimedDate(?string $giftAidClaimedDate = null): self
     {
@@ -887,7 +887,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set giftAidStatus value
      * @param int $giftAidStatus
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setGiftAidStatus(?int $giftAidStatus = null): self
     {
@@ -910,7 +910,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -933,7 +933,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setLetter(?string $letter = null): self
     {
@@ -956,7 +956,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -979,7 +979,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setNote(?string $note = null): self
     {
@@ -1002,7 +1002,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -1025,7 +1025,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set originalAccountName value
      * @param string $originalAccountName
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setOriginalAccountName(?string $originalAccountName = null): self
     {
@@ -1048,7 +1048,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set originalAccountRef value
      * @param string $originalAccountRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setOriginalAccountRef(?string $originalAccountRef = null): self
     {
@@ -1071,7 +1071,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set originalTransactionRef value
      * @param string $originalTransactionRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setOriginalTransactionRef(?string $originalTransactionRef = null): self
     {
@@ -1094,7 +1094,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -1117,7 +1117,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set recognitionName value
      * @param string $recognitionName
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setRecognitionName(?string $recognitionName = null): self
     {
@@ -1140,7 +1140,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set recognitionType value
      * @param int $recognitionType
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setRecognitionType(?int $recognitionType = null): self
     {
@@ -1163,7 +1163,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set recurringGiftScheduleRef value
      * @param string $recurringGiftScheduleRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setRecurringGiftScheduleRef(?string $recurringGiftScheduleRef = null): self
     {
@@ -1186,7 +1186,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setRef(?string $ref = null): self
     {
@@ -1200,7 +1200,7 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Get softCredit value
-     * @return \StructType\SoftCredit|null
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     public function getSoftCredit(): ?\StructType\SoftCredit
     {
@@ -1208,8 +1208,8 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Set softCredit value
-     * @param \StructType\SoftCredit $softCredit
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setSoftCredit(?\StructType\SoftCredit $softCredit = null): self
     {
@@ -1228,7 +1228,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set tributeAccountName value
      * @param string $tributeAccountName
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setTributeAccountName(?string $tributeAccountName = null): self
     {
@@ -1251,7 +1251,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set tributeAccountRef value
      * @param string $tributeAccountRef
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setTributeAccountRef(?string $tributeAccountRef = null): self
     {
@@ -1274,7 +1274,7 @@ class RecurringGift extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\RecurringGift
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setType(?int $type = null): self
     {
@@ -1288,7 +1288,7 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Get valuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getValuable(): ?\StructType\Valuable
     {
@@ -1296,8 +1296,8 @@ class RecurringGift extends AbstractStructBase
     }
     /**
      * Set valuable value
-     * @param \StructType\Valuable $valuable
-     * @return \StructType\RecurringGift
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $valuable
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift
      */
     public function setValuable(?\StructType\Valuable $valuable = null): self
     {

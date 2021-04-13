@@ -29,7 +29,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -75,7 +75,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
      * @uses OutlookIntegrationEmail::setTo()
      * @param string $bCC
      * @param string $cC
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $contactMethodRef
      * @param string $date
      * @param string $from
@@ -107,7 +107,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set BCC value
      * @param string $bCC
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setBCC(?string $bCC = null): self
     {
@@ -130,7 +130,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set CC value
      * @param string $cC
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setCC(?string $cC = null): self
     {
@@ -144,7 +144,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -162,12 +162,12 @@ class OutlookIntegrationEmail extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $outlookIntegrationEmailAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$outlookIntegrationEmailAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$outlookIntegrationEmailAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($outlookIntegrationEmailAttachmentsItem) ? get_class($outlookIntegrationEmailAttachmentsItem) : sprintf('%s(%s)', gettype($outlookIntegrationEmailAttachmentsItem), var_export($outlookIntegrationEmailAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -176,8 +176,8 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\OutlookIntegrationEmail
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -192,14 +192,14 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\OutlookIntegrationEmail
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -216,7 +216,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set contactMethodRef value
      * @param string $contactMethodRef
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setContactMethodRef(?string $contactMethodRef = null): self
     {
@@ -239,7 +239,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setDate(?string $date = null): self
     {
@@ -262,7 +262,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set from value
      * @param string $from
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setFrom(?string $from = null): self
     {
@@ -285,7 +285,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set message value
      * @param string $message
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setMessage(?string $message = null): self
     {
@@ -308,7 +308,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set subject value
      * @param string $subject
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setSubject(?string $subject = null): self
     {
@@ -331,7 +331,7 @@ class OutlookIntegrationEmail extends AbstractStructBase
     /**
      * Set to value
      * @param string $to
-     * @return \StructType\OutlookIntegrationEmail
+     * @return \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail
      */
     public function setTo(?string $to = null): self
     {

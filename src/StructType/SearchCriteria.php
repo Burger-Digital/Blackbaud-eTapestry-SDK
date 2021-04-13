@@ -67,7 +67,7 @@ class SearchCriteria extends AbstractStructBase
     /**
      * Set action value
      * @param string $action
-     * @return \StructType\SearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria
      */
     public function setAction(?string $action = null): self
     {
@@ -90,7 +90,7 @@ class SearchCriteria extends AbstractStructBase
     /**
      * Set field value
      * @param string $field
-     * @return \StructType\SearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria
      */
     public function setField(?string $field = null): self
     {
@@ -113,7 +113,7 @@ class SearchCriteria extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\SearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria
      */
     public function setType(?string $type = null): self
     {
@@ -160,7 +160,7 @@ class SearchCriteria extends AbstractStructBase
      * Set values value
      * @throws InvalidArgumentException
      * @param string[] $values
-     * @return \StructType\SearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria
      */
     public function setValues(array $values = []): self
     {
@@ -176,7 +176,7 @@ class SearchCriteria extends AbstractStructBase
      * Add item to values value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\SearchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria
      */
     public function addToValues(string $item): self
     {

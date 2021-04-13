@@ -15,7 +15,7 @@ class PrivacyPreferences extends AbstractStructBase
 {
     /**
      * The accountPrivacyPreference
-     * @var \StructType\PrivacyPreference|null
+     * @var \BurgerDigital\eTapestry\StructType\PrivacyPreference|null
      */
     protected ?\StructType\PrivacyPreference $accountPrivacyPreference = null;
     /**
@@ -29,7 +29,7 @@ class PrivacyPreferences extends AbstractStructBase
      * - arrayType: tns:PrivacyPreference[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\PrivacyPreference[]
+     * @var \BurgerDigital\eTapestry\StructType\PrivacyPreference[]
      */
     protected array $personaPrivacyPreferences = [];
     /**
@@ -37,9 +37,9 @@ class PrivacyPreferences extends AbstractStructBase
      * @uses PrivacyPreferences::setAccountPrivacyPreference()
      * @uses PrivacyPreferences::setAccountRef()
      * @uses PrivacyPreferences::setPersonaPrivacyPreferences()
-     * @param \StructType\PrivacyPreference $accountPrivacyPreference
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreference $accountPrivacyPreference
      * @param string $accountRef
-     * @param \StructType\PrivacyPreference[] $personaPrivacyPreferences
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreference[] $personaPrivacyPreferences
      */
     public function __construct(?\StructType\PrivacyPreference $accountPrivacyPreference = null, ?string $accountRef = null, array $personaPrivacyPreferences = [])
     {
@@ -50,7 +50,7 @@ class PrivacyPreferences extends AbstractStructBase
     }
     /**
      * Get accountPrivacyPreference value
-     * @return \StructType\PrivacyPreference|null
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference|null
      */
     public function getAccountPrivacyPreference(): ?\StructType\PrivacyPreference
     {
@@ -58,8 +58,8 @@ class PrivacyPreferences extends AbstractStructBase
     }
     /**
      * Set accountPrivacyPreference value
-     * @param \StructType\PrivacyPreference $accountPrivacyPreference
-     * @return \StructType\PrivacyPreferences
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreference $accountPrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences
      */
     public function setAccountPrivacyPreference(?\StructType\PrivacyPreference $accountPrivacyPreference = null): self
     {
@@ -78,7 +78,7 @@ class PrivacyPreferences extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\PrivacyPreferences
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -92,7 +92,7 @@ class PrivacyPreferences extends AbstractStructBase
     }
     /**
      * Get personaPrivacyPreferences value
-     * @return \StructType\PrivacyPreference[]
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference[]
      */
     public function getPersonaPrivacyPreferences(): array
     {
@@ -110,12 +110,12 @@ class PrivacyPreferences extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $privacyPreferencesPersonaPrivacyPreferencesItem) {
             // validation for constraint: itemType
-            if (!$privacyPreferencesPersonaPrivacyPreferencesItem instanceof \StructType\PrivacyPreference) {
+            if (!$privacyPreferencesPersonaPrivacyPreferencesItem instanceof \BurgerDigital\eTapestry\StructType\PrivacyPreference) {
                 $invalidValues[] = is_object($privacyPreferencesPersonaPrivacyPreferencesItem) ? get_class($privacyPreferencesPersonaPrivacyPreferencesItem) : sprintf('%s(%s)', gettype($privacyPreferencesPersonaPrivacyPreferencesItem), var_export($privacyPreferencesPersonaPrivacyPreferencesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The personaPrivacyPreferences property can only contain items of type \StructType\PrivacyPreference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The personaPrivacyPreferences property can only contain items of type \BurgerDigital\eTapestry\StructType\PrivacyPreference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -124,8 +124,8 @@ class PrivacyPreferences extends AbstractStructBase
     /**
      * Set personaPrivacyPreferences value
      * @throws InvalidArgumentException
-     * @param \StructType\PrivacyPreference[] $personaPrivacyPreferences
-     * @return \StructType\PrivacyPreferences
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreference[] $personaPrivacyPreferences
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences
      */
     public function setPersonaPrivacyPreferences(array $personaPrivacyPreferences = []): self
     {
@@ -140,14 +140,14 @@ class PrivacyPreferences extends AbstractStructBase
     /**
      * Add item to personaPrivacyPreferences value
      * @throws InvalidArgumentException
-     * @param \StructType\PrivacyPreference $item
-     * @return \StructType\PrivacyPreferences
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreference $item
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences
      */
     public function addToPersonaPrivacyPreferences(\StructType\PrivacyPreference $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PrivacyPreference) {
-            throw new InvalidArgumentException(sprintf('The personaPrivacyPreferences property can only contain items of type \StructType\PrivacyPreference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\PrivacyPreference) {
+            throw new InvalidArgumentException(sprintf('The personaPrivacyPreferences property can only contain items of type \BurgerDigital\eTapestry\StructType\PrivacyPreference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->personaPrivacyPreferences[] = $item;
         

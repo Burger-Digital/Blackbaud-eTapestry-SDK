@@ -39,7 +39,7 @@ class Buckaroo extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Buckaroo
+     * @return \BurgerDigital\eTapestry\StructType\Buckaroo
      */
     public function setNote(?string $note = null): self
     {

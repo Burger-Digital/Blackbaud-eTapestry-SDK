@@ -59,7 +59,7 @@ class Fund extends AbstractStructBase
      * - arrayType: tns:DefinedFieldValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedFieldValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     protected array $securityRights = [];
     /**
@@ -81,7 +81,7 @@ class Fund extends AbstractStructBase
      * @param string $receivablesAccount
      * @param string $ref
      * @param string $revenueAccount
-     * @param \StructType\DefinedFieldValue[] $securityRights
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $securityRights
      */
     public function __construct(?string $cashAccount = null, ?bool $disabled = null, ?string $name = null, ?string $note = null, ?string $projectId = null, ?string $receivablesAccount = null, ?string $ref = null, ?string $revenueAccount = null, array $securityRights = [])
     {
@@ -107,7 +107,7 @@ class Fund extends AbstractStructBase
     /**
      * Set cashAccount value
      * @param string $cashAccount
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setCashAccount(?string $cashAccount = null): self
     {
@@ -130,7 +130,7 @@ class Fund extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -153,7 +153,7 @@ class Fund extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setName(?string $name = null): self
     {
@@ -176,7 +176,7 @@ class Fund extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setNote(?string $note = null): self
     {
@@ -199,7 +199,7 @@ class Fund extends AbstractStructBase
     /**
      * Set projectId value
      * @param string $projectId
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setProjectId(?string $projectId = null): self
     {
@@ -222,7 +222,7 @@ class Fund extends AbstractStructBase
     /**
      * Set receivablesAccount value
      * @param string $receivablesAccount
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setReceivablesAccount(?string $receivablesAccount = null): self
     {
@@ -245,7 +245,7 @@ class Fund extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setRef(?string $ref = null): self
     {
@@ -268,7 +268,7 @@ class Fund extends AbstractStructBase
     /**
      * Set revenueAccount value
      * @param string $revenueAccount
-     * @return \StructType\Fund
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setRevenueAccount(?string $revenueAccount = null): self
     {
@@ -282,7 +282,7 @@ class Fund extends AbstractStructBase
     }
     /**
      * Get securityRights value
-     * @return \StructType\DefinedFieldValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     public function getSecurityRights(): array
     {
@@ -300,12 +300,12 @@ class Fund extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $fundSecurityRightsItem) {
             // validation for constraint: itemType
-            if (!$fundSecurityRightsItem instanceof \StructType\DefinedFieldValue) {
+            if (!$fundSecurityRightsItem instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
                 $invalidValues[] = is_object($fundSecurityRightsItem) ? get_class($fundSecurityRightsItem) : sprintf('%s(%s)', gettype($fundSecurityRightsItem), var_export($fundSecurityRightsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The securityRights property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The securityRights property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -314,8 +314,8 @@ class Fund extends AbstractStructBase
     /**
      * Set securityRights value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue[] $securityRights
-     * @return \StructType\Fund
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $securityRights
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function setSecurityRights(array $securityRights = []): self
     {
@@ -330,14 +330,14 @@ class Fund extends AbstractStructBase
     /**
      * Add item to securityRights value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue $item
-     * @return \StructType\Fund
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue $item
+     * @return \BurgerDigital\eTapestry\StructType\Fund
      */
     public function addToSecurityRights(\StructType\DefinedFieldValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedFieldValue) {
-            throw new InvalidArgumentException(sprintf('The securityRights property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
+            throw new InvalidArgumentException(sprintf('The securityRights property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->securityRights[] = $item;
         

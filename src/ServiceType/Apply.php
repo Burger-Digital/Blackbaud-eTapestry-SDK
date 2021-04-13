@@ -19,7 +19,7 @@ class Apply extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @param \StructType\DefinedValue[] $arrayOfDefinedValue_2
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $arrayOfDefinedValue_2
      * @param string $boolean_3
      * @return void|bool
      */

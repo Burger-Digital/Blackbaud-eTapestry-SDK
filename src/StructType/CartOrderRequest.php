@@ -15,7 +15,7 @@ class CartOrderRequest extends AbstractStructBase
 {
     /**
      * The account
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $account = null;
     /**
@@ -103,7 +103,7 @@ class CartOrderRequest extends AbstractStructBase
      * @uses CartOrderRequest::setStatusMessage()
      * @uses CartOrderRequest::setTransactionNumber()
      * @uses CartOrderRequest::setValidateLicense()
-     * @param \StructType\Account $account
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
      * @param string $amount
      * @param bool $createFieldAndValues
      * @param string $invoiceNumber
@@ -138,7 +138,7 @@ class CartOrderRequest extends AbstractStructBase
     }
     /**
      * Get account value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getAccount(): ?\StructType\Account
     {
@@ -146,8 +146,8 @@ class CartOrderRequest extends AbstractStructBase
     }
     /**
      * Set account value
-     * @param \StructType\Account $account
-     * @return \StructType\CartOrderRequest
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setAccount(?\StructType\Account $account = null): self
     {
@@ -166,7 +166,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set amount value
      * @param string $amount
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setAmount(?string $amount = null): self
     {
@@ -189,7 +189,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set createFieldAndValues value
      * @param bool $createFieldAndValues
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setCreateFieldAndValues(?bool $createFieldAndValues = null): self
     {
@@ -212,7 +212,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set invoiceNumber value
      * @param string $invoiceNumber
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setInvoiceNumber(?string $invoiceNumber = null): self
     {
@@ -235,7 +235,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set isBuckaroo value
      * @param bool $isBuckaroo
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setIsBuckaroo(?bool $isBuckaroo = null): self
     {
@@ -282,7 +282,7 @@ class CartOrderRequest extends AbstractStructBase
      * Set journalEntries value
      * @throws InvalidArgumentException
      * @param mixed[] $journalEntries
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setJournalEntries(array $journalEntries = []): self
     {
@@ -298,7 +298,7 @@ class CartOrderRequest extends AbstractStructBase
      * Add item to journalEntries value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function addToJournalEntries(mixed $item): self
     {
@@ -321,7 +321,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set populateDataSource value
      * @param bool $populateDataSource
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setPopulateDataSource(?bool $populateDataSource = null): self
     {
@@ -344,7 +344,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set processor value
      * @param string $processor
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setProcessor(?string $processor = null): self
     {
@@ -367,7 +367,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set skipSoftErrors value
      * @param bool $skipSoftErrors
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setSkipSoftErrors(?bool $skipSoftErrors = null): self
     {
@@ -390,7 +390,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set softErrorEmail value
      * @param string $softErrorEmail
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setSoftErrorEmail(?string $softErrorEmail = null): self
     {
@@ -413,7 +413,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set statusCode value
      * @param string $statusCode
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setStatusCode(?string $statusCode = null): self
     {
@@ -436,7 +436,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set statusMessage value
      * @param string $statusMessage
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setStatusMessage(?string $statusMessage = null): self
     {
@@ -459,7 +459,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set transactionNumber value
      * @param string $transactionNumber
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setTransactionNumber(?string $transactionNumber = null): self
     {
@@ -482,7 +482,7 @@ class CartOrderRequest extends AbstractStructBase
     /**
      * Set validateLicense value
      * @param bool $validateLicense
-     * @return \StructType\CartOrderRequest
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderRequest
      */
     public function setValidateLicense(?bool $validateLicense = null): self
     {

@@ -71,7 +71,7 @@ class Bond extends AbstractStructBase
     /**
      * Set actualValue value
      * @param float $actualValue
-     * @return \StructType\Bond
+     * @return \BurgerDigital\eTapestry\StructType\Bond
      */
     public function setActualValue(?float $actualValue = null): self
     {
@@ -94,7 +94,7 @@ class Bond extends AbstractStructBase
     /**
      * Set dateCashed value
      * @param string $dateCashed
-     * @return \StructType\Bond
+     * @return \BurgerDigital\eTapestry\StructType\Bond
      */
     public function setDateCashed(?string $dateCashed = null): self
     {
@@ -117,7 +117,7 @@ class Bond extends AbstractStructBase
     /**
      * Set issuingEntity value
      * @param string $issuingEntity
-     * @return \StructType\Bond
+     * @return \BurgerDigital\eTapestry\StructType\Bond
      */
     public function setIssuingEntity(?string $issuingEntity = null): self
     {
@@ -140,7 +140,7 @@ class Bond extends AbstractStructBase
     /**
      * Set maturityDate value
      * @param string $maturityDate
-     * @return \StructType\Bond
+     * @return \BurgerDigital\eTapestry\StructType\Bond
      */
     public function setMaturityDate(?string $maturityDate = null): self
     {
@@ -163,7 +163,7 @@ class Bond extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Bond
+     * @return \BurgerDigital\eTapestry\StructType\Bond
      */
     public function setNote(?string $note = null): self
     {

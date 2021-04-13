@@ -19,7 +19,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getAccount($string_1)
     {
@@ -41,7 +41,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getAccountById($int_1)
     {
@@ -65,7 +65,7 @@ class Get extends AbstractSoapClientBase
      * @param string $string_1
      * @param string $string_2
      * @param string $boolean_3
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getAccountByPersonaType($string_1, $string_2, $boolean_3)
     {
@@ -88,10 +88,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
-     * @return \StructType\Account|bool
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
-    public function getAccountByUniqueDefinedValue(\StructType\DefinedValue $definedValue_1)
+    public function getAccountByUniqueDefinedValue(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetAccountByUniqueDefinedValue = $this->getSoapClient()->__soapCall('getAccountByUniqueDefinedValue', [
@@ -111,7 +111,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getAccountFromPhoneAThonList($string_1)
     {
@@ -155,7 +155,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getAccountInvolvePrivacySettings($string_1)
     {
@@ -176,10 +176,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
      * @return string|bool
      */
-    public function getAccountRef(\StructType\DefinedValue $definedValue_1)
+    public function getAccountRef(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetAccountRef = $this->getSoapClient()->__soapCall('getAccountRef', [
@@ -221,7 +221,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\PagedCartElementsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsResponse|bool
      */
     public function getCachedCartElements($int_1)
     {
@@ -243,7 +243,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\PagedDefinedFieldsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsResponse|bool
      */
     public function getCachedDefinedFields($int_1)
     {
@@ -265,7 +265,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\PagedJournalEntriesResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesResponse|bool
      */
     public function getCachedJournalEntries($int_1)
     {
@@ -287,7 +287,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\PagedQueryResultsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse|bool
      */
     public function getCachedQueryResults($int_1)
     {
@@ -309,7 +309,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $int_1
-     * @return \StructType\PagedRelationshipsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse|bool
      */
     public function getCachedRelationships($int_1)
     {
@@ -331,7 +331,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\CalendarItem|bool
+     * @return \BurgerDigital\eTapestry\StructType\CalendarItem|bool
      */
     public function getCalendarItem($string_1)
     {
@@ -375,7 +375,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\CartCategory|bool
+     * @return \BurgerDigital\eTapestry\StructType\CartCategory|bool
      */
     public function getCartCategory($string_1)
     {
@@ -396,10 +396,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedCartElementsRequest $pagedCartElementsRequest_1
-     * @return \StructType\PagedCartElementsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedCartElementsRequest $pagedCartElementsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsResponse|bool
      */
-    public function getCartElements(\StructType\PagedCartElementsRequest $pagedCartElementsRequest_1)
+    public function getCartElements(\BurgerDigital\eTapestry\StructType\PagedCartElementsRequest $pagedCartElementsRequest_1)
     {
         try {
             $this->setResult($resultGetCartElements = $this->getSoapClient()->__soapCall('getCartElements', [
@@ -419,7 +419,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\CartItem|bool
+     * @return \BurgerDigital\eTapestry\StructType\CartItem|bool
      */
     public function getCartItem($string_1)
     {
@@ -441,7 +441,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\CartPreferences|bool
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences|bool
      */
     public function getCartPreferences($string_1)
     {
@@ -463,7 +463,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Contact|bool
+     * @return \BurgerDigital\eTapestry\StructType\Contact|bool
      */
     public function getContact($string_1)
     {
@@ -484,10 +484,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
-     * @return \StructType\Contact|bool
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
+     * @return \BurgerDigital\eTapestry\StructType\Contact|bool
      */
-    public function getContactByUniqueDefinedValue(\StructType\DefinedValue $definedValue_1)
+    public function getContactByUniqueDefinedValue(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetContactByUniqueDefinedValue = $this->getSoapClient()->__soapCall('getContactByUniqueDefinedValue', [
@@ -506,10 +506,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
      * @return string|bool
      */
-    public function getContactRef(\StructType\DefinedValue $definedValue_1)
+    public function getContactRef(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetContactRef = $this->getSoapClient()->__soapCall('getContactRef', [
@@ -529,7 +529,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Declaration|bool
+     * @return \BurgerDigital\eTapestry\StructType\Declaration|bool
      */
     public function getDeclaration($string_1)
     {
@@ -552,7 +552,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $boolean_2
-     * @return \StructType\DefinedField|bool
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField|bool
      */
     public function getDefinedField($string_1, $boolean_2)
     {
@@ -574,10 +574,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedDefinedFieldsRequest $pagedDefinedFieldsRequest_1
-     * @return \StructType\PagedDefinedFieldsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest $pagedDefinedFieldsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsResponse|bool
      */
-    public function getDefinedFields(\StructType\PagedDefinedFieldsRequest $pagedDefinedFieldsRequest_1)
+    public function getDefinedFields(\BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest $pagedDefinedFieldsRequest_1)
     {
         try {
             $this->setResult($resultGetDefinedFields = $this->getSoapClient()->__soapCall('getDefinedFields', [
@@ -597,7 +597,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Disbursement|bool
+     * @return \BurgerDigital\eTapestry\StructType\Disbursement|bool
      */
     public function getDisbursement($string_1)
     {
@@ -620,7 +620,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $string_2
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getDonorLoginAccount($string_1, $string_2)
     {
@@ -642,7 +642,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\DonorLoginPreferences|bool
+     * @return \BurgerDigital\eTapestry\StructType\DonorLoginPreferences|bool
      */
     public function getDonorLoginPreferences()
     {
@@ -661,10 +661,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DuplicateAccountSearch $duplicateAccountSearch_1
-     * @return \StructType\Account|bool
+     * @param \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch $duplicateAccountSearch_1
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
-    public function getDuplicateAccount(\StructType\DuplicateAccountSearch $duplicateAccountSearch_1)
+    public function getDuplicateAccount(\BurgerDigital\eTapestry\StructType\DuplicateAccountSearch $duplicateAccountSearch_1)
     {
         try {
             $this->setResult($resultGetDuplicateAccount = $this->getSoapClient()->__soapCall('getDuplicateAccount', [
@@ -683,10 +683,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DuplicateAccountSearch $duplicateAccountSearch_1
-     * @return \StructType\Account[]|bool
+     * @param \BurgerDigital\eTapestry\StructType\DuplicateAccountSearch $duplicateAccountSearch_1
+     * @return \BurgerDigital\eTapestry\StructType\Account[]|bool
      */
-    public function getDuplicateAccounts(\StructType\DuplicateAccountSearch $duplicateAccountSearch_1)
+    public function getDuplicateAccounts(\BurgerDigital\eTapestry\StructType\DuplicateAccountSearch $duplicateAccountSearch_1)
     {
         try {
             $this->setResult($resultGetDuplicateAccounts = $this->getSoapClient()->__soapCall('getDuplicateAccounts', [
@@ -727,10 +727,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DynamicQuery $dynamicQuery_1
-     * @return \StructType\QueryResultStats|bool
+     * @param \BurgerDigital\eTapestry\StructType\DynamicQuery $dynamicQuery_1
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats|bool
      */
-    public function getDynamicQueryResultStats(\StructType\DynamicQuery $dynamicQuery_1)
+    public function getDynamicQueryResultStats(\BurgerDigital\eTapestry\StructType\DynamicQuery $dynamicQuery_1)
     {
         try {
             $this->setResult($resultGetDynamicQueryResultStats = $this->getSoapClient()->__soapCall('getDynamicQueryResultStats', [
@@ -749,10 +749,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedDynamicQueryResultsRequest $pagedDynamicQueryResultsRequest_1
-     * @return \StructType\PagedQueryResultsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest $pagedDynamicQueryResultsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse|bool
      */
-    public function getDynamicQueryResults(\StructType\PagedDynamicQueryResultsRequest $pagedDynamicQueryResultsRequest_1)
+    public function getDynamicQueryResults(\BurgerDigital\eTapestry\StructType\PagedDynamicQueryResultsRequest $pagedDynamicQueryResultsRequest_1)
     {
         try {
             $this->setResult($resultGetDynamicQueryResults = $this->getSoapClient()->__soapCall('getDynamicQueryResults', [
@@ -773,7 +773,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $boolean_2
-     * @return \StructType\EntityRole|bool
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole|bool
      */
     public function getEntityRole($string_1, $boolean_2)
     {
@@ -796,7 +796,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\QueryResultStats|bool
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats|bool
      */
     public function getExistingQueryResultStats($string_1)
     {
@@ -817,10 +817,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedExistingQueryResultsRequest $pagedExistingQueryResultsRequest_1
-     * @return \StructType\PagedQueryResultsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest $pagedExistingQueryResultsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse|bool
      */
-    public function getExistingQueryResults(\StructType\PagedExistingQueryResultsRequest $pagedExistingQueryResultsRequest_1)
+    public function getExistingQueryResults(\BurgerDigital\eTapestry\StructType\PagedExistingQueryResultsRequest $pagedExistingQueryResultsRequest_1)
     {
         try {
             $this->setResult($resultGetExistingQueryResults = $this->getSoapClient()->__soapCall('getExistingQueryResults', [
@@ -840,7 +840,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $boolean_1
-     * @return \StructType\Fund[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\Fund[]|bool
      */
     public function getFundObjects($boolean_1)
     {
@@ -884,7 +884,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Gift|bool
+     * @return \BurgerDigital\eTapestry\StructType\Gift|bool
      */
     public function getGift($string_1)
     {
@@ -905,8 +905,8 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\OrderDetail[] $arrayOfOrderDetail_1
-     * @return \StructType\CartItem[]|bool
+     * @param \BurgerDigital\eTapestry\StructType\OrderDetail[] $arrayOfOrderDetail_1
+     * @return \BurgerDigital\eTapestry\StructType\CartItem[]|bool
      */
     public function getInvalidOrderDetailQuantities(array $arrayOfOrderDetail_1)
     {
@@ -928,7 +928,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Invitation|bool
+     * @return \BurgerDigital\eTapestry\StructType\Invitation|bool
      */
     public function getInvitation($string_1)
     {
@@ -949,10 +949,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedJournalEntriesRequest $pagedJournalEntriesRequest_1
-     * @return \StructType\PagedJournalEntriesResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest $pagedJournalEntriesRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesResponse|bool
      */
-    public function getJournalEntries(\StructType\PagedJournalEntriesRequest $pagedJournalEntriesRequest_1)
+    public function getJournalEntries(\BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest $pagedJournalEntriesRequest_1)
     {
         try {
             $this->setResult($resultGetJournalEntries = $this->getSoapClient()->__soapCall('getJournalEntries', [
@@ -993,7 +993,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getMyAccount()
     {
@@ -1014,7 +1014,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $boolean_2
-     * @return \StructType\Account|bool
+     * @return \BurgerDigital\eTapestry\StructType\Account|bool
      */
     public function getMyAccountByPersonaType($string_1, $boolean_2)
     {
@@ -1036,7 +1036,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\EntityRole|bool
+     * @return \BurgerDigital\eTapestry\StructType\EntityRole|bool
      */
     public function getMyEntityRole()
     {
@@ -1074,7 +1074,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\JournalSummary|bool
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary|bool
      */
     public function getMyJournalSummary()
     {
@@ -1093,7 +1093,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PrivacyPreferences|bool
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences|bool
      */
     public function getMyPrivacyPreferences()
     {
@@ -1112,7 +1112,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PagedCartElementsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedCartElementsResponse|bool
      */
     public function getNextCartElements()
     {
@@ -1131,7 +1131,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PagedDefinedFieldsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsResponse|bool
      */
     public function getNextDefinedFields()
     {
@@ -1150,7 +1150,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PagedJournalEntriesResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesResponse|bool
      */
     public function getNextJournalEntries()
     {
@@ -1169,7 +1169,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PagedQueryResultsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse|bool
      */
     public function getNextQueryResults()
     {
@@ -1188,7 +1188,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\PagedRelationshipsResponse|bool
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse|bool
      */
     public function getNextRelationships()
     {
@@ -1208,7 +1208,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Note|bool
+     * @return \BurgerDigital\eTapestry\StructType\Note|bool
      */
     public function getNote($string_1)
     {
@@ -1229,10 +1229,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
-     * @return \StructType\Note|bool
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
+     * @return \BurgerDigital\eTapestry\StructType\Note|bool
      */
-    public function getNoteByUniqueDefinedValue(\StructType\DefinedValue $definedValue_1)
+    public function getNoteByUniqueDefinedValue(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetNoteByUniqueDefinedValue = $this->getSoapClient()->__soapCall('getNoteByUniqueDefinedValue', [
@@ -1251,10 +1251,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
      * @return string|bool
      */
-    public function getNoteRef(\StructType\DefinedValue $definedValue_1)
+    public function getNoteRef(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetNoteRef = $this->getSoapClient()->__soapCall('getNoteRef', [
@@ -1273,7 +1273,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\OrganizationPreferences|bool
+     * @return \BurgerDigital\eTapestry\StructType\OrganizationPreferences|bool
      */
     public function getOrganizationPreferences()
     {
@@ -1293,7 +1293,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @return \StructType\DefinedValue[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]|bool
      */
     public function getOutlookIntegrationContactMethods()
     {
@@ -1332,7 +1332,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Payment|bool
+     * @return \BurgerDigital\eTapestry\StructType\Payment|bool
      */
     public function getPayment($string_1)
     {
@@ -1354,7 +1354,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $boolean_1
-     * @return \StructType\PhoneAThonList[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList[]|bool
      */
     public function getPhoneAThonLists($boolean_1)
     {
@@ -1376,7 +1376,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Pledge|bool
+     * @return \BurgerDigital\eTapestry\StructType\Pledge|bool
      */
     public function getPledge($string_1)
     {
@@ -1398,7 +1398,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\PrivacyPreferences|bool
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreferences|bool
      */
     public function getPrivacyPreferences($string_1)
     {
@@ -1420,7 +1420,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Purchase|bool
+     * @return \BurgerDigital\eTapestry\StructType\Purchase|bool
      */
     public function getPurchase($string_1)
     {
@@ -1443,7 +1443,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $string_2
-     * @return \StructType\QueryResultStats|bool
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats|bool
      */
     public function getQueryResultStats($string_1, $string_2)
     {
@@ -1466,7 +1466,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\RecurringGift|bool
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGift|bool
      */
     public function getRecurringGift($string_1)
     {
@@ -1488,7 +1488,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\RecurringGiftSchedule|bool
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule|bool
      */
     public function getRecurringGiftSchedule($string_1)
     {
@@ -1510,7 +1510,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Relationship|bool
+     * @return \BurgerDigital\eTapestry\StructType\Relationship|bool
      */
     public function getRelationship($string_1)
     {
@@ -1532,7 +1532,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $boolean_1
-     * @return \StructType\RelationshipType[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\RelationshipType[]|bool
      */
     public function getRelationshipTypes($boolean_1)
     {
@@ -1553,10 +1553,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PagedRelationshipsRequest $pagedRelationshipsRequest_1
-     * @return \StructType\PagedRelationshipsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest $pagedRelationshipsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse|bool
      */
-    public function getRelationships(\StructType\PagedRelationshipsRequest $pagedRelationshipsRequest_1)
+    public function getRelationships(\BurgerDigital\eTapestry\StructType\PagedRelationshipsRequest $pagedRelationshipsRequest_1)
     {
         try {
             $this->setResult($resultGetRelationships = $this->getSoapClient()->__soapCall('getRelationships', [
@@ -1576,7 +1576,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\SegmentedDonation|bool
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedDonation|bool
      */
     public function getSegmentedDonation($string_1)
     {
@@ -1598,7 +1598,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\SegmentedOrder|bool
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder|bool
      */
     public function getSegmentedOrder($string_1)
     {
@@ -1620,7 +1620,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\SegmentedPledge|bool
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedPledge|bool
      */
     public function getSegmentedPledge($string_1)
     {
@@ -1642,7 +1642,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Shipping|bool
+     * @return \BurgerDigital\eTapestry\StructType\Shipping|bool
      */
     public function getShipping($string_1)
     {
@@ -1664,7 +1664,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\SoftCredit|bool
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|bool
      */
     public function getSoftCredit($string_1)
     {
@@ -1687,7 +1687,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $boolean_2
-     * @return \StructType\DefinedValue[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]|bool
      */
     public function getSystemDefinedValues($string_1, $boolean_2)
     {
@@ -1710,7 +1710,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
-     * @return \StructType\Tax|bool
+     * @return \BurgerDigital\eTapestry\StructType\Tax|bool
      */
     public function getTax($string_1)
     {
@@ -1753,10 +1753,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
      * @return anyType|bool
      */
-    public function getTransactionByUniqueDefinedValue(\StructType\DefinedValue $definedValue_1)
+    public function getTransactionByUniqueDefinedValue(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetTransactionByUniqueDefinedValue = $this->getSoapClient()->__soapCall('getTransactionByUniqueDefinedValue', [
@@ -1776,7 +1776,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $boolean_1
-     * @return \StructType\TransactionProcessor[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor[]|bool
      */
     public function getTransactionProcessors($boolean_1)
     {
@@ -1797,10 +1797,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DefinedValue $definedValue_1
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1
      * @return string|bool
      */
-    public function getTransactionRef(\StructType\DefinedValue $definedValue_1)
+    public function getTransactionRef(\BurgerDigital\eTapestry\StructType\DefinedValue $definedValue_1)
     {
         try {
             $this->setResult($resultGetTransactionRef = $this->getSoapClient()->__soapCall('getTransactionRef', [
@@ -1821,7 +1821,7 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::saveLastError()
      * @param string $string_1
      * @param string $boolean_2
-     * @return \StructType\DefinedValue[]|bool
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]|bool
      */
     public function getUserDefinedSetValues($string_1, $boolean_2)
     {
@@ -1841,7 +1841,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return anyType|anyType[]|string|string[]|\StructType\Account|\StructType\Account[]|\StructType\CalendarItem|\StructType\CartCategory|\StructType\CartItem|\StructType\CartItem[]|\StructType\CartPreferences|\StructType\Contact|\StructType\Declaration|\StructType\DefinedField|\StructType\DefinedValue[]|\StructType\Disbursement|\StructType\DonorLoginPreferences|\StructType\EntityRole|\StructType\Fund[]|\StructType\Gift|\StructType\Invitation|\StructType\JournalSummary|\StructType\Note|\StructType\OrganizationPreferences|\StructType\PagedCartElementsResponse|\StructType\PagedDefinedFieldsResponse|\StructType\PagedJournalEntriesResponse|\StructType\PagedQueryResultsResponse|\StructType\PagedRelationshipsResponse|\StructType\Payment|\StructType\PhoneAThonList[]|\StructType\Pledge|\StructType\PrivacyPreferences|\StructType\Purchase|\StructType\QueryResultStats|\StructType\RecurringGift|\StructType\RecurringGiftSchedule|\StructType\Relationship|\StructType\RelationshipType[]|\StructType\SegmentedDonation|\StructType\SegmentedOrder|\StructType\SegmentedPledge|\StructType\Shipping|\StructType\SoftCredit|\StructType\Tax|\StructType\TransactionProcessor[]
+     * @return anyType|anyType[]|string|string[]|\BurgerDigital\eTapestry\StructType\Account|\BurgerDigital\eTapestry\StructType\Account[]|\BurgerDigital\eTapestry\StructType\CalendarItem|\BurgerDigital\eTapestry\StructType\CartCategory|\BurgerDigital\eTapestry\StructType\CartItem|\BurgerDigital\eTapestry\StructType\CartItem[]|\BurgerDigital\eTapestry\StructType\CartPreferences|\BurgerDigital\eTapestry\StructType\Contact|\BurgerDigital\eTapestry\StructType\Declaration|\BurgerDigital\eTapestry\StructType\DefinedField|\BurgerDigital\eTapestry\StructType\DefinedValue[]|\BurgerDigital\eTapestry\StructType\Disbursement|\BurgerDigital\eTapestry\StructType\DonorLoginPreferences|\BurgerDigital\eTapestry\StructType\EntityRole|\BurgerDigital\eTapestry\StructType\Fund[]|\BurgerDigital\eTapestry\StructType\Gift|\BurgerDigital\eTapestry\StructType\Invitation|\BurgerDigital\eTapestry\StructType\JournalSummary|\BurgerDigital\eTapestry\StructType\Note|\BurgerDigital\eTapestry\StructType\OrganizationPreferences|\BurgerDigital\eTapestry\StructType\PagedCartElementsResponse|\BurgerDigital\eTapestry\StructType\PagedDefinedFieldsResponse|\BurgerDigital\eTapestry\StructType\PagedJournalEntriesResponse|\BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse|\BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse|\BurgerDigital\eTapestry\StructType\Payment|\BurgerDigital\eTapestry\StructType\PhoneAThonList[]|\BurgerDigital\eTapestry\StructType\Pledge|\BurgerDigital\eTapestry\StructType\PrivacyPreferences|\BurgerDigital\eTapestry\StructType\Purchase|\BurgerDigital\eTapestry\StructType\QueryResultStats|\BurgerDigital\eTapestry\StructType\RecurringGift|\BurgerDigital\eTapestry\StructType\RecurringGiftSchedule|\BurgerDigital\eTapestry\StructType\Relationship|\BurgerDigital\eTapestry\StructType\RelationshipType[]|\BurgerDigital\eTapestry\StructType\SegmentedDonation|\BurgerDigital\eTapestry\StructType\SegmentedOrder|\BurgerDigital\eTapestry\StructType\SegmentedPledge|\BurgerDigital\eTapestry\StructType\Shipping|\BurgerDigital\eTapestry\StructType\SoftCredit|\BurgerDigital\eTapestry\StructType\Tax|\BurgerDigital\eTapestry\StructType\TransactionProcessor[]
      */
     public function getResult()
     {

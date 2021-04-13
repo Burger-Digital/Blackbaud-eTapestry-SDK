@@ -63,7 +63,7 @@ class DiscountApplied extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\DiscountApplied
+     * @return \BurgerDigital\eTapestry\StructType\DiscountApplied
      */
     public function setAmount(?float $amount = null): self
     {
@@ -86,7 +86,7 @@ class DiscountApplied extends AbstractStructBase
     /**
      * Set discountName value
      * @param string $discountName
-     * @return \StructType\DiscountApplied
+     * @return \BurgerDigital\eTapestry\StructType\DiscountApplied
      */
     public function setDiscountName(?string $discountName = null): self
     {
@@ -109,7 +109,7 @@ class DiscountApplied extends AbstractStructBase
     /**
      * Set discountRef value
      * @param string $discountRef
-     * @return \StructType\DiscountApplied
+     * @return \BurgerDigital\eTapestry\StructType\DiscountApplied
      */
     public function setDiscountRef(?string $discountRef = null): self
     {
@@ -132,7 +132,7 @@ class DiscountApplied extends AbstractStructBase
     /**
      * Set promoCode value
      * @param string $promoCode
-     * @return \StructType\DiscountApplied
+     * @return \BurgerDigital\eTapestry\StructType\DiscountApplied
      */
     public function setPromoCode(?string $promoCode = null): self
     {

@@ -15,7 +15,7 @@ class AccountChangeRequest extends AbstractStructBase
 {
     /**
      * The account
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $account = null;
     /**
@@ -45,7 +45,7 @@ class AccountChangeRequest extends AbstractStructBase
      * @uses AccountChangeRequest::setCreateFieldAndValues()
      * @uses AccountChangeRequest::setNotificationEmail()
      * @uses AccountChangeRequest::setUpdate()
-     * @param \StructType\Account $account
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
      * @param bool $createChangeNote
      * @param bool $createFieldAndValues
      * @param string $notificationEmail
@@ -62,7 +62,7 @@ class AccountChangeRequest extends AbstractStructBase
     }
     /**
      * Get account value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getAccount(): ?\StructType\Account
     {
@@ -70,8 +70,8 @@ class AccountChangeRequest extends AbstractStructBase
     }
     /**
      * Set account value
-     * @param \StructType\Account $account
-     * @return \StructType\AccountChangeRequest
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
+     * @return \BurgerDigital\eTapestry\StructType\AccountChangeRequest
      */
     public function setAccount(?\StructType\Account $account = null): self
     {
@@ -90,7 +90,7 @@ class AccountChangeRequest extends AbstractStructBase
     /**
      * Set createChangeNote value
      * @param bool $createChangeNote
-     * @return \StructType\AccountChangeRequest
+     * @return \BurgerDigital\eTapestry\StructType\AccountChangeRequest
      */
     public function setCreateChangeNote(?bool $createChangeNote = null): self
     {
@@ -113,7 +113,7 @@ class AccountChangeRequest extends AbstractStructBase
     /**
      * Set createFieldAndValues value
      * @param bool $createFieldAndValues
-     * @return \StructType\AccountChangeRequest
+     * @return \BurgerDigital\eTapestry\StructType\AccountChangeRequest
      */
     public function setCreateFieldAndValues(?bool $createFieldAndValues = null): self
     {
@@ -136,7 +136,7 @@ class AccountChangeRequest extends AbstractStructBase
     /**
      * Set notificationEmail value
      * @param string $notificationEmail
-     * @return \StructType\AccountChangeRequest
+     * @return \BurgerDigital\eTapestry\StructType\AccountChangeRequest
      */
     public function setNotificationEmail(?string $notificationEmail = null): self
     {
@@ -159,7 +159,7 @@ class AccountChangeRequest extends AbstractStructBase
     /**
      * Set update value
      * @param bool $update
-     * @return \StructType\AccountChangeRequest
+     * @return \BurgerDigital\eTapestry\StructType\AccountChangeRequest
      */
     public function setUpdate(?bool $update = null): self
     {

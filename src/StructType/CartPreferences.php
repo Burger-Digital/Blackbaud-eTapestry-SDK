@@ -29,7 +29,7 @@ class CartPreferences extends AbstractStructBase
      * - arrayType: tns:Question[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Question[]
+     * @var \BurgerDigital\eTapestry\StructType\Question[]
      */
     protected array $checkoutQuestions = [];
     /**
@@ -116,7 +116,7 @@ class CartPreferences extends AbstractStructBase
      * - arrayType: tns:StateTaxRate[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\StateTaxRate[]
+     * @var \BurgerDigital\eTapestry\StructType\StateTaxRate[]
      */
     protected array $stateTaxRates = [];
     /**
@@ -131,7 +131,7 @@ class CartPreferences extends AbstractStructBase
     protected ?string $templateSetFolder = null;
     /**
      * The transProcessor
-     * @var \StructType\TransactionProcessor|null
+     * @var \BurgerDigital\eTapestry\StructType\TransactionProcessor|null
      */
     protected ?\StructType\TransactionProcessor $transProcessor = null;
     /**
@@ -165,7 +165,7 @@ class CartPreferences extends AbstractStructBase
      * @uses CartPreferences::setWelcomeMessage()
      * @param string $bbpsCheckoutJavascriptUrl
      * @param string $categoryHeader
-     * @param \StructType\Question[] $checkoutQuestions
+     * @param \BurgerDigital\eTapestry\StructType\Question[] $checkoutQuestions
      * @param string $currencyLocaleCode
      * @param string[] $discountPromoCodes
      * @param string[] $domesticCountries
@@ -180,10 +180,10 @@ class CartPreferences extends AbstractStructBase
      * @param string $siteName
      * @param string $siteTitle
      * @param string $soldOutLabel
-     * @param \StructType\StateTaxRate[] $stateTaxRates
+     * @param \BurgerDigital\eTapestry\StructType\StateTaxRate[] $stateTaxRates
      * @param string $successMessage
      * @param string $templateSetFolder
-     * @param \StructType\TransactionProcessor $transProcessor
+     * @param \BurgerDigital\eTapestry\StructType\TransactionProcessor $transProcessor
      * @param string $welcomeMessage
      */
     public function __construct(?string $bbpsCheckoutJavascriptUrl = null, ?string $categoryHeader = null, array $checkoutQuestions = [], ?string $currencyLocaleCode = null, array $discountPromoCodes = [], array $domesticCountries = [], ?float $expressShippingPrice = null, ?float $freeOrderRegularShippingPrice = null, ?bool $hideSearchFeature = null, ?float $internationalShippingPrice = null, ?string $languageLocaleCode = null, ?bool $pricesIncludeTax = null, ?float $regularShippingPrice = null, ?int $salesTaxKey = null, ?string $siteName = null, ?string $siteTitle = null, ?string $soldOutLabel = null, array $stateTaxRates = [], ?string $successMessage = null, ?string $templateSetFolder = null, ?\StructType\TransactionProcessor $transProcessor = null, ?string $welcomeMessage = null)
@@ -223,7 +223,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set bbpsCheckoutJavascriptUrl value
      * @param string $bbpsCheckoutJavascriptUrl
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setBbpsCheckoutJavascriptUrl(?string $bbpsCheckoutJavascriptUrl = null): self
     {
@@ -246,7 +246,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set categoryHeader value
      * @param string $categoryHeader
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setCategoryHeader(?string $categoryHeader = null): self
     {
@@ -260,7 +260,7 @@ class CartPreferences extends AbstractStructBase
     }
     /**
      * Get checkoutQuestions value
-     * @return \StructType\Question[]
+     * @return \BurgerDigital\eTapestry\StructType\Question[]
      */
     public function getCheckoutQuestions(): array
     {
@@ -278,12 +278,12 @@ class CartPreferences extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartPreferencesCheckoutQuestionsItem) {
             // validation for constraint: itemType
-            if (!$cartPreferencesCheckoutQuestionsItem instanceof \StructType\Question) {
+            if (!$cartPreferencesCheckoutQuestionsItem instanceof \BurgerDigital\eTapestry\StructType\Question) {
                 $invalidValues[] = is_object($cartPreferencesCheckoutQuestionsItem) ? get_class($cartPreferencesCheckoutQuestionsItem) : sprintf('%s(%s)', gettype($cartPreferencesCheckoutQuestionsItem), var_export($cartPreferencesCheckoutQuestionsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The checkoutQuestions property can only contain items of type \StructType\Question, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The checkoutQuestions property can only contain items of type \BurgerDigital\eTapestry\StructType\Question, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -292,8 +292,8 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set checkoutQuestions value
      * @throws InvalidArgumentException
-     * @param \StructType\Question[] $checkoutQuestions
-     * @return \StructType\CartPreferences
+     * @param \BurgerDigital\eTapestry\StructType\Question[] $checkoutQuestions
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setCheckoutQuestions(array $checkoutQuestions = []): self
     {
@@ -308,14 +308,14 @@ class CartPreferences extends AbstractStructBase
     /**
      * Add item to checkoutQuestions value
      * @throws InvalidArgumentException
-     * @param \StructType\Question $item
-     * @return \StructType\CartPreferences
+     * @param \BurgerDigital\eTapestry\StructType\Question $item
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function addToCheckoutQuestions(\StructType\Question $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Question) {
-            throw new InvalidArgumentException(sprintf('The checkoutQuestions property can only contain items of type \StructType\Question, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Question) {
+            throw new InvalidArgumentException(sprintf('The checkoutQuestions property can only contain items of type \BurgerDigital\eTapestry\StructType\Question, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->checkoutQuestions[] = $item;
         
@@ -332,7 +332,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set currencyLocaleCode value
      * @param string $currencyLocaleCode
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setCurrencyLocaleCode(?string $currencyLocaleCode = null): self
     {
@@ -379,7 +379,7 @@ class CartPreferences extends AbstractStructBase
      * Set discountPromoCodes value
      * @throws InvalidArgumentException
      * @param string[] $discountPromoCodes
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setDiscountPromoCodes(array $discountPromoCodes = []): self
     {
@@ -395,7 +395,7 @@ class CartPreferences extends AbstractStructBase
      * Add item to discountPromoCodes value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function addToDiscountPromoCodes(string $item): self
     {
@@ -442,7 +442,7 @@ class CartPreferences extends AbstractStructBase
      * Set domesticCountries value
      * @throws InvalidArgumentException
      * @param string[] $domesticCountries
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setDomesticCountries(array $domesticCountries = []): self
     {
@@ -458,7 +458,7 @@ class CartPreferences extends AbstractStructBase
      * Add item to domesticCountries value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function addToDomesticCountries(string $item): self
     {
@@ -481,7 +481,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set expressShippingPrice value
      * @param float $expressShippingPrice
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setExpressShippingPrice(?float $expressShippingPrice = null): self
     {
@@ -504,7 +504,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set freeOrderRegularShippingPrice value
      * @param float $freeOrderRegularShippingPrice
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setFreeOrderRegularShippingPrice(?float $freeOrderRegularShippingPrice = null): self
     {
@@ -527,7 +527,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set hideSearchFeature value
      * @param bool $hideSearchFeature
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setHideSearchFeature(?bool $hideSearchFeature = null): self
     {
@@ -550,7 +550,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set internationalShippingPrice value
      * @param float $internationalShippingPrice
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setInternationalShippingPrice(?float $internationalShippingPrice = null): self
     {
@@ -573,7 +573,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set languageLocaleCode value
      * @param string $languageLocaleCode
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setLanguageLocaleCode(?string $languageLocaleCode = null): self
     {
@@ -596,7 +596,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set pricesIncludeTax value
      * @param bool $pricesIncludeTax
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setPricesIncludeTax(?bool $pricesIncludeTax = null): self
     {
@@ -619,7 +619,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set regularShippingPrice value
      * @param float $regularShippingPrice
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setRegularShippingPrice(?float $regularShippingPrice = null): self
     {
@@ -642,7 +642,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set salesTaxKey value
      * @param int $salesTaxKey
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setSalesTaxKey(?int $salesTaxKey = null): self
     {
@@ -665,7 +665,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set siteName value
      * @param string $siteName
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setSiteName(?string $siteName = null): self
     {
@@ -688,7 +688,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set siteTitle value
      * @param string $siteTitle
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setSiteTitle(?string $siteTitle = null): self
     {
@@ -711,7 +711,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set soldOutLabel value
      * @param string $soldOutLabel
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setSoldOutLabel(?string $soldOutLabel = null): self
     {
@@ -725,7 +725,7 @@ class CartPreferences extends AbstractStructBase
     }
     /**
      * Get stateTaxRates value
-     * @return \StructType\StateTaxRate[]
+     * @return \BurgerDigital\eTapestry\StructType\StateTaxRate[]
      */
     public function getStateTaxRates(): array
     {
@@ -743,12 +743,12 @@ class CartPreferences extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $cartPreferencesStateTaxRatesItem) {
             // validation for constraint: itemType
-            if (!$cartPreferencesStateTaxRatesItem instanceof \StructType\StateTaxRate) {
+            if (!$cartPreferencesStateTaxRatesItem instanceof \BurgerDigital\eTapestry\StructType\StateTaxRate) {
                 $invalidValues[] = is_object($cartPreferencesStateTaxRatesItem) ? get_class($cartPreferencesStateTaxRatesItem) : sprintf('%s(%s)', gettype($cartPreferencesStateTaxRatesItem), var_export($cartPreferencesStateTaxRatesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The stateTaxRates property can only contain items of type \StructType\StateTaxRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The stateTaxRates property can only contain items of type \BurgerDigital\eTapestry\StructType\StateTaxRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -757,8 +757,8 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set stateTaxRates value
      * @throws InvalidArgumentException
-     * @param \StructType\StateTaxRate[] $stateTaxRates
-     * @return \StructType\CartPreferences
+     * @param \BurgerDigital\eTapestry\StructType\StateTaxRate[] $stateTaxRates
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setStateTaxRates(array $stateTaxRates = []): self
     {
@@ -773,14 +773,14 @@ class CartPreferences extends AbstractStructBase
     /**
      * Add item to stateTaxRates value
      * @throws InvalidArgumentException
-     * @param \StructType\StateTaxRate $item
-     * @return \StructType\CartPreferences
+     * @param \BurgerDigital\eTapestry\StructType\StateTaxRate $item
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function addToStateTaxRates(\StructType\StateTaxRate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\StateTaxRate) {
-            throw new InvalidArgumentException(sprintf('The stateTaxRates property can only contain items of type \StructType\StateTaxRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\StateTaxRate) {
+            throw new InvalidArgumentException(sprintf('The stateTaxRates property can only contain items of type \BurgerDigital\eTapestry\StructType\StateTaxRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->stateTaxRates[] = $item;
         
@@ -797,7 +797,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set successMessage value
      * @param string $successMessage
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setSuccessMessage(?string $successMessage = null): self
     {
@@ -820,7 +820,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set templateSetFolder value
      * @param string $templateSetFolder
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setTemplateSetFolder(?string $templateSetFolder = null): self
     {
@@ -834,7 +834,7 @@ class CartPreferences extends AbstractStructBase
     }
     /**
      * Get transProcessor value
-     * @return \StructType\TransactionProcessor|null
+     * @return \BurgerDigital\eTapestry\StructType\TransactionProcessor|null
      */
     public function getTransProcessor(): ?\StructType\TransactionProcessor
     {
@@ -842,8 +842,8 @@ class CartPreferences extends AbstractStructBase
     }
     /**
      * Set transProcessor value
-     * @param \StructType\TransactionProcessor $transProcessor
-     * @return \StructType\CartPreferences
+     * @param \BurgerDigital\eTapestry\StructType\TransactionProcessor $transProcessor
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setTransProcessor(?\StructType\TransactionProcessor $transProcessor = null): self
     {
@@ -862,7 +862,7 @@ class CartPreferences extends AbstractStructBase
     /**
      * Set welcomeMessage value
      * @param string $welcomeMessage
-     * @return \StructType\CartPreferences
+     * @return \BurgerDigital\eTapestry\StructType\CartPreferences
      */
     public function setWelcomeMessage(?string $welcomeMessage = null): self
     {

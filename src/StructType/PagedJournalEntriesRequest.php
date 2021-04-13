@@ -99,7 +99,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -122,7 +122,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -145,7 +145,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -168,7 +168,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -191,7 +191,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set baseQuery value
      * @param string $baseQuery
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setBaseQuery(?string $baseQuery = null): self
     {
@@ -214,7 +214,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set endDate value
      * @param string $endDate
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -237,7 +237,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
     /**
      * Set startDate value
      * @param string $startDate
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -284,7 +284,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
      * Set types value
      * @throws InvalidArgumentException
      * @param int[] $types
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function setTypes(array $types = []): self
     {
@@ -300,7 +300,7 @@ class PagedJournalEntriesRequest extends AbstractStructBase
      * Add item to types value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \StructType\PagedJournalEntriesRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedJournalEntriesRequest
      */
     public function addToTypes(int $item): self
     {

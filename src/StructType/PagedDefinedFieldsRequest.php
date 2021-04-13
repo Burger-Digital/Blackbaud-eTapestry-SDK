@@ -107,7 +107,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
     /**
      * Set clearCache value
      * @param bool $clearCache
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setClearCache(?bool $clearCache = null): self
     {
@@ -130,7 +130,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setCount(?int $count = null): self
     {
@@ -153,7 +153,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setStart(?int $start = null): self
     {
@@ -200,7 +200,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Set applicationTypes value
      * @throws InvalidArgumentException
      * @param int[] $applicationTypes
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setApplicationTypes(array $applicationTypes = []): self
     {
@@ -216,7 +216,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Add item to applicationTypes value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function addToApplicationTypes(int $item): self
     {
@@ -263,7 +263,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Set categories value
      * @throws InvalidArgumentException
      * @param string[] $categories
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setCategories(array $categories = []): self
     {
@@ -279,7 +279,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Add item to categories value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function addToCategories(string $item): self
     {
@@ -302,7 +302,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
     /**
      * Set includeDisabledFields value
      * @param bool $includeDisabledFields
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setIncludeDisabledFields(?bool $includeDisabledFields = null): self
     {
@@ -325,7 +325,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
     /**
      * Set includeDisabledValues value
      * @param bool $includeDisabledValues
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setIncludeDisabledValues(?bool $includeDisabledValues = null): self
     {
@@ -372,7 +372,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Set names value
      * @throws InvalidArgumentException
      * @param string[] $names
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function setNames(array $names = []): self
     {
@@ -388,7 +388,7 @@ class PagedDefinedFieldsRequest extends AbstractStructBase
      * Add item to names value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\PagedDefinedFieldsRequest
+     * @return \BurgerDigital\eTapestry\StructType\PagedDefinedFieldsRequest
      */
     public function addToNames(string $item): self
     {

@@ -15,7 +15,7 @@ class EcommerceRequest extends AbstractStructBase
 {
     /**
      * The account
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $account = null;
     /**
@@ -109,7 +109,7 @@ class EcommerceRequest extends AbstractStructBase
      * @uses EcommerceRequest::setSkipSoftErrors()
      * @uses EcommerceRequest::setSoftErrorEmail()
      * @uses EcommerceRequest::setValidateLicense()
-     * @param \StructType\Account $account
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
      * @param string $confirmationEmailTemplate
      * @param string $confirmationSender
      * @param string $confirmationSubject
@@ -146,7 +146,7 @@ class EcommerceRequest extends AbstractStructBase
     }
     /**
      * Get account value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getAccount(): ?\StructType\Account
     {
@@ -154,8 +154,8 @@ class EcommerceRequest extends AbstractStructBase
     }
     /**
      * Set account value
-     * @param \StructType\Account $account
-     * @return \StructType\EcommerceRequest
+     * @param \BurgerDigital\eTapestry\StructType\Account $account
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setAccount(?\StructType\Account $account = null): self
     {
@@ -174,7 +174,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set confirmationEmailTemplate value
      * @param string $confirmationEmailTemplate
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setConfirmationEmailTemplate(?string $confirmationEmailTemplate = null): self
     {
@@ -197,7 +197,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set confirmationSender value
      * @param string $confirmationSender
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setConfirmationSender(?string $confirmationSender = null): self
     {
@@ -220,7 +220,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set confirmationSubject value
      * @param string $confirmationSubject
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setConfirmationSubject(?string $confirmationSubject = null): self
     {
@@ -243,7 +243,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set createFieldAndValues value
      * @param bool $createFieldAndValues
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setCreateFieldAndValues(?bool $createFieldAndValues = null): self
     {
@@ -266,7 +266,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set failureEmail value
      * @param string $failureEmail
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setFailureEmail(?string $failureEmail = null): self
     {
@@ -313,7 +313,7 @@ class EcommerceRequest extends AbstractStructBase
      * Set journalEntries value
      * @throws InvalidArgumentException
      * @param mixed[] $journalEntries
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setJournalEntries(array $journalEntries = []): self
     {
@@ -329,7 +329,7 @@ class EcommerceRequest extends AbstractStructBase
      * Add item to journalEntries value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function addToJournalEntries(mixed $item): self
     {
@@ -352,7 +352,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set notificationEmail value
      * @param string $notificationEmail
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setNotificationEmail(?string $notificationEmail = null): self
     {
@@ -375,7 +375,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set notificationSubject value
      * @param string $notificationSubject
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setNotificationSubject(?string $notificationSubject = null): self
     {
@@ -398,7 +398,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set populateDataSource value
      * @param bool $populateDataSource
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setPopulateDataSource(?bool $populateDataSource = null): self
     {
@@ -421,7 +421,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set processor value
      * @param string $processor
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setProcessor(?string $processor = null): self
     {
@@ -444,7 +444,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set skipProcessing value
      * @param bool $skipProcessing
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setSkipProcessing(?bool $skipProcessing = null): self
     {
@@ -467,7 +467,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set skipSoftErrors value
      * @param bool $skipSoftErrors
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setSkipSoftErrors(?bool $skipSoftErrors = null): self
     {
@@ -490,7 +490,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set softErrorEmail value
      * @param string $softErrorEmail
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setSoftErrorEmail(?string $softErrorEmail = null): self
     {
@@ -513,7 +513,7 @@ class EcommerceRequest extends AbstractStructBase
     /**
      * Set validateLicense value
      * @param bool $validateLicense
-     * @return \StructType\EcommerceRequest
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceRequest
      */
     public function setValidateLicense(?bool $validateLicense = null): self
     {

@@ -47,7 +47,7 @@ class OrganizationPreferences extends AbstractStructBase
     /**
      * Set passwordMinimumLength value
      * @param int $passwordMinimumLength
-     * @return \StructType\OrganizationPreferences
+     * @return \BurgerDigital\eTapestry\StructType\OrganizationPreferences
      */
     public function setPasswordMinimumLength(?int $passwordMinimumLength = null): self
     {
@@ -70,7 +70,7 @@ class OrganizationPreferences extends AbstractStructBase
     /**
      * Set passwordRequireComplexity value
      * @param bool $passwordRequireComplexity
-     * @return \StructType\OrganizationPreferences
+     * @return \BurgerDigital\eTapestry\StructType\OrganizationPreferences
      */
     public function setPasswordRequireComplexity(?bool $passwordRequireComplexity = null): self
     {

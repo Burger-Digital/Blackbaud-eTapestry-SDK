@@ -87,7 +87,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set location value
      * @param string $location
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setLocation(?string $location = null): self
     {
@@ -110,7 +110,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setNote(?string $note = null): self
     {
@@ -133,7 +133,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set realEstateType value
      * @param string $realEstateType
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setRealEstateType(?string $realEstateType = null): self
     {
@@ -156,7 +156,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set saleDate value
      * @param string $saleDate
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setSaleDate(?string $saleDate = null): self
     {
@@ -179,7 +179,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set saleValue value
      * @param float $saleValue
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setSaleValue(?float $saleValue = null): self
     {
@@ -202,7 +202,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set size value
      * @param string $size
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setSize(?string $size = null): self
     {
@@ -225,7 +225,7 @@ class RealEstate extends AbstractStructBase
     /**
      * Set taxParcelNumber value
      * @param string $taxParcelNumber
-     * @return \StructType\RealEstate
+     * @return \BurgerDigital\eTapestry\StructType\RealEstate
      */
     public function setTaxParcelNumber(?string $taxParcelNumber = null): self
     {

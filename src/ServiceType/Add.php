@@ -18,11 +18,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Account $account_1
+     * @param \BurgerDigital\eTapestry\StructType\Account $account_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addAccount(\StructType\Account $account_1, $boolean_2)
+    public function addAccount(\BurgerDigital\eTapestry\StructType\Account $account_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddAccount = $this->getSoapClient()->__soapCall('addAccount', [
@@ -42,11 +42,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Gift $gift_1
+     * @param \BurgerDigital\eTapestry\StructType\Gift $gift_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addAndProcessGift(\StructType\Gift $gift_1, $boolean_2)
+    public function addAndProcessGift(\BurgerDigital\eTapestry\StructType\Gift $gift_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddAndProcessGift = $this->getSoapClient()->__soapCall('addAndProcessGift', [
@@ -66,11 +66,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Payment $payment_1
+     * @param \BurgerDigital\eTapestry\StructType\Payment $payment_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addAndProcessPayment(\StructType\Payment $payment_1, $boolean_2)
+    public function addAndProcessPayment(\BurgerDigital\eTapestry\StructType\Payment $payment_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddAndProcessPayment = $this->getSoapClient()->__soapCall('addAndProcessPayment', [
@@ -90,11 +90,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Contact $contact_1
+     * @param \BurgerDigital\eTapestry\StructType\Contact $contact_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addContact(\StructType\Contact $contact_1, $boolean_2)
+    public function addContact(\BurgerDigital\eTapestry\StructType\Contact $contact_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddContact = $this->getSoapClient()->__soapCall('addContact', [
@@ -114,10 +114,10 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Declaration $declaration_1
+     * @param \BurgerDigital\eTapestry\StructType\Declaration $declaration_1
      * @return string|bool
      */
-    public function addDeclaration(\StructType\Declaration $declaration_1)
+    public function addDeclaration(\BurgerDigital\eTapestry\StructType\Declaration $declaration_1)
     {
         try {
             $this->setResult($resultAddDeclaration = $this->getSoapClient()->__soapCall('addDeclaration', [
@@ -136,11 +136,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Disbursement $disbursement_1
+     * @param \BurgerDigital\eTapestry\StructType\Disbursement $disbursement_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addDisbursement(\StructType\Disbursement $disbursement_1, $boolean_2)
+    public function addDisbursement(\BurgerDigital\eTapestry\StructType\Disbursement $disbursement_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddDisbursement = $this->getSoapClient()->__soapCall('addDisbursement', [
@@ -160,11 +160,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Gift $gift_1
+     * @param \BurgerDigital\eTapestry\StructType\Gift $gift_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addGift(\StructType\Gift $gift_1, $boolean_2)
+    public function addGift(\BurgerDigital\eTapestry\StructType\Gift $gift_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddGift = $this->getSoapClient()->__soapCall('addGift', [
@@ -184,10 +184,10 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\LoginCredentialsRequest $loginCredentialsRequest_1
-     * @return \StructType\LoginCredentialsResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\LoginCredentialsRequest $loginCredentialsRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsResponse|bool
      */
-    public function addLoginCredentials(\StructType\LoginCredentialsRequest $loginCredentialsRequest_1)
+    public function addLoginCredentials(\BurgerDigital\eTapestry\StructType\LoginCredentialsRequest $loginCredentialsRequest_1)
     {
         try {
             $this->setResult($resultAddLoginCredentials = $this->getSoapClient()->__soapCall('addLoginCredentials', [
@@ -206,11 +206,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Note $note_1
+     * @param \BurgerDigital\eTapestry\StructType\Note $note_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addNote(\StructType\Note $note_1, $boolean_2)
+    public function addNote(\BurgerDigital\eTapestry\StructType\Note $note_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddNote = $this->getSoapClient()->__soapCall('addNote', [
@@ -230,11 +230,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\OutlookIntegrationEmail $outlookIntegrationEmail_1
-     * @param \StructType\Account[] $arrayOfAccount_2
+     * @param \BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail $outlookIntegrationEmail_1
+     * @param \BurgerDigital\eTapestry\StructType\Account[] $arrayOfAccount_2
      * @return string|bool
      */
-    public function addOutlookIntegrationEmail(\StructType\OutlookIntegrationEmail $outlookIntegrationEmail_1, array $arrayOfAccount_2)
+    public function addOutlookIntegrationEmail(\BurgerDigital\eTapestry\StructType\OutlookIntegrationEmail $outlookIntegrationEmail_1, array $arrayOfAccount_2)
     {
         try {
             $this->setResult($resultAddOutlookIntegrationEmail = $this->getSoapClient()->__soapCall('addOutlookIntegrationEmail', [
@@ -310,11 +310,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Payment $payment_1
+     * @param \BurgerDigital\eTapestry\StructType\Payment $payment_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addPayment(\StructType\Payment $payment_1, $boolean_2)
+    public function addPayment(\BurgerDigital\eTapestry\StructType\Payment $payment_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddPayment = $this->getSoapClient()->__soapCall('addPayment', [
@@ -334,11 +334,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Pledge $pledge_1
+     * @param \BurgerDigital\eTapestry\StructType\Pledge $pledge_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addPledge(\StructType\Pledge $pledge_1, $boolean_2)
+    public function addPledge(\BurgerDigital\eTapestry\StructType\Pledge $pledge_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddPledge = $this->getSoapClient()->__soapCall('addPledge', [
@@ -358,11 +358,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\RecurringGift $recurringGift_1
+     * @param \BurgerDigital\eTapestry\StructType\RecurringGift $recurringGift_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addRecurringGift(\StructType\RecurringGift $recurringGift_1, $boolean_2)
+    public function addRecurringGift(\BurgerDigital\eTapestry\StructType\RecurringGift $recurringGift_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddRecurringGift = $this->getSoapClient()->__soapCall('addRecurringGift', [
@@ -382,11 +382,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\RecurringGiftSchedule $recurringGiftSchedule_1
+     * @param \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule $recurringGiftSchedule_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addRecurringGiftSchedule(\StructType\RecurringGiftSchedule $recurringGiftSchedule_1, $boolean_2)
+    public function addRecurringGiftSchedule(\BurgerDigital\eTapestry\StructType\RecurringGiftSchedule $recurringGiftSchedule_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddRecurringGiftSchedule = $this->getSoapClient()->__soapCall('addRecurringGiftSchedule', [
@@ -406,11 +406,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Relationship $relationship_1
+     * @param \BurgerDigital\eTapestry\StructType\Relationship $relationship_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addRelationship(\StructType\Relationship $relationship_1, $boolean_2)
+    public function addRelationship(\BurgerDigital\eTapestry\StructType\Relationship $relationship_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddRelationship = $this->getSoapClient()->__soapCall('addRelationship', [
@@ -430,11 +430,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SegmentedDonation $segmentedDonation_1
+     * @param \BurgerDigital\eTapestry\StructType\SegmentedDonation $segmentedDonation_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addSegmentedDonation(\StructType\SegmentedDonation $segmentedDonation_1, $boolean_2)
+    public function addSegmentedDonation(\BurgerDigital\eTapestry\StructType\SegmentedDonation $segmentedDonation_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddSegmentedDonation = $this->getSoapClient()->__soapCall('addSegmentedDonation', [
@@ -454,11 +454,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SegmentedPledge $segmentedPledge_1
+     * @param \BurgerDigital\eTapestry\StructType\SegmentedPledge $segmentedPledge_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addSegmentedPledge(\StructType\SegmentedPledge $segmentedPledge_1, $boolean_2)
+    public function addSegmentedPledge(\BurgerDigital\eTapestry\StructType\SegmentedPledge $segmentedPledge_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddSegmentedPledge = $this->getSoapClient()->__soapCall('addSegmentedPledge', [
@@ -478,11 +478,11 @@ class Add extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SoftCredit $softCredit_1
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function addSoftCredit(\StructType\SoftCredit $softCredit_1, $boolean_2)
+    public function addSoftCredit(\BurgerDigital\eTapestry\StructType\SoftCredit $softCredit_1, $boolean_2)
     {
         try {
             $this->setResult($resultAddSoftCredit = $this->getSoapClient()->__soapCall('addSoftCredit', [
@@ -500,7 +500,7 @@ class Add extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return string|void|\StructType\LoginCredentialsResponse
+     * @return string|void|\BurgerDigital\eTapestry\StructType\LoginCredentialsResponse
      */
     public function getResult()
     {

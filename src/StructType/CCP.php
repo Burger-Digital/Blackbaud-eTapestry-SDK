@@ -55,7 +55,7 @@ class CCP extends AbstractStructBase
     /**
      * Set CCPDate value
      * @param string $cCPDate
-     * @return \StructType\CCP
+     * @return \BurgerDigital\eTapestry\StructType\CCP
      */
     public function setCCPDate(?string $cCPDate = null): self
     {
@@ -78,7 +78,7 @@ class CCP extends AbstractStructBase
     /**
      * Set CCPId value
      * @param string $cCPId
-     * @return \StructType\CCP
+     * @return \BurgerDigital\eTapestry\StructType\CCP
      */
     public function setCCPId(?string $cCPId = null): self
     {
@@ -101,7 +101,7 @@ class CCP extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\CCP
+     * @return \BurgerDigital\eTapestry\StructType\CCP
      */
     public function setNote(?string $note = null): self
     {

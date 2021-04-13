@@ -50,7 +50,7 @@ class SegmentedOrder extends AbstractStructBase
     protected ?string $offsettingRef = null;
     /**
      * The orderInfo
-     * @var \StructType\OrderInfo|null
+     * @var \BurgerDigital\eTapestry\StructType\OrderInfo|null
      */
     protected ?\StructType\OrderInfo $orderInfo = null;
     /**
@@ -104,7 +104,7 @@ class SegmentedOrder extends AbstractStructBase
      * @param bool $final
      * @param string $lastModifiedDate
      * @param string $offsettingRef
-     * @param \StructType\OrderInfo $orderInfo
+     * @param \BurgerDigital\eTapestry\StructType\OrderInfo $orderInfo
      * @param string $ref
      * @param mixed[] $segments
      * @param float $totalAmount
@@ -139,7 +139,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -162,7 +162,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -185,7 +185,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -208,7 +208,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setDate(?string $date = null): self
     {
@@ -231,7 +231,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setFinal(?bool $final = null): self
     {
@@ -254,7 +254,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -277,7 +277,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set offsettingRef value
      * @param string $offsettingRef
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setOffsettingRef(?string $offsettingRef = null): self
     {
@@ -291,7 +291,7 @@ class SegmentedOrder extends AbstractStructBase
     }
     /**
      * Get orderInfo value
-     * @return \StructType\OrderInfo|null
+     * @return \BurgerDigital\eTapestry\StructType\OrderInfo|null
      */
     public function getOrderInfo(): ?\StructType\OrderInfo
     {
@@ -299,8 +299,8 @@ class SegmentedOrder extends AbstractStructBase
     }
     /**
      * Set orderInfo value
-     * @param \StructType\OrderInfo $orderInfo
-     * @return \StructType\SegmentedOrder
+     * @param \BurgerDigital\eTapestry\StructType\OrderInfo $orderInfo
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setOrderInfo(?\StructType\OrderInfo $orderInfo = null): self
     {
@@ -319,7 +319,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setRef(?string $ref = null): self
     {
@@ -366,7 +366,7 @@ class SegmentedOrder extends AbstractStructBase
      * Set segments value
      * @throws InvalidArgumentException
      * @param mixed[] $segments
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setSegments(array $segments = []): self
     {
@@ -382,7 +382,7 @@ class SegmentedOrder extends AbstractStructBase
      * Add item to segments value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function addToSegments(mixed $item): self
     {
@@ -405,7 +405,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set totalAmount value
      * @param float $totalAmount
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setTotalAmount(?float $totalAmount = null): self
     {
@@ -428,7 +428,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set totalNonDeductibleAmount value
      * @param float $totalNonDeductibleAmount
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setTotalNonDeductibleAmount(?float $totalNonDeductibleAmount = null): self
     {
@@ -451,7 +451,7 @@ class SegmentedOrder extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\SegmentedOrder
+     * @return \BurgerDigital\eTapestry\StructType\SegmentedOrder
      */
     public function setType(?int $type = null): self
     {

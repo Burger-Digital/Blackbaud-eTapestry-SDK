@@ -103,7 +103,7 @@ class Stock extends AbstractStructBase
     /**
      * Set brokerName value
      * @param string $brokerName
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setBrokerName(?string $brokerName = null): self
     {
@@ -126,7 +126,7 @@ class Stock extends AbstractStructBase
     /**
      * Set brokerageFee value
      * @param float $brokerageFee
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setBrokerageFee(?float $brokerageFee = null): self
     {
@@ -149,7 +149,7 @@ class Stock extends AbstractStructBase
     /**
      * Set company value
      * @param string $company
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setCompany(?string $company = null): self
     {
@@ -172,7 +172,7 @@ class Stock extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setNote(?string $note = null): self
     {
@@ -195,7 +195,7 @@ class Stock extends AbstractStructBase
     /**
      * Set numberOfShares value
      * @param float $numberOfShares
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setNumberOfShares(?float $numberOfShares = null): self
     {
@@ -218,7 +218,7 @@ class Stock extends AbstractStructBase
     /**
      * Set pricePerShare value
      * @param float $pricePerShare
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setPricePerShare(?float $pricePerShare = null): self
     {
@@ -241,7 +241,7 @@ class Stock extends AbstractStructBase
     /**
      * Set saleDate value
      * @param string $saleDate
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setSaleDate(?string $saleDate = null): self
     {
@@ -264,7 +264,7 @@ class Stock extends AbstractStructBase
     /**
      * Set salePricePerShare value
      * @param float $salePricePerShare
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setSalePricePerShare(?float $salePricePerShare = null): self
     {
@@ -287,7 +287,7 @@ class Stock extends AbstractStructBase
     /**
      * Set ticker value
      * @param string $ticker
-     * @return \StructType\Stock
+     * @return \BurgerDigital\eTapestry\StructType\Stock
      */
     public function setTicker(?string $ticker = null): self
     {

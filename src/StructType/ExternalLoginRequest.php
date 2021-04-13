@@ -71,7 +71,7 @@ class ExternalLoginRequest extends AbstractStructBase
     /**
      * Set applicationContext value
      * @param string $applicationContext
-     * @return \StructType\ExternalLoginRequest
+     * @return \BurgerDigital\eTapestry\StructType\ExternalLoginRequest
      */
     public function setApplicationContext(?string $applicationContext = null): self
     {
@@ -94,7 +94,7 @@ class ExternalLoginRequest extends AbstractStructBase
     /**
      * Set applicationName value
      * @param string $applicationName
-     * @return \StructType\ExternalLoginRequest
+     * @return \BurgerDigital\eTapestry\StructType\ExternalLoginRequest
      */
     public function setApplicationName(?string $applicationName = null): self
     {
@@ -117,7 +117,7 @@ class ExternalLoginRequest extends AbstractStructBase
     /**
      * Set databaseId value
      * @param string $databaseId
-     * @return \StructType\ExternalLoginRequest
+     * @return \BurgerDigital\eTapestry\StructType\ExternalLoginRequest
      */
     public function setDatabaseId(?string $databaseId = null): self
     {
@@ -140,7 +140,7 @@ class ExternalLoginRequest extends AbstractStructBase
     /**
      * Set loginId value
      * @param string $loginId
-     * @return \StructType\ExternalLoginRequest
+     * @return \BurgerDigital\eTapestry\StructType\ExternalLoginRequest
      */
     public function setLoginId(?string $loginId = null): self
     {
@@ -163,7 +163,7 @@ class ExternalLoginRequest extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\ExternalLoginRequest
+     * @return \BurgerDigital\eTapestry\StructType\ExternalLoginRequest
      */
     public function setPassword(?string $password = null): self
     {

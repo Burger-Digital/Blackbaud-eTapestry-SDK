@@ -119,7 +119,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -142,7 +142,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -165,7 +165,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set lifetimeGivingTotal value
      * @param float $lifetimeGivingTotal
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setLifetimeGivingTotal(?float $lifetimeGivingTotal = null): self
     {
@@ -188,7 +188,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set lifetimePledgedTotal value
      * @param float $lifetimePledgedTotal
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setLifetimePledgedTotal(?float $lifetimePledgedTotal = null): self
     {
@@ -211,7 +211,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set lifetimeTransactionCount value
      * @param int $lifetimeTransactionCount
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setLifetimeTransactionCount(?int $lifetimeTransactionCount = null): self
     {
@@ -234,7 +234,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set oneYearAgoGivingAmount value
      * @param float $oneYearAgoGivingAmount
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setOneYearAgoGivingAmount(?float $oneYearAgoGivingAmount = null): self
     {
@@ -257,7 +257,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set oneYearAgoPledgedAmount value
      * @param float $oneYearAgoPledgedAmount
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setOneYearAgoPledgedAmount(?float $oneYearAgoPledgedAmount = null): self
     {
@@ -280,7 +280,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set oneYearAgoTransactionCount value
      * @param int $oneYearAgoTransactionCount
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setOneYearAgoTransactionCount(?int $oneYearAgoTransactionCount = null): self
     {
@@ -303,7 +303,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set yearToDateGivingTotal value
      * @param float $yearToDateGivingTotal
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setYearToDateGivingTotal(?float $yearToDateGivingTotal = null): self
     {
@@ -326,7 +326,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set yearToDatePledgedTotal value
      * @param float $yearToDatePledgedTotal
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setYearToDatePledgedTotal(?float $yearToDatePledgedTotal = null): self
     {
@@ -349,7 +349,7 @@ class JournalSummary extends AbstractStructBase
     /**
      * Set yearToDateTransactionCount value
      * @param int $yearToDateTransactionCount
-     * @return \StructType\JournalSummary
+     * @return \BurgerDigital\eTapestry\StructType\JournalSummary
      */
     public function setYearToDateTransactionCount(?int $yearToDateTransactionCount = null): self
     {

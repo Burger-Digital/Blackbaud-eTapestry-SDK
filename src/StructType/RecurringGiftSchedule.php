@@ -39,7 +39,7 @@ class RecurringGiftSchedule extends AbstractStructBase
      * - arrayType: tns:Attachment[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\Attachment[]
+     * @var \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     protected array $attachments = [];
     /**
@@ -63,7 +63,7 @@ class RecurringGiftSchedule extends AbstractStructBase
      * - arrayType: tns:DefinedValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     protected array $definedValues = [];
     /**
@@ -153,17 +153,17 @@ class RecurringGiftSchedule extends AbstractStructBase
     protected ?string $ref = null;
     /**
      * The schedule
-     * @var \StructType\StandardPaymentSchedule|null
+     * @var \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule|null
      */
     protected ?\StructType\StandardPaymentSchedule $schedule = null;
     /**
      * The scheduledValuable
-     * @var \StructType\Valuable|null
+     * @var \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     protected ?\StructType\Valuable $scheduledValuable = null;
     /**
      * The softCredit
-     * @var \StructType\SoftCredit|null
+     * @var \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     protected ?\StructType\SoftCredit $softCredit = null;
     /**
@@ -219,11 +219,11 @@ class RecurringGiftSchedule extends AbstractStructBase
      * @param string $accountRef
      * @param float $amount
      * @param string $approach
-     * @param \StructType\Attachment[] $attachments
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
      * @param string $campaign
      * @param string $createdDate
      * @param string $date
-     * @param \StructType\DefinedValue[] $definedValues
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
      * @param bool $final
      * @param string $fund
      * @param string $fundraiser
@@ -241,9 +241,9 @@ class RecurringGiftSchedule extends AbstractStructBase
      * @param string $recognitionName
      * @param int $recognitionType
      * @param string $ref
-     * @param \StructType\StandardPaymentSchedule $schedule
-     * @param \StructType\Valuable $scheduledValuable
-     * @param \StructType\SoftCredit $softCredit
+     * @param \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule $schedule
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $scheduledValuable
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
      * @param string $tributeAccountName
      * @param string $tributeAccountRef
      * @param int $type
@@ -295,7 +295,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -318,7 +318,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -341,7 +341,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setAmount(?float $amount = null): self
     {
@@ -364,7 +364,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setApproach(?string $approach = null): self
     {
@@ -378,7 +378,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Get attachments value
-     * @return \StructType\Attachment[]
+     * @return \BurgerDigital\eTapestry\StructType\Attachment[]
      */
     public function getAttachments(): array
     {
@@ -396,12 +396,12 @@ class RecurringGiftSchedule extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurringGiftScheduleAttachmentsItem) {
             // validation for constraint: itemType
-            if (!$recurringGiftScheduleAttachmentsItem instanceof \StructType\Attachment) {
+            if (!$recurringGiftScheduleAttachmentsItem instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
                 $invalidValues[] = is_object($recurringGiftScheduleAttachmentsItem) ? get_class($recurringGiftScheduleAttachmentsItem) : sprintf('%s(%s)', gettype($recurringGiftScheduleAttachmentsItem), var_export($recurringGiftScheduleAttachmentsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -410,8 +410,8 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment[] $attachments
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\Attachment[] $attachments
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setAttachments(array $attachments = []): self
     {
@@ -426,14 +426,14 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Add item to attachments value
      * @throws InvalidArgumentException
-     * @param \StructType\Attachment $item
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\Attachment $item
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function addToAttachments(\StructType\Attachment $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Attachment) {
-            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\Attachment) {
+            throw new InvalidArgumentException(sprintf('The attachments property can only contain items of type \BurgerDigital\eTapestry\StructType\Attachment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->attachments[] = $item;
         
@@ -450,7 +450,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -473,7 +473,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -496,7 +496,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setDate(?string $date = null): self
     {
@@ -510,7 +510,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Get definedValues value
-     * @return \StructType\DefinedValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedValue[]
      */
     public function getDefinedValues(): array
     {
@@ -528,12 +528,12 @@ class RecurringGiftSchedule extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $recurringGiftScheduleDefinedValuesItem) {
             // validation for constraint: itemType
-            if (!$recurringGiftScheduleDefinedValuesItem instanceof \StructType\DefinedValue) {
+            if (!$recurringGiftScheduleDefinedValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
                 $invalidValues[] = is_object($recurringGiftScheduleDefinedValuesItem) ? get_class($recurringGiftScheduleDefinedValuesItem) : sprintf('%s(%s)', gettype($recurringGiftScheduleDefinedValuesItem), var_export($recurringGiftScheduleDefinedValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -542,8 +542,8 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue[] $definedValues
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue[] $definedValues
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setDefinedValues(array $definedValues = []): self
     {
@@ -558,14 +558,14 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Add item to definedValues value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedValue $item
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\DefinedValue $item
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function addToDefinedValues(\StructType\DefinedValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedValue) {
-            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedValue) {
+            throw new InvalidArgumentException(sprintf('The definedValues property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->definedValues[] = $item;
         
@@ -582,7 +582,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setFinal(?bool $final = null): self
     {
@@ -605,7 +605,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setFund(?string $fund = null): self
     {
@@ -628,7 +628,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set fundraiser value
      * @param string $fundraiser
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setFundraiser(?string $fundraiser = null): self
     {
@@ -651,7 +651,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -674,7 +674,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setLetter(?string $letter = null): self
     {
@@ -697,7 +697,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set linkedGiftsAmount value
      * @param float $linkedGiftsAmount
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setLinkedGiftsAmount(?float $linkedGiftsAmount = null): self
     {
@@ -720,7 +720,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set nextGiftAmount value
      * @param float $nextGiftAmount
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setNextGiftAmount(?float $nextGiftAmount = null): self
     {
@@ -743,7 +743,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set nextGiftDate value
      * @param string $nextGiftDate
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setNextGiftDate(?string $nextGiftDate = null): self
     {
@@ -766,7 +766,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set nonDeductibleAmount value
      * @param float $nonDeductibleAmount
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setNonDeductibleAmount(?float $nonDeductibleAmount = null): self
     {
@@ -789,7 +789,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setNote(?string $note = null): self
     {
@@ -812,7 +812,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set originalAccountName value
      * @param string $originalAccountName
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setOriginalAccountName(?string $originalAccountName = null): self
     {
@@ -835,7 +835,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set originalAccountRef value
      * @param string $originalAccountRef
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setOriginalAccountRef(?string $originalAccountRef = null): self
     {
@@ -858,7 +858,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set originalTransactionRef value
      * @param string $originalTransactionRef
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setOriginalTransactionRef(?string $originalTransactionRef = null): self
     {
@@ -881,7 +881,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set receipt value
      * @param string $receipt
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setReceipt(?string $receipt = null): self
     {
@@ -904,7 +904,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set recognitionName value
      * @param string $recognitionName
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setRecognitionName(?string $recognitionName = null): self
     {
@@ -927,7 +927,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set recognitionType value
      * @param int $recognitionType
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setRecognitionType(?int $recognitionType = null): self
     {
@@ -950,7 +950,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setRef(?string $ref = null): self
     {
@@ -964,7 +964,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Get schedule value
-     * @return \StructType\StandardPaymentSchedule|null
+     * @return \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule|null
      */
     public function getSchedule(): ?\StructType\StandardPaymentSchedule
     {
@@ -972,8 +972,8 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Set schedule value
-     * @param \StructType\StandardPaymentSchedule $schedule
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\StandardPaymentSchedule $schedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setSchedule(?\StructType\StandardPaymentSchedule $schedule = null): self
     {
@@ -983,7 +983,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Get scheduledValuable value
-     * @return \StructType\Valuable|null
+     * @return \BurgerDigital\eTapestry\StructType\Valuable|null
      */
     public function getScheduledValuable(): ?\StructType\Valuable
     {
@@ -991,8 +991,8 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Set scheduledValuable value
-     * @param \StructType\Valuable $scheduledValuable
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\Valuable $scheduledValuable
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setScheduledValuable(?\StructType\Valuable $scheduledValuable = null): self
     {
@@ -1002,7 +1002,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Get softCredit value
-     * @return \StructType\SoftCredit|null
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit|null
      */
     public function getSoftCredit(): ?\StructType\SoftCredit
     {
@@ -1010,8 +1010,8 @@ class RecurringGiftSchedule extends AbstractStructBase
     }
     /**
      * Set softCredit value
-     * @param \StructType\SoftCredit $softCredit
-     * @return \StructType\RecurringGiftSchedule
+     * @param \BurgerDigital\eTapestry\StructType\SoftCredit $softCredit
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setSoftCredit(?\StructType\SoftCredit $softCredit = null): self
     {
@@ -1030,7 +1030,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set tributeAccountName value
      * @param string $tributeAccountName
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setTributeAccountName(?string $tributeAccountName = null): self
     {
@@ -1053,7 +1053,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set tributeAccountRef value
      * @param string $tributeAccountRef
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setTributeAccountRef(?string $tributeAccountRef = null): self
     {
@@ -1076,7 +1076,7 @@ class RecurringGiftSchedule extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\RecurringGiftSchedule
+     * @return \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule
      */
     public function setType(?int $type = null): self
     {

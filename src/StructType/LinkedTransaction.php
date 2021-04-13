@@ -15,7 +15,7 @@ class LinkedTransaction extends AbstractStructBase
 {
     /**
      * The softCreditAccount
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $softCreditAccount = null;
     /**
@@ -25,12 +25,12 @@ class LinkedTransaction extends AbstractStructBase
     protected ?mixed $transaction = null;
     /**
      * The tributeAccount
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $tributeAccount = null;
     /**
      * The tributeNotificantAccount
-     * @var \StructType\Account|null
+     * @var \BurgerDigital\eTapestry\StructType\Account|null
      */
     protected ?\StructType\Account $tributeNotificantAccount = null;
     /**
@@ -45,10 +45,10 @@ class LinkedTransaction extends AbstractStructBase
      * @uses LinkedTransaction::setTributeAccount()
      * @uses LinkedTransaction::setTributeNotificantAccount()
      * @uses LinkedTransaction::setTributeNotificantRelationshipType()
-     * @param \StructType\Account $softCreditAccount
+     * @param \BurgerDigital\eTapestry\StructType\Account $softCreditAccount
      * @param mixed $transaction
-     * @param \StructType\Account $tributeAccount
-     * @param \StructType\Account $tributeNotificantAccount
+     * @param \BurgerDigital\eTapestry\StructType\Account $tributeAccount
+     * @param \BurgerDigital\eTapestry\StructType\Account $tributeNotificantAccount
      * @param string $tributeNotificantRelationshipType
      */
     public function __construct(?\StructType\Account $softCreditAccount = null, ?mixed $transaction = null, ?\StructType\Account $tributeAccount = null, ?\StructType\Account $tributeNotificantAccount = null, ?string $tributeNotificantRelationshipType = null)
@@ -62,7 +62,7 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Get softCreditAccount value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getSoftCreditAccount(): ?\StructType\Account
     {
@@ -70,8 +70,8 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Set softCreditAccount value
-     * @param \StructType\Account $softCreditAccount
-     * @return \StructType\LinkedTransaction
+     * @param \BurgerDigital\eTapestry\StructType\Account $softCreditAccount
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function setSoftCreditAccount(?\StructType\Account $softCreditAccount = null): self
     {
@@ -90,7 +90,7 @@ class LinkedTransaction extends AbstractStructBase
     /**
      * Set transaction value
      * @param mixed $transaction
-     * @return \StructType\LinkedTransaction
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function setTransaction(?mixed $transaction = null): self
     {
@@ -100,7 +100,7 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Get tributeAccount value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getTributeAccount(): ?\StructType\Account
     {
@@ -108,8 +108,8 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Set tributeAccount value
-     * @param \StructType\Account $tributeAccount
-     * @return \StructType\LinkedTransaction
+     * @param \BurgerDigital\eTapestry\StructType\Account $tributeAccount
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function setTributeAccount(?\StructType\Account $tributeAccount = null): self
     {
@@ -119,7 +119,7 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Get tributeNotificantAccount value
-     * @return \StructType\Account|null
+     * @return \BurgerDigital\eTapestry\StructType\Account|null
      */
     public function getTributeNotificantAccount(): ?\StructType\Account
     {
@@ -127,8 +127,8 @@ class LinkedTransaction extends AbstractStructBase
     }
     /**
      * Set tributeNotificantAccount value
-     * @param \StructType\Account $tributeNotificantAccount
-     * @return \StructType\LinkedTransaction
+     * @param \BurgerDigital\eTapestry\StructType\Account $tributeNotificantAccount
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function setTributeNotificantAccount(?\StructType\Account $tributeNotificantAccount = null): self
     {
@@ -147,7 +147,7 @@ class LinkedTransaction extends AbstractStructBase
     /**
      * Set tributeNotificantRelationshipType value
      * @param string $tributeNotificantRelationshipType
-     * @return \StructType\LinkedTransaction
+     * @return \BurgerDigital\eTapestry\StructType\LinkedTransaction
      */
     public function setTributeNotificantRelationshipType(?string $tributeNotificantRelationshipType = null): self
     {

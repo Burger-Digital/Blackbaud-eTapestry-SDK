@@ -18,10 +18,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\AccountChangeRequest $accountChangeRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\AccountChangeRequest $accountChangeRequest_1
      * @return void|bool
      */
-    public function processAccountChange(\StructType\AccountChangeRequest $accountChangeRequest_1)
+    public function processAccountChange(\BurgerDigital\eTapestry\StructType\AccountChangeRequest $accountChangeRequest_1)
     {
         try {
             $this->setResult($resultProcessAccountChange = $this->getSoapClient()->__soapCall('processAccountChange', [
@@ -40,10 +40,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CartOrderRequest $cartOrderRequest_1
-     * @return \StructType\CartOrderResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\CartOrderRequest $cartOrderRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\CartOrderResponse|bool
      */
-    public function processCartOrder(\StructType\CartOrderRequest $cartOrderRequest_1)
+    public function processCartOrder(\BurgerDigital\eTapestry\StructType\CartOrderRequest $cartOrderRequest_1)
     {
         try {
             $this->setResult($resultProcessCartOrder = $this->getSoapClient()->__soapCall('processCartOrder', [
@@ -62,10 +62,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\EcommerceRequest $ecommerceRequest_1
-     * @return \StructType\EcommerceResponse|bool
+     * @param \BurgerDigital\eTapestry\StructType\EcommerceRequest $ecommerceRequest_1
+     * @return \BurgerDigital\eTapestry\StructType\EcommerceResponse|bool
      */
-    public function processEcommerceRequest(\StructType\EcommerceRequest $ecommerceRequest_1)
+    public function processEcommerceRequest(\BurgerDigital\eTapestry\StructType\EcommerceRequest $ecommerceRequest_1)
     {
         try {
             $this->setResult($resultProcessEcommerceRequest = $this->getSoapClient()->__soapCall('processEcommerceRequest', [
@@ -84,10 +84,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\ForgottenPasswordEmailHelpRequest $forgottenPasswordEmailHelpRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest $forgottenPasswordEmailHelpRequest_1
      * @return int|bool
      */
-    public function processForgottenPasswordEmailHelp(\StructType\ForgottenPasswordEmailHelpRequest $forgottenPasswordEmailHelpRequest_1)
+    public function processForgottenPasswordEmailHelp(\BurgerDigital\eTapestry\StructType\ForgottenPasswordEmailHelpRequest $forgottenPasswordEmailHelpRequest_1)
     {
         try {
             $this->setResult($resultProcessForgottenPasswordEmailHelp = $this->getSoapClient()->__soapCall('processForgottenPasswordEmailHelp', [
@@ -106,10 +106,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\ForgottenPasswordResetHelpRequest $forgottenPasswordResetHelpRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\ForgottenPasswordResetHelpRequest $forgottenPasswordResetHelpRequest_1
      * @return string|bool
      */
-    public function processForgottenPasswordResetHelp(\StructType\ForgottenPasswordResetHelpRequest $forgottenPasswordResetHelpRequest_1)
+    public function processForgottenPasswordResetHelp(\BurgerDigital\eTapestry\StructType\ForgottenPasswordResetHelpRequest $forgottenPasswordResetHelpRequest_1)
     {
         try {
             $this->setResult($resultProcessForgottenPasswordResetHelp = $this->getSoapClient()->__soapCall('processForgottenPasswordResetHelp', [
@@ -128,10 +128,10 @@ class Process extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\ProcessTransactionRequest $processTransactionRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\ProcessTransactionRequest $processTransactionRequest_1
      * @return string|bool
      */
-    public function processTransaction(\StructType\ProcessTransactionRequest $processTransactionRequest_1)
+    public function processTransaction(\BurgerDigital\eTapestry\StructType\ProcessTransactionRequest $processTransactionRequest_1)
     {
         try {
             $this->setResult($resultProcessTransaction = $this->getSoapClient()->__soapCall('processTransaction', [
@@ -148,7 +148,7 @@ class Process extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return int|string|void|\StructType\CartOrderResponse|\StructType\EcommerceResponse
+     * @return int|string|void|\BurgerDigital\eTapestry\StructType\CartOrderResponse|\BurgerDigital\eTapestry\StructType\EcommerceResponse
      */
     public function getResult()
     {

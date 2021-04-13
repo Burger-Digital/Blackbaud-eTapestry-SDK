@@ -83,7 +83,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setCount(?int $count = null): self
     {
@@ -130,7 +130,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param mixed[] $data
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setData(array $data = []): self
     {
@@ -146,7 +146,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function addToData(mixed $item): self
     {
@@ -169,7 +169,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
     /**
      * Set pages value
      * @param int $pages
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setPages(?int $pages = null): self
     {
@@ -192,7 +192,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setStart(?int $start = null): self
     {
@@ -215,7 +215,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setTotal(?int $total = null): self
     {
@@ -238,7 +238,7 @@ class PagedQueryResultsResponse extends AbstractStructBase
     /**
      * Set usedCache value
      * @param bool $usedCache
-     * @return \StructType\PagedQueryResultsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedQueryResultsResponse
      */
     public function setUsedCache(?bool $usedCache = null): self
     {

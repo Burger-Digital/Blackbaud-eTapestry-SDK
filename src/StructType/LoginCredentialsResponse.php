@@ -55,7 +55,7 @@ class LoginCredentialsResponse extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\LoginCredentialsResponse
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsResponse
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -78,7 +78,7 @@ class LoginCredentialsResponse extends AbstractStructBase
     /**
      * Set createdNewAccount value
      * @param bool $createdNewAccount
-     * @return \StructType\LoginCredentialsResponse
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsResponse
      */
     public function setCreatedNewAccount(?bool $createdNewAccount = null): self
     {
@@ -101,7 +101,7 @@ class LoginCredentialsResponse extends AbstractStructBase
     /**
      * Set matchedMultiples value
      * @param bool $matchedMultiples
-     * @return \StructType\LoginCredentialsResponse
+     * @return \BurgerDigital\eTapestry\StructType\LoginCredentialsResponse
      */
     public function setMatchedMultiples(?bool $matchedMultiples = null): self
     {

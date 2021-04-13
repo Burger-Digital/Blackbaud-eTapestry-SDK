@@ -47,7 +47,7 @@ class Phone extends AbstractStructBase
     /**
      * Set number value
      * @param string $number
-     * @return \StructType\Phone
+     * @return \BurgerDigital\eTapestry\StructType\Phone
      */
     public function setNumber(?string $number = null): self
     {
@@ -70,7 +70,7 @@ class Phone extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \StructType\Phone
+     * @return \BurgerDigital\eTapestry\StructType\Phone
      */
     public function setType(?string $type = null): self
     {

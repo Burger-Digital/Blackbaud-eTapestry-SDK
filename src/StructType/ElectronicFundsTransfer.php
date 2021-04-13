@@ -143,7 +143,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {
@@ -166,7 +166,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set accountType value
      * @param int $accountType
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setAccountType(?int $accountType = null): self
     {
@@ -189,7 +189,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set authorizationCode value
      * @param string $authorizationCode
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setAuthorizationCode(?string $authorizationCode = null): self
     {
@@ -212,7 +212,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set bank value
      * @param string $bank
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setBank(?string $bank = null): self
     {
@@ -235,7 +235,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set dateOfBirth value
      * @param string $dateOfBirth
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setDateOfBirth(?string $dateOfBirth = null): self
     {
@@ -258,7 +258,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set driversLicenseNumber value
      * @param string $driversLicenseNumber
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setDriversLicenseNumber(?string $driversLicenseNumber = null): self
     {
@@ -281,7 +281,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set driversLicenseState value
      * @param string $driversLicenseState
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setDriversLicenseState(?string $driversLicenseState = null): self
     {
@@ -304,7 +304,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setFirstName(?string $firstName = null): self
     {
@@ -327,7 +327,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set lastName value
      * @param string $lastName
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setLastName(?string $lastName = null): self
     {
@@ -350,7 +350,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setMiddleName(?string $middleName = null): self
     {
@@ -373,7 +373,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setNote(?string $note = null): self
     {
@@ -396,7 +396,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set processDate value
      * @param string $processDate
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setProcessDate(?string $processDate = null): self
     {
@@ -419,7 +419,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set routingNumber value
      * @param string $routingNumber
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setRoutingNumber(?string $routingNumber = null): self
     {
@@ -442,7 +442,7 @@ class ElectronicFundsTransfer extends AbstractStructBase
     /**
      * Set ssn value
      * @param string $ssn
-     * @return \StructType\ElectronicFundsTransfer
+     * @return \BurgerDigital\eTapestry\StructType\ElectronicFundsTransfer
      */
     public function setSsn(?string $ssn = null): self
     {

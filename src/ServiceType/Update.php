@@ -18,11 +18,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Account $account_1
+     * @param \BurgerDigital\eTapestry\StructType\Account $account_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateAccount(\StructType\Account $account_1, $boolean_2)
+    public function updateAccount(\BurgerDigital\eTapestry\StructType\Account $account_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateAccount = $this->getSoapClient()->__soapCall('updateAccount', [
@@ -42,11 +42,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Contact $contact_1
+     * @param \BurgerDigital\eTapestry\StructType\Contact $contact_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateContact(\StructType\Contact $contact_1, $boolean_2)
+    public function updateContact(\BurgerDigital\eTapestry\StructType\Contact $contact_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateContact = $this->getSoapClient()->__soapCall('updateContact', [
@@ -66,10 +66,10 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Declaration $declaration_1
+     * @param \BurgerDigital\eTapestry\StructType\Declaration $declaration_1
      * @return string|bool
      */
-    public function updateDeclaration(\StructType\Declaration $declaration_1)
+    public function updateDeclaration(\BurgerDigital\eTapestry\StructType\Declaration $declaration_1)
     {
         try {
             $this->setResult($resultUpdateDeclaration = $this->getSoapClient()->__soapCall('updateDeclaration', [
@@ -114,11 +114,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Gift $gift_1
+     * @param \BurgerDigital\eTapestry\StructType\Gift $gift_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateGift(\StructType\Gift $gift_1, $boolean_2)
+    public function updateGift(\BurgerDigital\eTapestry\StructType\Gift $gift_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateGift = $this->getSoapClient()->__soapCall('updateGift', [
@@ -206,11 +206,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Note $note_1
+     * @param \BurgerDigital\eTapestry\StructType\Note $note_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateNote(\StructType\Note $note_1, $boolean_2)
+    public function updateNote(\BurgerDigital\eTapestry\StructType\Note $note_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateNote = $this->getSoapClient()->__soapCall('updateNote', [
@@ -230,11 +230,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Payment $payment_1
+     * @param \BurgerDigital\eTapestry\StructType\Payment $payment_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updatePayment(\StructType\Payment $payment_1, $boolean_2)
+    public function updatePayment(\BurgerDigital\eTapestry\StructType\Payment $payment_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdatePayment = $this->getSoapClient()->__soapCall('updatePayment', [
@@ -254,11 +254,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Pledge $pledge_1
+     * @param \BurgerDigital\eTapestry\StructType\Pledge $pledge_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updatePledge(\StructType\Pledge $pledge_1, $boolean_2)
+    public function updatePledge(\BurgerDigital\eTapestry\StructType\Pledge $pledge_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdatePledge = $this->getSoapClient()->__soapCall('updatePledge', [
@@ -278,11 +278,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PrivacyPreferences $privacyPreferences_1
+     * @param \BurgerDigital\eTapestry\StructType\PrivacyPreferences $privacyPreferences_1
      * @param string $boolean_2
      * @return void|bool
      */
-    public function updatePrivacyPreferences(\StructType\PrivacyPreferences $privacyPreferences_1, $boolean_2)
+    public function updatePrivacyPreferences(\BurgerDigital\eTapestry\StructType\PrivacyPreferences $privacyPreferences_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdatePrivacyPreferences = $this->getSoapClient()->__soapCall('updatePrivacyPreferences', [
@@ -302,11 +302,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\RecurringGift $recurringGift_1
+     * @param \BurgerDigital\eTapestry\StructType\RecurringGift $recurringGift_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateRecurringGift(\StructType\RecurringGift $recurringGift_1, $boolean_2)
+    public function updateRecurringGift(\BurgerDigital\eTapestry\StructType\RecurringGift $recurringGift_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateRecurringGift = $this->getSoapClient()->__soapCall('updateRecurringGift', [
@@ -326,11 +326,11 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\RecurringGiftSchedule $recurringGiftSchedule_1
+     * @param \BurgerDigital\eTapestry\StructType\RecurringGiftSchedule $recurringGiftSchedule_1
      * @param string $boolean_2
      * @return string|bool
      */
-    public function updateRecurringGiftSchedule(\StructType\RecurringGiftSchedule $recurringGiftSchedule_1, $boolean_2)
+    public function updateRecurringGiftSchedule(\BurgerDigital\eTapestry\StructType\RecurringGiftSchedule $recurringGiftSchedule_1, $boolean_2)
     {
         try {
             $this->setResult($resultUpdateRecurringGiftSchedule = $this->getSoapClient()->__soapCall('updateRecurringGiftSchedule', [

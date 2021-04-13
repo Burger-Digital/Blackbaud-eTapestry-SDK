@@ -18,10 +18,10 @@ class Connect extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\ConnectRequest $connectRequest_1
+     * @param \BurgerDigital\eTapestry\StructType\ConnectRequest $connectRequest_1
      * @return string|bool
      */
-    public function connect(\StructType\ConnectRequest $connectRequest_1)
+    public function connect(\BurgerDigital\eTapestry\StructType\ConnectRequest $connectRequest_1)
     {
         try {
             $this->setResult($resultConnect = $this->getSoapClient()->__soapCall('connect', [

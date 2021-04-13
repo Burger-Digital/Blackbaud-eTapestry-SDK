@@ -79,7 +79,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set gifted value
      * @param float $gifted
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setGifted(?float $gifted = null): self
     {
@@ -102,7 +102,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set journalEntryCount value
      * @param int $journalEntryCount
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setJournalEntryCount(?int $journalEntryCount = null): self
     {
@@ -125,7 +125,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set pledged value
      * @param float $pledged
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setPledged(?float $pledged = null): self
     {
@@ -148,7 +148,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set raised value
      * @param float $raised
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setRaised(?float $raised = null): self
     {
@@ -171,7 +171,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set received value
      * @param float $received
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setReceived(?float $received = null): self
     {
@@ -194,7 +194,7 @@ class QueryResultStats extends AbstractStructBase
     /**
      * Set transactionCount value
      * @param int $transactionCount
-     * @return \StructType\QueryResultStats
+     * @return \BurgerDigital\eTapestry\StructType\QueryResultStats
      */
     public function setTransactionCount(?int $transactionCount = null): self
     {

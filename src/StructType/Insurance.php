@@ -111,7 +111,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set beneficiary value
      * @param string $beneficiary
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setBeneficiary(?string $beneficiary = null): self
     {
@@ -134,7 +134,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set insurer value
      * @param string $insurer
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setInsurer(?string $insurer = null): self
     {
@@ -157,7 +157,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set lengthOfPolicyAgreement value
      * @param string $lengthOfPolicyAgreement
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setLengthOfPolicyAgreement(?string $lengthOfPolicyAgreement = null): self
     {
@@ -180,7 +180,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setNote(?string $note = null): self
     {
@@ -203,7 +203,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set organizationPayingPremiums value
      * @param bool $organizationPayingPremiums
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setOrganizationPayingPremiums(?bool $organizationPayingPremiums = null): self
     {
@@ -226,7 +226,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set policyNumber value
      * @param string $policyNumber
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setPolicyNumber(?string $policyNumber = null): self
     {
@@ -249,7 +249,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set premiumAmount value
      * @param float $premiumAmount
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setPremiumAmount(?float $premiumAmount = null): self
     {
@@ -272,7 +272,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set premiumFrequency value
      * @param int $premiumFrequency
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setPremiumFrequency(?int $premiumFrequency = null): self
     {
@@ -295,7 +295,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set surrenderDate value
      * @param string $surrenderDate
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setSurrenderDate(?string $surrenderDate = null): self
     {
@@ -318,7 +318,7 @@ class Insurance extends AbstractStructBase
     /**
      * Set surrenderValue value
      * @param float $surrenderValue
-     * @return \StructType\Insurance
+     * @return \BurgerDigital\eTapestry\StructType\Insurance
      */
     public function setSurrenderValue(?float $surrenderValue = null): self
     {

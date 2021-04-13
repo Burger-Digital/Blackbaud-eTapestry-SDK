@@ -55,7 +55,7 @@ class SocialMediaProfile extends AbstractStructBase
     /**
      * Set channel value
      * @param string $channel
-     * @return \StructType\SocialMediaProfile
+     * @return \BurgerDigital\eTapestry\StructType\SocialMediaProfile
      */
     public function setChannel(?string $channel = null): self
     {
@@ -78,7 +78,7 @@ class SocialMediaProfile extends AbstractStructBase
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\SocialMediaProfile
+     * @return \BurgerDigital\eTapestry\StructType\SocialMediaProfile
      */
     public function setEmail(?string $email = null): self
     {
@@ -101,7 +101,7 @@ class SocialMediaProfile extends AbstractStructBase
     /**
      * Set url value
      * @param string $url
-     * @return \StructType\SocialMediaProfile
+     * @return \BurgerDigital\eTapestry\StructType\SocialMediaProfile
      */
     public function setUrl(?string $url = null): self
     {

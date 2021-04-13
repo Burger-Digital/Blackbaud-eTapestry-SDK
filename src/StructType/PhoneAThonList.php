@@ -87,7 +87,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set currentCount value
      * @param int $currentCount
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setCurrentCount(?int $currentCount = null): self
     {
@@ -110,7 +110,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set description value
      * @param string $description
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setDescription(?string $description = null): self
     {
@@ -133,7 +133,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set enabled value
      * @param bool $enabled
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setEnabled(?bool $enabled = null): self
     {
@@ -156,7 +156,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set initialCount value
      * @param int $initialCount
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setInitialCount(?int $initialCount = null): self
     {
@@ -179,7 +179,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set lastGenerated value
      * @param string $lastGenerated
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setLastGenerated(?string $lastGenerated = null): self
     {
@@ -202,7 +202,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setName(?string $name = null): self
     {
@@ -225,7 +225,7 @@ class PhoneAThonList extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\PhoneAThonList
+     * @return \BurgerDigital\eTapestry\StructType\PhoneAThonList
      */
     public function setRef(?string $ref = null): self
     {

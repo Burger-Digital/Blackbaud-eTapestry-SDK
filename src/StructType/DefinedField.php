@@ -73,7 +73,7 @@ class DefinedField extends AbstractStructBase
      * - arrayType: tns:DefinedFieldValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedFieldValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     protected array $securityRights = [];
     /**
@@ -87,7 +87,7 @@ class DefinedField extends AbstractStructBase
      * - arrayType: tns:DefinedFieldValue[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\DefinedFieldValue[]
+     * @var \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     protected array $values = [];
     /**
@@ -115,9 +115,9 @@ class DefinedField extends AbstractStructBase
      * @param string $name
      * @param string $ref
      * @param bool $required
-     * @param \StructType\DefinedFieldValue[] $securityRights
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $securityRights
      * @param bool $system
-     * @param \StructType\DefinedFieldValue[] $values
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $values
      */
     public function __construct(array $applicationTypes = [], ?string $category = null, ?bool $consent = null, ?int $dataType = null, ?string $desc = null, ?bool $disabled = null, ?int $displayType = null, ?string $name = null, ?string $ref = null, ?bool $required = null, array $securityRights = [], ?bool $system = null, array $values = [])
     {
@@ -171,7 +171,7 @@ class DefinedField extends AbstractStructBase
      * Set applicationTypes value
      * @throws InvalidArgumentException
      * @param int[] $applicationTypes
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setApplicationTypes(array $applicationTypes = []): self
     {
@@ -187,7 +187,7 @@ class DefinedField extends AbstractStructBase
      * Add item to applicationTypes value
      * @throws InvalidArgumentException
      * @param int $item
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function addToApplicationTypes(int $item): self
     {
@@ -210,7 +210,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set category value
      * @param string $category
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setCategory(?string $category = null): self
     {
@@ -233,7 +233,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set consent value
      * @param bool $consent
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setConsent(?bool $consent = null): self
     {
@@ -256,7 +256,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set dataType value
      * @param int $dataType
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setDataType(?int $dataType = null): self
     {
@@ -279,7 +279,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set desc value
      * @param string $desc
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setDesc(?string $desc = null): self
     {
@@ -302,7 +302,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set disabled value
      * @param bool $disabled
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setDisabled(?bool $disabled = null): self
     {
@@ -325,7 +325,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set displayType value
      * @param int $displayType
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setDisplayType(?int $displayType = null): self
     {
@@ -348,7 +348,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setName(?string $name = null): self
     {
@@ -371,7 +371,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setRef(?string $ref = null): self
     {
@@ -394,7 +394,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set required value
      * @param bool $required
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setRequired(?bool $required = null): self
     {
@@ -408,7 +408,7 @@ class DefinedField extends AbstractStructBase
     }
     /**
      * Get securityRights value
-     * @return \StructType\DefinedFieldValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     public function getSecurityRights(): array
     {
@@ -426,12 +426,12 @@ class DefinedField extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $definedFieldSecurityRightsItem) {
             // validation for constraint: itemType
-            if (!$definedFieldSecurityRightsItem instanceof \StructType\DefinedFieldValue) {
+            if (!$definedFieldSecurityRightsItem instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
                 $invalidValues[] = is_object($definedFieldSecurityRightsItem) ? get_class($definedFieldSecurityRightsItem) : sprintf('%s(%s)', gettype($definedFieldSecurityRightsItem), var_export($definedFieldSecurityRightsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The securityRights property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The securityRights property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -440,8 +440,8 @@ class DefinedField extends AbstractStructBase
     /**
      * Set securityRights value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue[] $securityRights
-     * @return \StructType\DefinedField
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $securityRights
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setSecurityRights(array $securityRights = []): self
     {
@@ -456,14 +456,14 @@ class DefinedField extends AbstractStructBase
     /**
      * Add item to securityRights value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue $item
-     * @return \StructType\DefinedField
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue $item
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function addToSecurityRights(\StructType\DefinedFieldValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedFieldValue) {
-            throw new InvalidArgumentException(sprintf('The securityRights property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
+            throw new InvalidArgumentException(sprintf('The securityRights property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->securityRights[] = $item;
         
@@ -480,7 +480,7 @@ class DefinedField extends AbstractStructBase
     /**
      * Set system value
      * @param bool $system
-     * @return \StructType\DefinedField
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setSystem(?bool $system = null): self
     {
@@ -494,7 +494,7 @@ class DefinedField extends AbstractStructBase
     }
     /**
      * Get values value
-     * @return \StructType\DefinedFieldValue[]
+     * @return \BurgerDigital\eTapestry\StructType\DefinedFieldValue[]
      */
     public function getValues(): array
     {
@@ -512,12 +512,12 @@ class DefinedField extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $definedFieldValuesItem) {
             // validation for constraint: itemType
-            if (!$definedFieldValuesItem instanceof \StructType\DefinedFieldValue) {
+            if (!$definedFieldValuesItem instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
                 $invalidValues[] = is_object($definedFieldValuesItem) ? get_class($definedFieldValuesItem) : sprintf('%s(%s)', gettype($definedFieldValuesItem), var_export($definedFieldValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The values property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The values property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -526,8 +526,8 @@ class DefinedField extends AbstractStructBase
     /**
      * Set values value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue[] $values
-     * @return \StructType\DefinedField
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue[] $values
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function setValues(array $values = []): self
     {
@@ -542,14 +542,14 @@ class DefinedField extends AbstractStructBase
     /**
      * Add item to values value
      * @throws InvalidArgumentException
-     * @param \StructType\DefinedFieldValue $item
-     * @return \StructType\DefinedField
+     * @param \BurgerDigital\eTapestry\StructType\DefinedFieldValue $item
+     * @return \BurgerDigital\eTapestry\StructType\DefinedField
      */
     public function addToValues(\StructType\DefinedFieldValue $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DefinedFieldValue) {
-            throw new InvalidArgumentException(sprintf('The values property can only contain items of type \StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\DefinedFieldValue) {
+            throw new InvalidArgumentException(sprintf('The values property can only contain items of type \BurgerDigital\eTapestry\StructType\DefinedFieldValue, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->values[] = $item;
         

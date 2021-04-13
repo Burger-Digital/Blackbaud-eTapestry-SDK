@@ -167,7 +167,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set accountName value
      * @param string $accountName
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -190,7 +190,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set accountRef value
      * @param string $accountRef
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setAccountRef(?string $accountRef = null): self
     {
@@ -213,7 +213,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set amount value
      * @param float $amount
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setAmount(?float $amount = null): self
     {
@@ -236,7 +236,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set approach value
      * @param string $approach
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setApproach(?string $approach = null): self
     {
@@ -259,7 +259,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set campaign value
      * @param string $campaign
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setCampaign(?string $campaign = null): self
     {
@@ -282,7 +282,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set createdDate value
      * @param string $createdDate
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setCreatedDate(?string $createdDate = null): self
     {
@@ -305,7 +305,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setDate(?string $date = null): self
     {
@@ -328,7 +328,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set final value
      * @param bool $final
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setFinal(?bool $final = null): self
     {
@@ -351,7 +351,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set fund value
      * @param string $fund
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setFund(?string $fund = null): self
     {
@@ -374,7 +374,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set hardCreditAccountName value
      * @param string $hardCreditAccountName
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setHardCreditAccountName(?string $hardCreditAccountName = null): self
     {
@@ -397,7 +397,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set hardCreditAccountRef value
      * @param string $hardCreditAccountRef
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setHardCreditAccountRef(?string $hardCreditAccountRef = null): self
     {
@@ -420,7 +420,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set hardCreditRef value
      * @param string $hardCreditRef
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setHardCreditRef(?string $hardCreditRef = null): self
     {
@@ -443,7 +443,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set lastModifiedDate value
      * @param string $lastModifiedDate
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setLastModifiedDate(?string $lastModifiedDate = null): self
     {
@@ -466,7 +466,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set letter value
      * @param string $letter
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setLetter(?string $letter = null): self
     {
@@ -489,7 +489,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set note value
      * @param string $note
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setNote(?string $note = null): self
     {
@@ -512,7 +512,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setRef(?string $ref = null): self
     {
@@ -535,7 +535,7 @@ class SoftCredit extends AbstractStructBase
     /**
      * Set type value
      * @param int $type
-     * @return \StructType\SoftCredit
+     * @return \BurgerDigital\eTapestry\StructType\SoftCredit
      */
     public function setType(?int $type = null): self
     {

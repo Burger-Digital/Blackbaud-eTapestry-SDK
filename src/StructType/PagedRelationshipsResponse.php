@@ -83,7 +83,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
     /**
      * Set count value
      * @param int $count
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setCount(?int $count = null): self
     {
@@ -130,7 +130,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
      * Set data value
      * @throws InvalidArgumentException
      * @param mixed[] $data
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setData(array $data = []): self
     {
@@ -146,7 +146,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
      * Add item to data value
      * @throws InvalidArgumentException
      * @param mixed $item
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function addToData(mixed $item): self
     {
@@ -169,7 +169,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
     /**
      * Set pages value
      * @param int $pages
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setPages(?int $pages = null): self
     {
@@ -192,7 +192,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
     /**
      * Set start value
      * @param int $start
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setStart(?int $start = null): self
     {
@@ -215,7 +215,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
     /**
      * Set total value
      * @param int $total
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setTotal(?int $total = null): self
     {
@@ -238,7 +238,7 @@ class PagedRelationshipsResponse extends AbstractStructBase
     /**
      * Set usedCache value
      * @param bool $usedCache
-     * @return \StructType\PagedRelationshipsResponse
+     * @return \BurgerDigital\eTapestry\StructType\PagedRelationshipsResponse
      */
     public function setUsedCache(?bool $usedCache = null): self
     {

@@ -75,7 +75,7 @@ class PrivacyPreference extends AbstractStructBase
     /**
      * Set accountDefined value
      * @param bool $accountDefined
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function setAccountDefined(?bool $accountDefined = null): self
     {
@@ -98,7 +98,7 @@ class PrivacyPreference extends AbstractStructBase
     /**
      * Set applicationGroup value
      * @param string $applicationGroup
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function setApplicationGroup(?string $applicationGroup = null): self
     {
@@ -145,7 +145,7 @@ class PrivacyPreference extends AbstractStructBase
      * Set hiddenFields value
      * @throws InvalidArgumentException
      * @param string[] $hiddenFields
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function setHiddenFields(array $hiddenFields = []): self
     {
@@ -161,7 +161,7 @@ class PrivacyPreference extends AbstractStructBase
      * Add item to hiddenFields value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function addToHiddenFields(string $item): self
     {
@@ -184,7 +184,7 @@ class PrivacyPreference extends AbstractStructBase
     /**
      * Set personaType value
      * @param string $personaType
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function setPersonaType(?string $personaType = null): self
     {
@@ -207,7 +207,7 @@ class PrivacyPreference extends AbstractStructBase
     /**
      * Set status value
      * @param int $status
-     * @return \StructType\PrivacyPreference
+     * @return \BurgerDigital\eTapestry\StructType\PrivacyPreference
      */
     public function setStatus(?int $status = null): self
     {

@@ -47,7 +47,7 @@ class CartParent extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\CartParent
+     * @return \BurgerDigital\eTapestry\StructType\CartParent
      */
     public function setName(?string $name = null): self
     {
@@ -70,7 +70,7 @@ class CartParent extends AbstractStructBase
     /**
      * Set ref value
      * @param string $ref
-     * @return \StructType\CartParent
+     * @return \BurgerDigital\eTapestry\StructType\CartParent
      */
     public function setRef(?string $ref = null): self
     {

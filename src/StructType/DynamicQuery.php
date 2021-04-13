@@ -54,7 +54,7 @@ class DynamicQuery extends AbstractStructBase
      * - arrayType: tns:SearchCriteria[]
      * - base: soap11-enc:Array
      * - ref: soap11-enc:arrayType
-     * @var \StructType\SearchCriteria[]
+     * @var \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     protected array $searchCriteria = [];
     /**
@@ -74,7 +74,7 @@ class DynamicQuery extends AbstractStructBase
      * @param bool $matchAny
      * @param string $personaOption
      * @param int $returnType
-     * @param \StructType\SearchCriteria[] $searchCriteria
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $searchCriteria
      */
     public function __construct(?int $accountType = null, ?string $applicationGroup = null, ?string $baseQuery = null, ?bool $involvePrivacySettings = null, ?bool $matchAny = null, ?string $personaOption = null, ?int $returnType = null, array $searchCriteria = [])
     {
@@ -99,7 +99,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set accountType value
      * @param int $accountType
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setAccountType(?int $accountType = null): self
     {
@@ -122,7 +122,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set applicationGroup value
      * @param string $applicationGroup
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setApplicationGroup(?string $applicationGroup = null): self
     {
@@ -145,7 +145,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set baseQuery value
      * @param string $baseQuery
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setBaseQuery(?string $baseQuery = null): self
     {
@@ -168,7 +168,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set involvePrivacySettings value
      * @param bool $involvePrivacySettings
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setInvolvePrivacySettings(?bool $involvePrivacySettings = null): self
     {
@@ -191,7 +191,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set matchAny value
      * @param bool $matchAny
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setMatchAny(?bool $matchAny = null): self
     {
@@ -214,7 +214,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set personaOption value
      * @param string $personaOption
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setPersonaOption(?string $personaOption = null): self
     {
@@ -237,7 +237,7 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set returnType value
      * @param int $returnType
-     * @return \StructType\DynamicQuery
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setReturnType(?int $returnType = null): self
     {
@@ -251,7 +251,7 @@ class DynamicQuery extends AbstractStructBase
     }
     /**
      * Get searchCriteria value
-     * @return \StructType\SearchCriteria[]
+     * @return \BurgerDigital\eTapestry\StructType\SearchCriteria[]
      */
     public function getSearchCriteria(): array
     {
@@ -269,12 +269,12 @@ class DynamicQuery extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $dynamicQuerySearchCriteriaItem) {
             // validation for constraint: itemType
-            if (!$dynamicQuerySearchCriteriaItem instanceof \StructType\SearchCriteria) {
+            if (!$dynamicQuerySearchCriteriaItem instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
                 $invalidValues[] = is_object($dynamicQuerySearchCriteriaItem) ? get_class($dynamicQuerySearchCriteriaItem) : sprintf('%s(%s)', gettype($dynamicQuerySearchCriteriaItem), var_export($dynamicQuerySearchCriteriaItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The searchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The searchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -283,8 +283,8 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Set searchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria[] $searchCriteria
-     * @return \StructType\DynamicQuery
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria[] $searchCriteria
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function setSearchCriteria(array $searchCriteria = []): self
     {
@@ -299,14 +299,14 @@ class DynamicQuery extends AbstractStructBase
     /**
      * Add item to searchCriteria value
      * @throws InvalidArgumentException
-     * @param \StructType\SearchCriteria $item
-     * @return \StructType\DynamicQuery
+     * @param \BurgerDigital\eTapestry\StructType\SearchCriteria $item
+     * @return \BurgerDigital\eTapestry\StructType\DynamicQuery
      */
     public function addToSearchCriteria(\StructType\SearchCriteria $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SearchCriteria) {
-            throw new InvalidArgumentException(sprintf('The searchCriteria property can only contain items of type \StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \BurgerDigital\eTapestry\StructType\SearchCriteria) {
+            throw new InvalidArgumentException(sprintf('The searchCriteria property can only contain items of type \BurgerDigital\eTapestry\StructType\SearchCriteria, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->searchCriteria[] = $item;
         
