@@ -1,0 +1,117 @@
+<?php
+
+declare(strict_types=1);
+
+namespace BurgerDigital\eTapestry;
+
+/**
+ * Class which returns the class map definition
+ */
+class ClassMap
+{
+    /**
+     * Returns the mapping between the WSDL Structs and generated Structs' classes
+     * This array is sent to the \SoapClient when calling the WS
+     * @return string[]
+     */
+    final public static function get(): array
+    {
+        return [
+            'Account' => '\\BurgerDigital\\eTapestry\\StructType\\Account',
+            'DefinedValue' => '\\BurgerDigital\\eTapestry\\StructType\\DefinedValue',
+            'Phone' => '\\BurgerDigital\\eTapestry\\StructType\\Phone',
+            'SocialMediaProfile' => '\\BurgerDigital\\eTapestry\\StructType\\SocialMediaProfile',
+            'Gift' => '\\BurgerDigital\\eTapestry\\StructType\\Gift',
+            'Attachment' => '\\BurgerDigital\\eTapestry\\StructType\\Attachment',
+            'GeneratedReceipt' => '\\BurgerDigital\\eTapestry\\StructType\\GeneratedReceipt',
+            'OrderDetail' => '\\BurgerDigital\\eTapestry\\StructType\\OrderDetail',
+            'DiscountApplied' => '\\BurgerDigital\\eTapestry\\StructType\\DiscountApplied',
+            'OrderInfo' => '\\BurgerDigital\\eTapestry\\StructType\\OrderInfo',
+            'SoftCredit' => '\\BurgerDigital\\eTapestry\\StructType\\SoftCredit',
+            'Valuable' => '\\BurgerDigital\\eTapestry\\StructType\\Valuable',
+            'CCP' => '\\BurgerDigital\\eTapestry\\StructType\\CCP',
+            'Bond' => '\\BurgerDigital\\eTapestry\\StructType\\Bond',
+            'Buckaroo' => '\\BurgerDigital\\eTapestry\\StructType\\Buckaroo',
+            'Cash' => '\\BurgerDigital\\eTapestry\\StructType\\Cash',
+            'Check' => '\\BurgerDigital\\eTapestry\\StructType\\Check',
+            'CreditCard' => '\\BurgerDigital\\eTapestry\\StructType\\CreditCard',
+            'ElectronicFundsTransfer' => '\\BurgerDigital\\eTapestry\\StructType\\ElectronicFundsTransfer',
+            'InKind' => '\\BurgerDigital\\eTapestry\\StructType\\InKind',
+            'Insurance' => '\\BurgerDigital\\eTapestry\\StructType\\Insurance',
+            'RealEstate' => '\\BurgerDigital\\eTapestry\\StructType\\RealEstate',
+            'Stock' => '\\BurgerDigital\\eTapestry\\StructType\\Stock',
+            'Payment' => '\\BurgerDigital\\eTapestry\\StructType\\Payment',
+            'Contact' => '\\BurgerDigital\\eTapestry\\StructType\\Contact',
+            'Declaration' => '\\BurgerDigital\\eTapestry\\StructType\\Declaration',
+            'Disbursement' => '\\BurgerDigital\\eTapestry\\StructType\\Disbursement',
+            'LoginCredentialsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\LoginCredentialsRequest',
+            'SearchCriteria' => '\\BurgerDigital\\eTapestry\\StructType\\SearchCriteria',
+            'LoginCredentialsResponse' => '\\BurgerDigital\\eTapestry\\StructType\\LoginCredentialsResponse',
+            'Note' => '\\BurgerDigital\\eTapestry\\StructType\\Note',
+            'OutlookIntegrationEmail' => '\\BurgerDigital\\eTapestry\\StructType\\OutlookIntegrationEmail',
+            'Pledge' => '\\BurgerDigital\\eTapestry\\StructType\\Pledge',
+            'CustomPaymentSchedule' => '\\BurgerDigital\\eTapestry\\StructType\\CustomPaymentSchedule',
+            'StandardPaymentSchedule' => '\\BurgerDigital\\eTapestry\\StructType\\StandardPaymentSchedule',
+            'RecurringGift' => '\\BurgerDigital\\eTapestry\\StructType\\RecurringGift',
+            'RecurringGiftSchedule' => '\\BurgerDigital\\eTapestry\\StructType\\RecurringGiftSchedule',
+            'Relationship' => '\\BurgerDigital\\eTapestry\\StructType\\Relationship',
+            'RelationshipType' => '\\BurgerDigital\\eTapestry\\StructType\\RelationshipType',
+            'SegmentedDonation' => '\\BurgerDigital\\eTapestry\\StructType\\SegmentedDonation',
+            'SegmentedPledge' => '\\BurgerDigital\\eTapestry\\StructType\\SegmentedPledge',
+            'ConnectRequest' => '\\BurgerDigital\\eTapestry\\StructType\\ConnectRequest',
+            'ExternalLoginRequest' => '\\BurgerDigital\\eTapestry\\StructType\\ExternalLoginRequest',
+            'CartOrderRequest' => '\\BurgerDigital\\eTapestry\\StructType\\CartOrderRequest',
+            'PagedCartElementsResponse' => '\\BurgerDigital\\eTapestry\\StructType\\PagedCartElementsResponse',
+            'PagedDefinedFieldsResponse' => '\\BurgerDigital\\eTapestry\\StructType\\PagedDefinedFieldsResponse',
+            'PagedJournalEntriesResponse' => '\\BurgerDigital\\eTapestry\\StructType\\PagedJournalEntriesResponse',
+            'PagedQueryResultsResponse' => '\\BurgerDigital\\eTapestry\\StructType\\PagedQueryResultsResponse',
+            'PagedRelationshipsResponse' => '\\BurgerDigital\\eTapestry\\StructType\\PagedRelationshipsResponse',
+            'CalendarItem' => '\\BurgerDigital\\eTapestry\\StructType\\CalendarItem',
+            'Invitation' => '\\BurgerDigital\\eTapestry\\StructType\\Invitation',
+            'RecurringSchedule' => '\\BurgerDigital\\eTapestry\\StructType\\RecurringSchedule',
+            'CartCategory' => '\\BurgerDigital\\eTapestry\\StructType\\CartCategory',
+            'CartImage' => '\\BurgerDigital\\eTapestry\\StructType\\CartImage',
+            'CartParent' => '\\BurgerDigital\\eTapestry\\StructType\\CartParent',
+            'PagedCartElementsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedCartElementsRequest',
+            'CartItem' => '\\BurgerDigital\\eTapestry\\StructType\\CartItem',
+            'CartItemDiscount' => '\\BurgerDigital\\eTapestry\\StructType\\CartItemDiscount',
+            'Question' => '\\BurgerDigital\\eTapestry\\StructType\\Question',
+            'DefinedField' => '\\BurgerDigital\\eTapestry\\StructType\\DefinedField',
+            'DefinedFieldValue' => '\\BurgerDigital\\eTapestry\\StructType\\DefinedFieldValue',
+            'CartPreferences' => '\\BurgerDigital\\eTapestry\\StructType\\CartPreferences',
+            'StateTaxRate' => '\\BurgerDigital\\eTapestry\\StructType\\StateTaxRate',
+            'TransactionProcessor' => '\\BurgerDigital\\eTapestry\\StructType\\TransactionProcessor',
+            'PagedDefinedFieldsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedDefinedFieldsRequest',
+            'DonorLoginPreferences' => '\\BurgerDigital\\eTapestry\\StructType\\DonorLoginPreferences',
+            'DuplicateAccountSearch' => '\\BurgerDigital\\eTapestry\\StructType\\DuplicateAccountSearch',
+            'DynamicQuery' => '\\BurgerDigital\\eTapestry\\StructType\\DynamicQuery',
+            'QueryResultStats' => '\\BurgerDigital\\eTapestry\\StructType\\QueryResultStats',
+            'PagedDynamicQueryResultsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedDynamicQueryResultsRequest',
+            'SortOption' => '\\BurgerDigital\\eTapestry\\StructType\\SortOption',
+            'EntityRole' => '\\BurgerDigital\\eTapestry\\StructType\\EntityRole',
+            'Persona' => '\\BurgerDigital\\eTapestry\\StructType\\Persona',
+            'PagedExistingQueryResultsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedExistingQueryResultsRequest',
+            'Fund' => '\\BurgerDigital\\eTapestry\\StructType\\Fund',
+            'PagedJournalEntriesRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedJournalEntriesRequest',
+            'JournalSummary' => '\\BurgerDigital\\eTapestry\\StructType\\JournalSummary',
+            'PrivacyPreferences' => '\\BurgerDigital\\eTapestry\\StructType\\PrivacyPreferences',
+            'PrivacyPreference' => '\\BurgerDigital\\eTapestry\\StructType\\PrivacyPreference',
+            'OrganizationPreferences' => '\\BurgerDigital\\eTapestry\\StructType\\OrganizationPreferences',
+            'PhoneAThonList' => '\\BurgerDigital\\eTapestry\\StructType\\PhoneAThonList',
+            'Purchase' => '\\BurgerDigital\\eTapestry\\StructType\\Purchase',
+            'PagedRelationshipsRequest' => '\\BurgerDigital\\eTapestry\\StructType\\PagedRelationshipsRequest',
+            'SegmentedOrder' => '\\BurgerDigital\\eTapestry\\StructType\\SegmentedOrder',
+            'Shipping' => '\\BurgerDigital\\eTapestry\\StructType\\Shipping',
+            'Tax' => '\\BurgerDigital\\eTapestry\\StructType\\Tax',
+            'LinkedTransaction' => '\\BurgerDigital\\eTapestry\\StructType\\LinkedTransaction',
+            'AccountChangeRequest' => '\\BurgerDigital\\eTapestry\\StructType\\AccountChangeRequest',
+            'CartOrderResponse' => '\\BurgerDigital\\eTapestry\\StructType\\CartOrderResponse',
+            'EcommerceRequest' => '\\BurgerDigital\\eTapestry\\StructType\\EcommerceRequest',
+            'EcommerceResponse' => '\\BurgerDigital\\eTapestry\\StructType\\EcommerceResponse',
+            'ForgottenPasswordEmailHelpRequest' => '\\BurgerDigital\\eTapestry\\StructType\\ForgottenPasswordEmailHelpRequest',
+            'ForgottenPasswordResetHelpRequest' => '\\BurgerDigital\\eTapestry\\StructType\\ForgottenPasswordResetHelpRequest',
+            'ProcessTransactionRequest' => '\\BurgerDigital\\eTapestry\\StructType\\ProcessTransactionRequest',
+            'SendEmailRequest' => '\\BurgerDigital\\eTapestry\\StructType\\SendEmailRequest',
+        ];
+    }
+}
