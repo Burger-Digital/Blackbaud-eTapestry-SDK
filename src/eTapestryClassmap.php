@@ -1,6 +1,6 @@
 <?php
 
-namespace BBurgerDigital\eTapestry;
+namespace BurgerDigital\eTapestry;
 
 use BurgerDigital\eTapestry\Type;
 use Phpro\SoapClient\Soap\ClassMap\ClassMapCollection;

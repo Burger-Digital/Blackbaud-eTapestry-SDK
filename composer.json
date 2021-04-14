@@ -16,6 +16,7 @@
         "types": ["./vendor/bin/soap-client generate:types --config config/soap-client.php"],
         "clientfactory": ["./vendor/bin/soap-client generate:clientfactory --config config/soap-client.php"],
         "client": ["./vendor/bin/soap-client generate:client --config config/soap-client.php"],
-        "classmap": ["./vendor/bin/soap-client generate:classmap --config config/soap-client.php"]
+        "classmap": ["./vendor/bin/soap-client generate:classmap --config config/soap-client.php"],
+        "build": ["composer types && composer clientfactory && composer client && composer classmap"]
     }
 }
