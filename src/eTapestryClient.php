@@ -4,7 +4,6 @@ namespace BurgerDigital\eTapestry;
 
 use BurgerDigital\eTapestry\Type;
 use Phpro\SoapClient\Type\RequestInterface;
-use \;
 use Phpro\SoapClient\Type\ResultInterface;
 use Phpro\SoapClient\Exception\SoapException;
 

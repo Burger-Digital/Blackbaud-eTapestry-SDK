@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\RequestInterface;
 
@@ -44,7 +43,7 @@ class DynamicQuery implements RequestInterface
     private $returnType;
 
     /**
-     * @var \BurgerDigital\Type\SearchCriteria
+     * @var \BurgerDigital\eTapestry\Type\SearchCriteria
      */
     private $searchCriteria;
 

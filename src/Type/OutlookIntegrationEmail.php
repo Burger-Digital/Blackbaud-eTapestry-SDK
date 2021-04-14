@@ -1,6 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class OutlookIntegrationEmail
 {
@@ -16,7 +16,7 @@ class OutlookIntegrationEmail
     private $CC;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 

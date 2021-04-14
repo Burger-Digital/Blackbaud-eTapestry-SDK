@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -29,7 +28,7 @@ class RecurringGiftSchedule implements ResultInterface
     private $approach;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -49,7 +48,7 @@ class RecurringGiftSchedule implements ResultInterface
     private $date;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -139,17 +138,17 @@ class RecurringGiftSchedule implements ResultInterface
     private $ref;
 
     /**
-     * @var \BurgerDigital\Type\StandardPaymentSchedule
+     * @var \BurgerDigital\eTapestry\Type\StandardPaymentSchedule
      */
     private $schedule;
 
     /**
-     * @var \BurgerDigital\Type\Valuable
+     * @var \BurgerDigital\eTapestry\Type\Valuable
      */
     private $scheduledValuable;
 
     /**
-     * @var \BurgerDigital\Type\SoftCredit
+     * @var \BurgerDigital\eTapestry\Type\SoftCredit
      */
     private $softCredit;
 

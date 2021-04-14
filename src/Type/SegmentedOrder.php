@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -44,7 +43,7 @@ class SegmentedOrder implements ResultInterface
     private $offsettingRef;
 
     /**
-     * @var \BurgerDigital\Type\OrderInfo
+     * @var \BurgerDigital\eTapestry\Type\OrderInfo
      */
     private $orderInfo;
 

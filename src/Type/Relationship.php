@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -34,7 +33,7 @@ class Relationship implements ResultInterface
     private $createdDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -79,7 +78,7 @@ class Relationship implements ResultInterface
     private $startDate;
 
     /**
-     * @var \BurgerDigital\Type\RelationshipType
+     * @var \BurgerDigital\eTapestry\Type\RelationshipType
      */
     private $type;
 

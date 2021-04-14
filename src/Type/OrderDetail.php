@@ -1,12 +1,12 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class OrderDetail
 {
 
     /**
-     * @var \BurgerDigital\Type\DiscountApplied
+     * @var \BurgerDigital\eTapestry\Type\DiscountApplied
      */
     private $discountApplied;
 

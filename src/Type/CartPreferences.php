@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class CartPreferences implements ResultInterface
     private $categoryHeader;
 
     /**
-     * @var \BurgerDigital\Type\Question
+     * @var \BurgerDigital\eTapestry\Type\Question
      */
     private $checkoutQuestions;
 
@@ -94,7 +93,7 @@ class CartPreferences implements ResultInterface
     private $soldOutLabel;
 
     /**
-     * @var \BurgerDigital\Type\StateTaxRate
+     * @var \BurgerDigital\eTapestry\Type\StateTaxRate
      */
     private $stateTaxRates;
 
@@ -109,7 +108,7 @@ class CartPreferences implements ResultInterface
     private $templateSetFolder;
 
     /**
-     * @var \BurgerDigital\Type\TransactionProcessor
+     * @var \BurgerDigital\eTapestry\Type\TransactionProcessor
      */
     private $transProcessor;
 

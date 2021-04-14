@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -9,7 +8,7 @@ class PrivacyPreferences implements ResultInterface
 {
 
     /**
-     * @var \BurgerDigital\Type\PrivacyPreference
+     * @var \BurgerDigital\eTapestry\Type\PrivacyPreference
      */
     private $accountPrivacyPreference;
 
@@ -19,7 +18,7 @@ class PrivacyPreferences implements ResultInterface
     private $accountRef;
 
     /**
-     * @var \BurgerDigital\Type\PrivacyPreference
+     * @var \BurgerDigital\eTapestry\Type\PrivacyPreference
      */
     private $personaPrivacyPreferences;
 

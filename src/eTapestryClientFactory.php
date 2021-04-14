@@ -1,9 +1,9 @@
 <?php
 
-namespace BurgerDigital\eTapestry;
+namespace BBurgerDigital\eTapestry;
 
-use BurgerDigital\eTapestry\eTapestryClient;
-use BurgerDigital\eTapestry\eTapestryClassmap;
+use BBurgerDigital\eTapestry\eTapestryClient;
+use BBurgerDigital\eTapestry\eTapestryClassmap;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapEngineFactory;
 use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
@@ -11,7 +11,7 @@ use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
 class eTapestryClientFactory
 {
 
-    public static function factory(string $wsdl) : \BurgerDigital\eTapestry\eTapestryClient
+    public static function factory(string $wsdl) : \BBurgerDigital\eTapestry\eTapestryClient
     {
         $engine = ExtSoapEngineFactory::fromOptions(
             ExtSoapOptions::defaults($wsdl, [])

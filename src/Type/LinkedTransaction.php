@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -9,7 +8,7 @@ class LinkedTransaction implements ResultInterface
 {
 
     /**
-     * @var \BurgerDigital\Type\Account
+     * @var \BurgerDigital\eTapestry\Type\Account
      */
     private $softCreditAccount;
 
@@ -19,12 +18,12 @@ class LinkedTransaction implements ResultInterface
     private $transaction;
 
     /**
-     * @var \BurgerDigital\Type\Account
+     * @var \BurgerDigital\eTapestry\Type\Account
      */
     private $tributeAccount;
 
     /**
-     * @var \BurgerDigital\Type\Account
+     * @var \BurgerDigital\eTapestry\Type\Account
      */
     private $tributeNotificantAccount;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class Fund
 {
@@ -46,7 +46,7 @@ class Fund
     private $revenueAccount;
 
     /**
-     * @var \BurgerDigital\Type\DefinedFieldValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedFieldValue
      */
     private $securityRights;
 

@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -24,7 +23,7 @@ class SegmentedPledge implements ResultInterface
     private $arrearsAmount;
 
     /**
-     * @var \BurgerDigital\Type\CustomPaymentSchedule
+     * @var \BurgerDigital\eTapestry\Type\CustomPaymentSchedule
      */
     private $consolidatedCustomSchedule;
 

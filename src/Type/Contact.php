@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class Contact implements ResultInterface
     private $accountRef;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -34,7 +33,7 @@ class Contact implements ResultInterface
     private $date;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 

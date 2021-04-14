@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class CalendarItem implements ResultInterface
     private $accountRef;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -29,7 +28,7 @@ class CalendarItem implements ResultInterface
     private $createdDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -39,7 +38,7 @@ class CalendarItem implements ResultInterface
     private $endTime;
 
     /**
-     * @var \BurgerDigital\Type\Invitation
+     * @var \BurgerDigital\eTapestry\Type\Invitation
      */
     private $invitations;
 
@@ -64,7 +63,7 @@ class CalendarItem implements ResultInterface
     private $private;
 
     /**
-     * @var \BurgerDigital\Type\RecurringSchedule
+     * @var \BurgerDigital\eTapestry\Type\RecurringSchedule
      */
     private $recurringSchedule;
 

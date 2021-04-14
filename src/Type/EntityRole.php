@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class EntityRole implements ResultInterface
     private $createdDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -74,7 +73,7 @@ class EntityRole implements ResultInterface
     private $name;
 
     /**
-     * @var \BurgerDigital\Type\Persona
+     * @var \BurgerDigital\eTapestry\Type\Persona
      */
     private $personas;
 

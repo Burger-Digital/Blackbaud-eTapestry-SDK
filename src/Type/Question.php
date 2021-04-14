@@ -1,6 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class Question
 {
@@ -11,7 +11,7 @@ class Question
     private $displayText;
 
     /**
-     * @var \BurgerDigital\Type\DefinedField
+     * @var \BurgerDigital\eTapestry\Type\DefinedField
      */
     private $field;
 

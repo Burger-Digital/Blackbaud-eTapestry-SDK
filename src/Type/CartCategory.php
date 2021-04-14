@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class CartCategory implements ResultInterface
     private $disabled;
 
     /**
-     * @var \BurgerDigital\Type\CartImage
+     * @var \BurgerDigital\eTapestry\Type\CartImage
      */
     private $image;
 
@@ -49,7 +48,7 @@ class CartCategory implements ResultInterface
     private $nestedItems;
 
     /**
-     * @var \BurgerDigital\Type\CartParent
+     * @var \BurgerDigital\eTapestry\Type\CartParent
      */
     private $parents;
 

@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -49,7 +48,7 @@ class Gift implements ResultInterface
     private $approach;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -69,7 +68,7 @@ class Gift implements ResultInterface
     private $date;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -89,7 +88,7 @@ class Gift implements ResultInterface
     private $fundraiser;
 
     /**
-     * @var \BurgerDigital\Type\GeneratedReceipt
+     * @var \BurgerDigital\eTapestry\Type\GeneratedReceipt
      */
     private $generatedReceipt;
 
@@ -134,12 +133,12 @@ class Gift implements ResultInterface
     private $offsettingRef;
 
     /**
-     * @var \BurgerDigital\Type\OrderDetail
+     * @var \BurgerDigital\eTapestry\Type\OrderDetail
      */
     private $orderDetail;
 
     /**
-     * @var \BurgerDigital\Type\OrderInfo
+     * @var \BurgerDigital\eTapestry\Type\OrderInfo
      */
     private $orderInfo;
 
@@ -184,7 +183,7 @@ class Gift implements ResultInterface
     private $segmentedTransactionRef;
 
     /**
-     * @var \BurgerDigital\Type\SoftCredit
+     * @var \BurgerDigital\eTapestry\Type\SoftCredit
      */
     private $softCredit;
 
@@ -204,7 +203,7 @@ class Gift implements ResultInterface
     private $type;
 
     /**
-     * @var \BurgerDigital\Type\Valuable
+     * @var \BurgerDigital\eTapestry\Type\Valuable
      */
     private $valuable;
 

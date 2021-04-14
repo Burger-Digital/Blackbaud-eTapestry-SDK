@@ -1,11 +1,10 @@
 <?php
 
-namespace BurgerDigital\eTapestry;
+namespace BBurgerDigital\eTapestry;
 
-use BurgerDigital\Type;
+use BurgerDigital\eTapestry\Type;
 use Phpro\SoapClient\Soap\ClassMap\ClassMapCollection;
 use Phpro\SoapClient\Soap\ClassMap\ClassMap;
-use BurgerDigital\eTapestry\Type;
 
 class eTapestryClassmap
 {

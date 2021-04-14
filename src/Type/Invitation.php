@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class Invitation implements ResultInterface
     private $accountRef;
 
     /**
-     * @var \BurgerDigital\Type\CalendarItem
+     * @var \BurgerDigital\eTapestry\Type\CalendarItem
      */
     private $calendarItem;
 

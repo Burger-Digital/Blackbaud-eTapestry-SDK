@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -19,7 +18,7 @@ class CartItem implements ResultInterface
     private $disabled;
 
     /**
-     * @var \BurgerDigital\Type\CartItemDiscount
+     * @var \BurgerDigital\eTapestry\Type\CartItemDiscount
      */
     private $discounts;
 
@@ -44,7 +43,7 @@ class CartItem implements ResultInterface
     private $nonDeductibleAmount;
 
     /**
-     * @var \BurgerDigital\Type\CartParent
+     * @var \BurgerDigital\eTapestry\Type\CartParent
      */
     private $parents;
 
@@ -79,7 +78,7 @@ class CartItem implements ResultInterface
     private $quantity;
 
     /**
-     * @var \BurgerDigital\Type\Question
+     * @var \BurgerDigital\eTapestry\Type\Question
      */
     private $questions;
 
@@ -89,7 +88,7 @@ class CartItem implements ResultInterface
     private $ref;
 
     /**
-     * @var \BurgerDigital\Type\CartImage
+     * @var \BurgerDigital\eTapestry\Type\CartImage
      */
     private $regularImages;
 
@@ -119,7 +118,7 @@ class CartItem implements ResultInterface
     private $taxableAmount;
 
     /**
-     * @var \BurgerDigital\Type\CartImage
+     * @var \BurgerDigital\eTapestry\Type\CartImage
      */
     private $thumbImage;
 

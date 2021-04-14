@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -14,7 +13,7 @@ class Account implements ResultInterface
     private $accountCreatedDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $accountDefinedValues;
 
@@ -149,7 +148,7 @@ class Account implements ResultInterface
     private $personaCreatedDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $personaDefinedValues;
 
@@ -169,7 +168,7 @@ class Account implements ResultInterface
     private $personaTypes;
 
     /**
-     * @var \BurgerDigital\Type\Phone
+     * @var \BurgerDigital\eTapestry\Type\Phone
      */
     private $phones;
 
@@ -194,7 +193,7 @@ class Account implements ResultInterface
     private $shortSalutation;
 
     /**
-     * @var \BurgerDigital\Type\SocialMediaProfile
+     * @var \BurgerDigital\eTapestry\Type\SocialMediaProfile
      */
     private $socialMediaProfiles;
 

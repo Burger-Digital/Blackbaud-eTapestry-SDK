@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -59,7 +58,7 @@ class DefinedField implements ResultInterface
     private $required;
 
     /**
-     * @var \BurgerDigital\Type\DefinedFieldValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedFieldValue
      */
     private $securityRights;
 
@@ -69,7 +68,7 @@ class DefinedField implements ResultInterface
     private $system;
 
     /**
-     * @var \BurgerDigital\Type\DefinedFieldValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedFieldValue
      */
     private $values;
 

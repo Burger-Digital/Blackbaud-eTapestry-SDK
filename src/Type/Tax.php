@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -49,7 +48,7 @@ class Tax implements ResultInterface
     private $approach;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -69,7 +68,7 @@ class Tax implements ResultInterface
     private $date;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -84,7 +83,7 @@ class Tax implements ResultInterface
     private $fund;
 
     /**
-     * @var \BurgerDigital\Type\GeneratedReceipt
+     * @var \BurgerDigital\eTapestry\Type\GeneratedReceipt
      */
     private $generatedReceipt;
 
@@ -139,7 +138,7 @@ class Tax implements ResultInterface
     private $segmentedTransactionRef;
 
     /**
-     * @var \BurgerDigital\Type\SoftCredit
+     * @var \BurgerDigital\eTapestry\Type\SoftCredit
      */
     private $softCredit;
 
@@ -159,7 +158,7 @@ class Tax implements ResultInterface
     private $type;
 
     /**
-     * @var \BurgerDigital\Type\Valuable
+     * @var \BurgerDigital\eTapestry\Type\Valuable
      */
     private $valuable;
 

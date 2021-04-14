@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\RequestInterface;
 
@@ -9,7 +8,7 @@ class LoginCredentialsRequest implements RequestInterface
 {
 
     /**
-     * @var \BurgerDigital\Type\Account
+     * @var \BurgerDigital\eTapestry\Type\Account
      */
     private $account;
 
@@ -44,7 +43,7 @@ class LoginCredentialsRequest implements RequestInterface
     private $confirmationSubject;
 
     /**
-     * @var \BurgerDigital\Type\SearchCriteria
+     * @var \BurgerDigital\eTapestry\Type\SearchCriteria
      */
     private $duplicateSearchCriteria;
 

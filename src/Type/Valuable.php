@@ -1,62 +1,62 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class Valuable
 {
 
     /**
-     * @var \BurgerDigital\Type\CCP
+     * @var \BurgerDigital\eTapestry\Type\CCP
      */
     private $CCP;
 
     /**
-     * @var \BurgerDigital\Type\Bond
+     * @var \BurgerDigital\eTapestry\Type\Bond
      */
     private $bond;
 
     /**
-     * @var \BurgerDigital\Type\Buckaroo
+     * @var \BurgerDigital\eTapestry\Type\Buckaroo
      */
     private $buckaroo;
 
     /**
-     * @var \BurgerDigital\Type\Cash
+     * @var \BurgerDigital\eTapestry\Type\Cash
      */
     private $cash;
 
     /**
-     * @var \BurgerDigital\Type\Check
+     * @var \BurgerDigital\eTapestry\Type\Check
      */
     private $check;
 
     /**
-     * @var \BurgerDigital\Type\CreditCard
+     * @var \BurgerDigital\eTapestry\Type\CreditCard
      */
     private $creditCard;
 
     /**
-     * @var \BurgerDigital\Type\ElectronicFundsTransfer
+     * @var \BurgerDigital\eTapestry\Type\ElectronicFundsTransfer
      */
     private $electronicFundsTransfer;
 
     /**
-     * @var \BurgerDigital\Type\InKind
+     * @var \BurgerDigital\eTapestry\Type\InKind
      */
     private $inKind;
 
     /**
-     * @var \BurgerDigital\Type\Insurance
+     * @var \BurgerDigital\eTapestry\Type\Insurance
      */
     private $insurance;
 
     /**
-     * @var \BurgerDigital\Type\RealEstate
+     * @var \BurgerDigital\eTapestry\Type\RealEstate
      */
     private $realEstate;
 
     /**
-     * @var \BurgerDigital\Type\Stock
+     * @var \BurgerDigital\eTapestry\Type\Stock
      */
     private $stock;
 

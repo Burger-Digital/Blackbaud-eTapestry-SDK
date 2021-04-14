@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -54,7 +53,7 @@ class Pledge implements ResultInterface
     private $arrearsAmount;
 
     /**
-     * @var \BurgerDigital\Type\Attachment
+     * @var \BurgerDigital\eTapestry\Type\Attachment
      */
     private $attachments;
 
@@ -74,7 +73,7 @@ class Pledge implements ResultInterface
     private $createdDate;
 
     /**
-     * @var \BurgerDigital\Type\CustomPaymentSchedule
+     * @var \BurgerDigital\eTapestry\Type\CustomPaymentSchedule
      */
     private $customSchedule;
 
@@ -84,7 +83,7 @@ class Pledge implements ResultInterface
     private $date;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -104,7 +103,7 @@ class Pledge implements ResultInterface
     private $fundraiser;
 
     /**
-     * @var \BurgerDigital\Type\GeneratedReceipt
+     * @var \BurgerDigital\eTapestry\Type\GeneratedReceipt
      */
     private $generatedReceipt;
 
@@ -189,7 +188,7 @@ class Pledge implements ResultInterface
     private $outstandingBalance;
 
     /**
-     * @var \BurgerDigital\Type\Valuable
+     * @var \BurgerDigital\eTapestry\Type\Valuable
      */
     private $paymentValuable;
 
@@ -214,7 +213,7 @@ class Pledge implements ResultInterface
     private $ref;
 
     /**
-     * @var \BurgerDigital\Type\Valuable
+     * @var \BurgerDigital\eTapestry\Type\Valuable
      */
     private $scheduledValuable;
 
@@ -224,12 +223,12 @@ class Pledge implements ResultInterface
     private $segmentedTransactionRef;
 
     /**
-     * @var \BurgerDigital\Type\SoftCredit
+     * @var \BurgerDigital\eTapestry\Type\SoftCredit
      */
     private $softCredit;
 
     /**
-     * @var \BurgerDigital\Type\StandardPaymentSchedule
+     * @var \BurgerDigital\eTapestry\Type\StandardPaymentSchedule
      */
     private $standardSchedule;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class OrderInfo
 {

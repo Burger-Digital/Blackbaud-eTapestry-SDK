@@ -1,6 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
+namespace BurgerDigital\eTapestry\Type;
 
 class Persona
 {
@@ -31,7 +31,7 @@ class Persona
     private $createdDate;
 
     /**
-     * @var \BurgerDigital\Type\DefinedValue
+     * @var \BurgerDigital\eTapestry\Type\DefinedValue
      */
     private $definedValues;
 
@@ -56,7 +56,7 @@ class Persona
     private $note;
 
     /**
-     * @var \BurgerDigital\Type\Phone
+     * @var \BurgerDigital\eTapestry\Type\Phone
      */
     private $phones;
 

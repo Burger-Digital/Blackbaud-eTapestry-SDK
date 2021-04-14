@@ -1,7 +1,6 @@
 <?php
 
-namespace BurgerDigital\Type;
-
+namespace BurgerDigital\eTapestry\Type;
 
 use Phpro\SoapClient\Type\RequestInterface;
 
@@ -34,7 +33,7 @@ class PagedExistingQueryResultsRequest implements RequestInterface
     private $query;
 
     /**
-     * @var \BurgerDigital\Type\SortOption
+     * @var \BurgerDigital\eTapestry\Type\SortOption
      */
     private $sortOptions;
 
