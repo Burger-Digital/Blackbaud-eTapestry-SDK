@@ -1,16 +1,8 @@
 {
-    "name": "burger-digital/etapestry-sdk",
-    "description": "Package generated from https://sna.etapestry.com/v3messaging/service?WSDL using wsdltophp/packagegenerator",
     "require": {
-        "php": ">=7.4",
-        "ext-dom": "*",
-        "ext-mbstring": "*",
-        "ext-soap": "*",
-        "wsdltophp/packagebase": "~5.0"
+        "phpro/soap-client": "^1.4"
     },
-    "autoload": {
-        "psr-4": {
-            "BurgerDigital\\eTapestry\\" : "/src/"
-        }
+    "require-dev": {
+        "laminas/laminas-code": "^3.1.0"
     }
 }
