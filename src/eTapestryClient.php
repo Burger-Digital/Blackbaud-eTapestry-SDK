@@ -12,7 +12,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Account $Account_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -26,7 +26,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Gift $Gift_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -40,7 +40,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Payment $Payment_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -54,7 +54,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Contact $Contact_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -78,7 +78,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Disbursement $Disbursement_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -92,7 +92,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Gift $Gift_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -116,7 +116,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Note $Note_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -130,7 +130,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\OutlookIntegrationEmail $OutlookIntegrationEmail_1
      * BurgerDigital\eTapestry\Type\Account $arrayOfAccount_2
      *
@@ -154,7 +154,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\DateTime $Date_2
      * BurgerDigital\eTapestry\Type\Integer $int_3
@@ -173,7 +173,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Payment $Payment_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -187,7 +187,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Pledge $Pledge_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -201,7 +201,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\RecurringGift $RecurringGift_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -215,7 +215,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\RecurringGiftSchedule $RecurringGiftSchedule_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -229,7 +229,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Relationship $Relationship_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -243,7 +243,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\SegmentedDonation $SegmentedDonation_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -257,7 +257,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\SegmentedPledge $SegmentedPledge_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -271,7 +271,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\SoftCredit $SoftCredit_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -285,21 +285,21 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
      * @param Phpro\SoapClient\Type\MultiArgumentRequest
      * @return ResultInterface|Type\StringType
      */
-    public function apiKeyLogin(\Phpro\SoapClient\Type\MultiArgumentRequest $multiArgumentRequest) : \BurgerDigital\eTapestry\Type\StringType
+    public function apiKeyLogin(\Phpro\SoapClient\Type\MultiArgumentRequest $multiArgumentRequest)
     {
         return $this->call('apiKeyLogin', $multiArgumentRequest);
     }
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\DefinedValue $arrayOfDefinedValue_2
      * BurgerDigital\eTapestry\Type\Boolean $boolean_3
@@ -344,7 +344,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      * BurgerDigital\eTapestry\Type\Boolean $boolean_3
@@ -372,14 +372,14 @@ class eTapestryClient extends \Phpro\SoapClient\Client
      * @return ResultInterface|Type\Account
      * @throws SoapException
      */
-    public function getAccountById(\BurgerDigital\eTapestry\Type\Integer $int_1) : \BurgerDigital\eTapestry\Type\Account
+    public function getAccountById($int_1) : \BurgerDigital\eTapestry\Type\Account
     {
         return $this->call('getAccountById', $int_1);
     }
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      * BurgerDigital\eTapestry\Type\Boolean $boolean_3
@@ -604,7 +604,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -638,7 +638,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
@@ -674,7 +674,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
      * @return ResultInterface|Type\Account
      * @throws SoapException
      */
-    public function getDuplicateAccounts(\BurgerDigital\eTapestry\Type\DuplicateAccountSearch $DuplicateAccountSearch_1) : \BurgerDigital\eTapestry\Type\Account
+    public function getDuplicateAccounts(\BurgerDigital\eTapestry\Type\DuplicateAccountSearch $DuplicateAccountSearch_1)
     {
         return $this->call('getDuplicateAccounts', $DuplicateAccountSearch_1);
     }
@@ -711,7 +711,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -824,7 +824,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1026,7 +1026,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
@@ -1140,7 +1140,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1204,7 +1204,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1281,7 +1281,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
@@ -1382,7 +1382,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * BurgerDigital\eTapestry\Type\DefinedValue $arrayOfDefinedValue_2
      *
@@ -1396,7 +1396,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
@@ -1430,7 +1430,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Account $Account_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1444,7 +1444,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Contact $Contact_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1468,7 +1468,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      * string $String_3
@@ -1483,7 +1483,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Gift $Gift_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1507,7 +1507,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * string $String_1
      * string $String_2
      *
@@ -1531,7 +1531,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Note $Note_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1545,7 +1545,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Payment $Payment_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1559,7 +1559,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\Pledge $Pledge_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1573,7 +1573,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\PrivacyPreferences $PrivacyPreferences_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1587,7 +1587,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\RecurringGift $RecurringGift_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
@@ -1601,7 +1601,7 @@ class eTapestryClient extends \Phpro\SoapClient\Client
 
     /**
      * MultiArgumentRequest with following params:
-     * 
+     *
      * BurgerDigital\eTapestry\Type\RecurringGiftSchedule $RecurringGiftSchedule_1
      * BurgerDigital\eTapestry\Type\Boolean $boolean_2
      *
