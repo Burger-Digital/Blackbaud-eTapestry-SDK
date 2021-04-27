@@ -4,7 +4,7 @@ namespace BurgerDigital\eTapestry;
 
 use BurgerDigital\eTapestry\eTapestryClient;
 use BurgerDigital\eTapestry\eTapestryClassmap;
-use Http\Adapter\Guzzle7\Client as GuzzleAdapter;
+use Http\Adapter\Guzzle6\Client as GuzzleAdapter;
 use Phpro\SoapClient\Middleware\RemoveEmptyNodesMiddleware;
 use Phpro\SoapClient\Soap\Handler\HttPlugHandle;
 use Symfony\Component\EventDispatcher\EventDispatcher;
